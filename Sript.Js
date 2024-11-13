@@ -6,12 +6,12 @@
 
 
 
- home.addEventListener("click", function(){
+home.addEventListener("click", function(){
 
  })
 
- karte.addEventListener("click", function(){
-    window.location.href = "/pages/Karte.html";})
+karte.addEventListener("click", function(){
+   window.location.href = "/pages/Karte.html";})
 
 aktivitaeten.addEventListener("click",function(){
    window.location.href = "/pages/Aktivitäten.html";} )
