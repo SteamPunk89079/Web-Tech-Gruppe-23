@@ -1,6 +1,6 @@
 const home = document.getElementById("Home_button");
- const karte = document.getElementById("Karte_button");
- const aktivitaeten = document.getElementById("Aktivitaeten_button");
+const karte = document.getElementById("Karte_button");
+const aktivitaeten = document.getElementById("Aktivitaeten_button");
 
 
 
@@ -26,11 +26,15 @@ const cards = document.querySelectorAll(".location_card");
         const video = card.querySelector("video");
         card.addEventListener('mouseenter', function (){
             video.play();
-            console.log(card.getElementById(this)+" mouse entered");
         });
 
         card.addEventListener("mouseleave", function() {
             video.pause();
-            console.log(card.getElementById(this)+" mouse exited");
+            console.log(this.getElementById());
+        });
+        
+        card.addEventListener('click', function(){
+            console.log(card.getAttribute('test'));
+            console.log("Pressed")
         });
     });
