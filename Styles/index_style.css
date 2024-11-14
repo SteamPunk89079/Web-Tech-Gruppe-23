@@ -3,6 +3,7 @@
     background-color: aqua;
 
     
+    
  }
 
 
@@ -11,6 +12,11 @@
     margin-bottom: 10px;
     margin-left: 10px;
     height: 70px;
+    width: 100px;
+    border-radius: 10px;
+    background-color:cadetblue;
+    border: 1px solid black;
+    
 }
 
 .mainpic{
@@ -34,7 +40,7 @@
 .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px; /* Space between columns */
+    gap: 20px;
   }
   .title{
     text-align: center;
@@ -44,6 +50,8 @@ video{
     border-radius: 20px;
     border: 3px solid rgb(0, 49, 90);
     margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 footer {
@@ -58,7 +66,13 @@ footer {
     margin-top: 50px;
 }
 
-
+.individuelle_location{
+    background-color: violet;
+}
+.location_row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
 
 
 
