@@ -1,19 +1,131 @@
+ /*---------topbar--stuff-------*/
  .topbars{
     border:  2px solid black;
     background-color: aqua;
+<<<<<<< Updated upstream
 
     
  }
 
+=======
+    height: 150px;
+}
+.topbar_buttons{
+    nav-left: auto;
+}
+.topbar_img{
+    margin-left:500px;
+    height: 60px; border-radius: 20px; 
+}
+/*---------topbar--stuff-------*/
+>>>>>>> Stashed changes
 
 .button{
     margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
+    margin-right: -20px;
     height: 70px;
+<<<<<<< Updated upstream
+=======
+    width: 150px;
+    border-radius: 10px;
+    background-color:cadetblue;
+    border: 1px solid black;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    font-size: 18px;
+    font-family:Arial, Helvetica, sans-serif;    
+    margin-top: 80px;
+>>>>>>> Stashed changes
 }
+
 
 .mainpic{
-    height: 500px;
+    height: 200px;
+    width: 1500px;
 }
 
+<<<<<<< Updated upstream
+=======
+
+
+
+/*---------------BANNER-----------------*/
+.banner{
+    border: 3px solid black;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    background-color: yellow;
+}
+.settings_button{
+    height: 40px;
+    margin-left: 1000px;
+}
+.banner_title{
+    margin-bottom: -35px;
+    margin-left: 30px;
+    font-size: 50px;
+}
+/*---------------BANNER-----------------*/
+
+
+
+
+.karte_page{
+    background-color: cadetblue;    
+}
+.location_card{
+    border: 2px solid black;
+    background-color: teal;
+    text-align: center;
+    border-radius: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+  .title{
+    text-align: center;
+  }
+
+video{
+    border-radius: 20px;
+    border: 3px solid rgb(0, 49, 90);
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #333;      /* Dark background color */
+    color: #f1f1f1;              /* Light text color */
+    text-align: center;          /* Center the text */
+    padding: 10px;               /* Add some padding */
+    width: 100%;                 /* Full width */
+    bottom: 0;      
+    border-radius: 20px;      
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+.individuelle_location{
+    background-color: violet;
+}
+.location_row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+.location_card:hover{
+    p, h2{
+        color: rgba(190, 23, 23, 0.656);
+    }
+}
+  
+>>>>>>> Stashed changes
