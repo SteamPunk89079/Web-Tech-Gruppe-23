@@ -38,3 +38,18 @@ const cards = document.querySelectorAll(".location_card");
             console.log("Pressed")
         });
     });
+
+
+
+
+
+
+    // Wait 30 seconds and show the popup
+setTimeout(() => {
+    document.getElementById('popup').style.display = 'block';
+}, 30000); // 30,000 milliseconds = 30 seconds
+
+// Close the popup when the close button is clicked
+document.getElementById('close-popup').addEventListener('click', () => {
+    document.getElementById('popup').style.display = 'none';
+});

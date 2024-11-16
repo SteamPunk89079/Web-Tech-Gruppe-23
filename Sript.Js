@@ -15,3 +15,15 @@ karte.addEventListener("click", function(){
 
 aktivitaeten.addEventListener("click",function(){
    window.location.href = "/pages/Aktivitäten.html";} )
+
+
+
+
+
+
+
+
+
+
+
+   
