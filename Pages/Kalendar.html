@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalendar</title>
+
+    <link rel="stylesheet" href="../Styles/index_style.css">
+</head>
+<body>
+
+    
+    <div class="topbars">
+        
+        <button id="Home_button" class="button">Home</button>
+        <button id="Karte_button" class="button">Karte</button>
+        <button id="Aktivitaeten_button" class="button">Aktivitäten</button>
+        <button id="Kalendar_button" class="button">Kalendar</button>
+        <button id="Events_button" class="button">Events</button>
+        <img class="topbar_img" src="../Bilder/trier-logo.jpg" style="text-align: right;">
+        
+    
+    </div>
+
+    
+    <br><br><br><br>
+
+ <!---------------------------------------CALENDAR--------------------------------->   
+    <div class="calendar" style="background-color: rgb(255, 212, 111) ">
+        <div class="month_bar">
+            <button 
+            class="month_selector" \
+            style="margin-right: 25px; 
+                    margin-left: 5px;"
+            id="month_before"        
+            ><-</button>
+
+            <p id="month_text" style="background-color: rgb(255, 199, 69); width: 150px;"></p>
+            
+            <button class="month_selector" 
+            style="margin-left: 25px;"
+            id="month_after"
+            >-></button>
+        </div>
+        <div id="kalendar"></div>
+    </div>
+ <!---------------------------------------CALENDAR--------------------------------->
+    
+    <p id="days_left_counter" style="text-align: center;"></p>
+    
+    <script src="../Scripts/Kalendar.Js"></script>
+</body>
+</html>

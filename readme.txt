@@ -17,3 +17,11 @@ Ziegenbock
 
 kulturelles:
 https://www.trier.de/kultur-freizeit/kunstakademie/
+
+
+
+login funtion, abbility to query events
+
+
+
+homepage button top right ->> sprache andern
