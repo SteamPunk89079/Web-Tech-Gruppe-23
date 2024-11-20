@@ -1,0 +1,25 @@
+
+
+
+body{
+    background-color:   cadetblue;
+}
+
+.location_row {
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 15px; 
+    padding-left: 20px;
+}
+
+.location_row img {
+    max-width: 50px;
+    height: auto;
+    margin-right: 10px; 
+}
+
+.location_row h4 {
+    font-size: 1rem; 
+    margin: 0; 
+    text-align: left; 
+}
