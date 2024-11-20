@@ -278,9 +278,30 @@ footer {
     border: 1px solid #ddd;
     border-radius: 4px;
 }
+.calendar p {
+    background-color: rgb(255, 199, 69);
+}
 
 #kalendar p:hover{
-    background-color: gray;
+    background-color: rgb(190, 190, 190);
+    cursor: pointer;
+}
+.month_bar{
+    display: flex; 
+}
+
+.month_selector{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+
+    margin-bottom: 20px;
+    background-color: rgb(255, 199, 69);
+    border: 1px solid #ddd;
+}
+.month_selector:hover{
+    background-color: rgb(190, 190, 190);
     cursor: pointer;
 }
 

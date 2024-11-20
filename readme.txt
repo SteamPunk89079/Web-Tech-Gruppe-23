@@ -20,7 +20,7 @@ https://www.trier.de/kultur-freizeit/kunstakademie/
 
 
 
-
+login funtion, abbility to query events
 
 
 
