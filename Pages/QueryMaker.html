@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Maker</title>
+    <link rel="stylesheet" href="../Styles/query_maker_styles.css">
+</head>
+<body style="background-color: orange;">
+    
+        
+    <div class="container">
+        
+        
+        <label for="dropdown_type">Veranstaltungs Art:</label>
+        <select id="dropdown_type">
+            <option value="option_0"></option>
+            <option value="Konzert">Konzert</option>
+            <option value="Kneipe">Kneipe</option>
+            <option value="Theather_Stuck">Theather Stuck</option>
+            <option value="Art_Galerie">Art Galerie</option>
+            <option value="Flohmarkt">Flohmarkt</option>
+            <option value="Sehenswurdigkeit">Sehenswurdigkeit</option>
+            <option value="Restaurant">Restaurant</option>
+            <option value="Film">Film</option>
+            <option value="Workshop">Workshop</option>
+        </select>
+
+        <label for="dropdown_location">Standort:</label>
+        <select id="dropdown_location">
+            <option value="option_0"></option>
+            <option value="New_Mintons">New Mintons</option>
+            <option value="Chrome">Chrome</option>
+            <option value="Ziegels">Ziegels</option>
+            <option value="Irish_Pub">Irish Pub</option>
+            <option value="Simplicissimus">Simplicissimus</option>
+            <option value="Cubiculum">Cubiculum</option>
+            <option value="option_7">...museum</option>
+            <option value="option_8">...kino</option>
+            <option value="option_9">...theater</option>
+        </select>
+        
+
+        <textarea id="description_area" type="text" placeholder="event description" class="event_description"></textarea>
+        
+        <input type="date" placeholder="event date" id="date_selector"> 
+
+        <button id="save_event_button">SAVE EVENT</button>
+
+        <p id="test"></p>
+    </div>
+
+
+
+    <script src="../Scripts/QueryMaker.js"></script>
+</body>
+</html>

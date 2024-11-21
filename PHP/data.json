@@ -1,0 +1,18 @@
+[
+    [
+        {
+            "type": "Kneipe",
+            "location": "New_Mintons",
+            "date": "2024-11-07",
+            "description": "cool"
+        }
+    ],
+    [
+        {
+            "type": "Sehenswurdigkeit",
+            "location": "option_8",
+            "date": "2024-11-14",
+            "description": "cool"
+        }
+    ]
+]
