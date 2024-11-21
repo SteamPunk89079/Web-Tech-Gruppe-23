@@ -83,4 +83,8 @@ month_after.addEventListener('click', function () {
 //--------------------------MONTH-NAVIGATION--------------------------
 
 updateCalendar();
-days_left.innerHTML = `${days_remaining + 1} days left until Christmas`;
+//days_left.innerHTML = `${days_remaining + 1} days left until Christmas`;
+
+
+
+

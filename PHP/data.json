@@ -1,26 +1,18 @@
-[
-    [
+{
+    "data": [
         {
-            "type": "Kneipe",
-            "location": "New_Mintons",
-            "date": "2024-11-07",
-            "description": "cool"
-        }
-    ],
-    [
+            "id": 1,
+            "type": "",
+            "location": "",
+            "date": "",
+            "description": ""
+        },
         {
-            "type": "Sehenswurdigkeit",
-            "location": "option_8",
-            "date": "2024-11-14",
-            "description": "cool"
-        }
-    ],
-    [
-        {
-            "type": "Sehenswurdigkeit",
-            "location": "Irish_Pub",
-            "date": "2024-11-06",
-            "description": "asd"
+            "id": 2,
+            "type": "",
+            "location": "",
+            "date": "",
+            "description": ""
         }
     ]
-]
+}

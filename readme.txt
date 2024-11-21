@@ -20,8 +20,31 @@ https://www.trier.de/kultur-freizeit/kunstakademie/
 
 
 
-login funtion, abbility to query events
+login funktion, abbility to query events
 
 
 
 homepage button top right ->> sprache andern
+
+
+
+
+Jede anwendung musss mit hilfe eine Tastatur 
+ohne mouse bedient werden koennen 
+
+
+
+
+
+----------------------------------------------
+mit pfeile durch die elemente gehen kann 
+
+text muss verstandlich sein 
+
+bilder placeholder elemente einsetzen 
+
+gute headline (verstandliche headlines)
+
+
+----------------------------------------------
+FONTS MUSSEN NOCH angepasst werden 
