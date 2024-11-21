@@ -14,5 +14,13 @@
             "date": "2024-11-14",
             "description": "cool"
         }
+    ],
+    [
+        {
+            "type": "Sehenswurdigkeit",
+            "location": "Irish_Pub",
+            "date": "2024-11-06",
+            "description": "asd"
+        }
     ]
 ]
