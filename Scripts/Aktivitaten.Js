@@ -1,7 +1,11 @@
 const home = document.getElementById("Home_button");
- const karte = document.getElementById("Karte_button");
- const aktivitaeten = document.getElementById("Aktivitaeten_button");
-
+const karte = document.getElementById("Karte_button");
+const aktivitaeten = document.getElementById("Aktivitaeten_button");
+const kalendar = document.getElementById("Kalendar_button").addEventListener(
+  'click', function(){
+    window.location.href = "/pages/Kalendar.html";
+  }
+)
 
 
 

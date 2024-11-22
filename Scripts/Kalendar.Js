@@ -11,7 +11,7 @@ karte.addEventListener('click', function () {
     window.location.href = "./Karte.html";
 });
 aktivitaeten.addEventListener('click', function () {
-    window.location.href = "./Aktivitaten.html";
+    window.location.href = "./Aktivitäten.html";
 });
 events.addEventListener('click', function () {
     window.location.href = "./Events.html"

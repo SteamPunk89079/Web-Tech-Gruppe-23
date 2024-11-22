@@ -24,7 +24,7 @@ if (file_exists($file_path)) {
 
 $data_array[] = $new_data;
 
-$updated_json = json_encode($data_array, JSON_PRETTY_PRINT);
+$updated_json = json_encode($data_array);
 
 if (file_put_contents($file_path, $updated_json)) {
     echo json_encode(["status" => "success", "message" => "Data appended successfully."]);

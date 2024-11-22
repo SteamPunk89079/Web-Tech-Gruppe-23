@@ -312,3 +312,10 @@ footer {
 
 
 /*-------------------CALENDAR-----------------------*/
+
+.index {background-color: rgb(255, 199, 69);}
+.index header {background-image: url("../Bilder/Trier_Balkenbild.jpg");
+        background-repeat: no-repeat;
+        background-position: center;}
+.index h2 {background-color: orange;}
+.index h3 {text-decoration: underline orange;}
