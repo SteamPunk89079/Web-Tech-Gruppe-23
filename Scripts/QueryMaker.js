@@ -16,7 +16,7 @@ const test = document.getElementById("test");
 
 
 save_event_button.addEventListener('click', function(){
-
+    
     let query = [];
 
     if (type_selector.value !== "option_0" 
