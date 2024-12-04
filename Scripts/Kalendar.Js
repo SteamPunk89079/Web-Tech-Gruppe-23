@@ -54,37 +54,9 @@ month_after.addEventListener('click', function () {
 updateCalendar();
 //days_left.innerHTML = `${days_remaining + 1} days left until Christmas`;
 //let dates_array = get_event_dates();
-console.log(actual_month)
-
-
-
+console.log(get_event_dates());
 
 //------------------------------MAIN---------------------------------------
-
-function get_event_dates(){
-    let date_event_arr = [];
-    fetch(`../PHP/data.json`).then(response => {
-        if (!response.ok){
-            throw new Error("Filter malfunction");
-        }
-        return response.json();
-    }).then(dtb => {
-        dtb.forEach((inner_array) => {
-            const entry = inner_array[0];
-
-            date_event_arr.push(entry.date);
-        });
-
-    })
-    .catch(error => {
-        console.error("Error loading data:", error);
-        card.innerHTML = `<p>Error loading events.</p>`;
-    });
-
-    return date_event_arr;
-}
-
-
 
 
 
@@ -102,6 +74,7 @@ function updateCalendar() {
                 onmouseout="this.style.backgroundColor='red'; this.style.color='white';"
             >${i}</p>`);
         } else if ( is_date_event(i, actual_month) ){ //PROBLEM IN THIS BRANCH
+            console.log("works");
             arr.push(`<div style="background-color: red; color: white;"
                     onmouseover="this.style.backgroundColor='green'; this.style.color='white';"
                     onmouseout="this.style.backgroundColor='red'; this.style.color='white';">
@@ -135,17 +108,35 @@ function is_date_event(day, month) {
     return false;
 }*/
 
+function get_event_dates(){
+    let date_event_arr = [];
+    fetch(`../PHP/data.json`).then(response => {
+        if (!response.ok){
+            throw new Error("Filter malfunction");
+        }
+        return response.json();
+    }).then(dtb => {
+        dtb.forEach((inner_array) => {
+            const entry = inner_array[0];
+
+            date_event_arr.push(entry.date);
+        });
+    })
+    .catch(error => {
+        console.error("Error loading data:", error);
+        card.innerHTML = `<p>Error loading events.</p>`;
+    });
+    return date_event_arr;
+}
+
 function is_date_event(day, month) {
     let dates_array = get_event_dates();
     let valid = false;
     dates_array.forEach(my_date => {
         let [year, month_str, day_str] = my_date.split("-");
         console.log(date);
-        
         let event_date = new Date(year, month_str - 1, day_str);
-
         console.log(event_date.getDate());
-                
         if (event_date.getDate() === day && event_date.getMonth() + 1 === month) {
             console.log("true")
             valid = true; 
