@@ -1,11 +1,17 @@
 body {
-    background-color: lightsalmon;
+    background-color: lightgoldenrodyellow;
+}
+h1 {
+    text-decoration: underline lightsalmon;
 }
 
-/*WIP*/
-.container {
-    display:contents;
-    align-items: center;
-    border: 2px black;
-    border-radius: 50%;
+.slide-container {
+    width: 200px;
+    height: 100px;
+    margin: auto; /* Automatische Zentrierung */
+    border: solid 2px black;
+    text-align: center;
+    border-radius: 10px;
+  
 }
+
