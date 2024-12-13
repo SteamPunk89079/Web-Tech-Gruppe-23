@@ -1,0 +1,11 @@
+body {
+    background-color: lightsalmon;
+}
+
+/*WIP*/
+.container {
+    display:contents;
+    align-items: center;
+    border: 2px black;
+    border-radius: 50%;
+}
