@@ -1,3 +1,7 @@
+.topbars {
+    background-color: transparent;
+    border: transparent;
+}
 body {background-image: url("../Bilder/Trier-Stadt.jpg");
     background-repeat: no-repeat;
     background-position: center;}

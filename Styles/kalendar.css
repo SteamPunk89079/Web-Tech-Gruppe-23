@@ -1,3 +1,12 @@
+body {
+    background-image: url("../Bilder/Trier\ City\ Event.jpg");
+}
+
+.topbars {
+    background-color: transparent;
+    border-color: transparent;
+}
+
 .circle-paragraph::after {
     content: ""; /* No text, just the circle */
     display: block;

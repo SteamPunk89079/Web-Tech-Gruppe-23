@@ -1,0 +1,17 @@
+body {
+    background-color: lightgoldenrodyellow;
+}
+h1 {
+    text-decoration: underline lightsalmon;
+}
+
+.slide-container {
+    width: 200px;
+    height: 100px;
+    margin: auto; /* Automatische Zentrierung */
+    border: solid 2px black;
+    text-align: center;
+    border-radius: 10px;
+  
+}
+
