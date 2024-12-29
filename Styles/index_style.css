@@ -18,7 +18,7 @@
 
 .topbar_img{
     width: 100px;
-    position: absolute;
+    position: relative;
     top: 10px; /* Distance from the top of the container */
     right: 10px; /* Distance from the right of the container */
 }
@@ -49,8 +49,11 @@
     border: 2px solid black;
 }
 
+
+
 .mainpic{
-    height: 300px;
+    width: 70%;
+    margin-left: 15%;
 }
 
 
