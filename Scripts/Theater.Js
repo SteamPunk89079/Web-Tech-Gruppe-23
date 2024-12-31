@@ -1,27 +1,32 @@
-const contents = document.querySelectorAll('.content');
-const leftArrow = document.querySelector('.left-arrow');
-const rightArrow = document.querySelector('.right-arrow');
+// Elemente auswählen
+const contents = document.querySelectorAll('.content'); // Alle Inhalte
+const leftArrow = document.querySelector('.left-arrow'); // Linker Pfeil
+const rightArrow = document.querySelector('.right-arrow'); // Rechter Pfeil
 
-let currentIndex = 0;
+let currentIndex = 0; // Startindex
 
-// Funktion, um den aktiven Inhalt anzuzeigen
+// Funktion, um den aktiven Inhalt zu aktualisieren
 function updateContent() {
+  // Alle Inhalte verstecken
   contents.forEach((content, index) => {
-    content.classList.toggle('active', index === currentIndex);
+    content.classList.remove('active'); // Entferne 'active' von allen
+    if (index === currentIndex) {
+      content.classList.add('active'); // Füge 'active' nur zum aktuellen hinzu
+    }
   });
 }
 
-// Event-Listener für die Pfeile
+// Event-Listener für den linken Pfeil
 leftArrow.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + contents.length) % contents.length;
-  updateContent();
+  currentIndex = (currentIndex - 1 + contents.length) % contents.length; // Rückwärts navigieren
+  updateContent(); // Inhalt aktualisieren
 });
 
+// Event-Listener für den rechten Pfeil
 rightArrow.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % contents.length;
-  updateContent();
+  currentIndex = (currentIndex + 1) % contents.length; // Vorwärts navigieren
+  updateContent(); // Inhalt aktualisieren
 });
 
-// Initial den ersten Inhalt anzeigen
+// Initialen Inhalt anzeigen
 updateContent();
-
