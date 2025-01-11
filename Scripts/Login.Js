@@ -24,7 +24,6 @@ login_button.addEventListener('click', function(){
     }else if ( password_value === "admin" && username_value === "admin"){
         window.location.href = "../Pages/QueryMaker.html"
     }
-
 });
 
 

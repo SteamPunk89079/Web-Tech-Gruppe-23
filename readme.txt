@@ -48,3 +48,12 @@ gute headline (verstandliche headlines)
 
 ----------------------------------------------
 FONTS MUSSEN NOCH angepasst werden 
+
+
+
+
+events filter engine aufspalten untergliedern*
+(dynamically show possible locations)
+
+
+Php fur login page 
