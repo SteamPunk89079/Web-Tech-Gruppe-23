@@ -4,7 +4,7 @@ const aktivitaeten = document.getElementById("Aktivitaeten_button");
 const kalendar = document.getElementById("Kalendar_button");
 const events = document.getElementById("Events_button");
 const hobbies = document.getElementById("Hobbies_button");
-
+const theater = document.getElementById("Theater_button");
 
 
 
@@ -23,6 +23,9 @@ events.addEventListener("click", function(){
 });
 hobbies.addEventListener("click", function(){
    window.location.href = "/pages/Hobbies.html";
+});
+theater.addEventListener("click", function(){
+   window.location.href = "/pages/Theater.html";
 });
 
 
