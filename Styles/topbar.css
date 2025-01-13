@@ -1,0 +1,41 @@
+/*---------topbar--stuff-------*/
+.topbars {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space between buttons and the image */
+    align-items: center; /* Vertically align items */
+    padding: 10px;
+    background-color: transparent;
+    margin-top: 38px;
+    border: 2px solid black;
+}
+.topbars button:first-of-type{
+    margin-left: 20px;
+}
+.topbars .button {
+    margin-left: -30px;
+    height: 70px;
+    width: 100px;
+
+    border-radius: 10px;
+    border: 1px solid black;
+
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+
+    background-color: rgb(255, 212, 111);
+    border: 1px solid rgb(201, 148, 0);
+
+    text-align: center;
+    cursor: pointer;
+}
+
+.topbars .button:hover {
+    background-color: rgb(255, 200, 90);
+}
+
+.topbar_img {
+    width: 100px;
+    height: auto; 
+    margin-left: auto;
+}
+/*---------topbar--stuff-------*/

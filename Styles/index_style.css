@@ -1,53 +1,5 @@
  
- 
- 
- /*---------topbar--stuff-------*/
- 
- .topbars{
-    margin-top: 38px;
-    border:  transparent;
-    background-color: transparent;
 
-    position: relative; /* Ensures the image is positioned relative to this container */
-    padding: 10px;
-}
-.topbars button:first-of-type{
-    margin-left: 40px;
-}
-
-
-.topbar_img{
-    width: 100px;
-    position: relative;
-    top: 10px; /* Distance from the top of the container */
-    right: 10px; /* Distance from the right of the container */
-}
-/*---------topbar--stuff-------*/
-
-.button{
-    margin-top: 10px;
-    margin-bottom: -10px;
-    margin-left: -10px;
-    margin-right: -10px;
-    height: 70px;
-    width: 100px;
-
-    border-radius: 10px;
-    border: 1px solid black;
-
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-
-    background-color:rgb(255, 212, 111);
-    border: 1px solid rgb(201, 148, 0);
-    
-}
-
-
-.banner{
-    display: flex;
-    border: 2px solid black;
-}
 
 
 
@@ -56,17 +8,10 @@
     margin-left: 15%;
 }
 
-
-
-
-
-
-
 .left,
 .right {
   width: 100%;
 }
-
 
 .middle {
     width: 1500px;
@@ -75,10 +20,6 @@
     gap: 30px;
     width: 100%;
 }
-
-
-
-
 
 .karte_page{
     background-color:rgb(255, 212, 111);    
@@ -90,10 +31,6 @@
     border-radius: 20px;
     width: 350px;
 }
-
-
-
-
 
 
 .container {
@@ -115,11 +52,11 @@ video{
 }
 
 footer {
-    background-color: #333;      /* Dark background color */
-    color: #f1f1f1;              /* Light text color */
-    text-align: center;          /* Center the text */
-    padding: 10px;               /* Add some padding */
-    width: auto;                 /* Full width */
+    background-color: #333;     
+    color: #f1f1f1;           
+    text-align: center;         
+    padding: 10px;              
+    width: auto;                
     bottom: 0;      
     border-radius: 20px;      
     margin-left: 10px;
@@ -140,74 +77,6 @@ footer {
     color: rgba(190, 23, 23, 0.656);
 }
   
-
-
-
-
-/*----------------------NEWS-BAR---------------------*/
-.news-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    font-family: "Roboto", sans-serif;
-    box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.3);
-}
-
-.news-container .title {
-    position: absolute;
-    background: #df2020;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    padding: 0 24px;
-    color: white;
-    font-weight: bold;
-    z-index: 200;
-}
-
-.news-container ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    animation: scroll 25s infinite linear;
-}
-
-.news-container ul li {
-    white-space: nowrap;
-    padding: 10px 24px;
-    color: #494949;
-    position: relative;
-}
-
-.news-container ul li::after {
-    content:"";
-    width: 1px;
-    height: 100%;
-    background: #b8b8b8;
-    position: absolute;
-    top: 0;
-    right: 0;
-}
-
-.news-container ul li:last-child::after {
-    display: none;
-}
-
-@keyframes scroll {
-    from {
-        transform: translateX(100%);
-    }
-
-    to {
-        transform: translateX(-1083px);
-
-    }
-}
-
-/*----------------------NEWS-BAR---------------------*/
-
-
 
 
 /*---------------POPUP-------------------------*/
