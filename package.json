@@ -1,0 +1,16 @@
+{
+  "name": "web-tech-gruppe-23",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build:start": "mkdir build_folder",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prebuild": "cp index.html build_folder && cp Script.js build_folder",
+    "build": " npm run build:start && cp -r Pages build_folder && cp -r Styles build_folder && cp -r Scripts build_folder && cp -r Videos build_folder",
+    "clean": "rm -r build_folder",
+    "start": "php -S localhost:8080"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
