@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build:start": "mkdir build_folder",
-    "build": " npm run build:start && cp -r Pages build_folder && cp -r Styles build_folder && cp -r Scripts build_folder && cp -r Videos build_folder && npm run pre:build && npm run video:compress && cp -r compressed_videos build_folder/compressed_videos && rm -r compressed_videos",
+    "build": " npm install && npm run build:start && cp -r Pages build_folder && cp -r Styles build_folder && cp -r Scripts build_folder && cp -r Videos build_folder && npm run pre:build && npm run video:compress && cp -r compressed_videos build_folder/compressed_videos && rm -r compressed_videos",
     "clean": "rm -r build_folder && rm -r compressed_videos",
     "start": "php -S localhost:8080",
     "pre:build": "cp index.html build_folder && cp Script.js build_folder && cp -r PHP build_folder",
