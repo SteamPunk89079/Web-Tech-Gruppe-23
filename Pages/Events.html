@@ -14,20 +14,23 @@
 
 
     
-    <div class="topbars">
-        
-        <button id="Home_button" class="button">Home</button>
-        <button id="Aktivitaeten_button" class="button">Aktivitäten</button>
-        <button id="Theater_button" class="button">Theater</button>
-        <button id="Hobbies_button" class="button">Hobbies</button>
-        <button id="Karte_button" class="button">Karte</button>
-        <button id="Kalendar_button" class="button">Kalendar</button>
-        <button id="Events_button" class="button"  style="background-color: cadetblue;">Events</button>
-        
-        <img class="topbar_img" src="../Bilder/trier-logo.jpg" style="text-align: right;">
-        
     
-    </div>
+    <header class="banner" >
+        <div class="topbars">
+            
+            <button id="Home_button" class="button">Home</button>
+            <button id="Aktivitaeten_button" class="button">Aktivitäten</button>
+            <button id="Theater_button" class="button">Theater</button>
+            <button id="Hobbies_button" class="button">Hobbies</button>
+            <button id="Karte_button" class="button">Karte</button>
+            <button id="Kalendar_button" class="button">Kalendar</button>
+            <button id="Events_button" class="button"  style="background-color: cadetblue;">Events</button>
+            
+
+            
+            <img class="topbar_img" src="../Bilder/trier-logo.jpg" style="text-align: right;">
+        </div>
+    </header>
 
 
 
@@ -76,44 +79,17 @@
     </form>
 
 
-    <div class="container">
 
         
         <!-- fetch body -->
-        <div class="middle_column">
             <div id="card"></div>
-        </div>
         <!-- fetch body -->
-            
-    <!---------------------------------------CALENDAR--------------------------------->   
-        <div class="right_column">
-            <section class="calendar" style="background-color: rgb(255, 212, 111) ">
-                <nav class="month_bar">
-                    <button 
-                    class="month_selector" 
-                    style="margin-right: 25px; 
-                            margin-left: 5px;"
-                    id="month_before"        
-                    ><-</button>
-
-                    <p id="month_text" style="background-color: rgb(255, 199, 69); width: 150px;"></p>
-                    
-                    <button class="month_selector" 
-                    style="margin-left: 25px;"
-                    id="month_after"
-                    >-></button>
-                </nav>
-                
-                <div id="kalendar"></div>
-            </section>
-        </div>
-    <!---------------------------------------CALENDAR--------------------------------->
         
-    </div>
+    
 
 
 
-       
+    <script src="../Scripts/navigation_script.js"></script>
     <script src="../Scripts/Events.js"></script>
     <script src="../Scripts/Kalendar.Js"></script>
 

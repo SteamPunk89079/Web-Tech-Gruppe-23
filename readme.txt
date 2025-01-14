@@ -57,3 +57,8 @@ events filter engine aufspalten untergliedern*
 
 
 Php fur login page 
+
+
+
+text vergrosern     
+sprache andern 

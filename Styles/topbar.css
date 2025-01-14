@@ -12,7 +12,7 @@
     margin-left: 20px;
 }
 .topbars .button {
-    margin-left: -30px;
+    margin-left: -25px;
     height: 70px;
     width: 100px;
 
@@ -38,4 +38,13 @@
     height: auto; 
     margin-left: auto;
 }
+
+
+
+.index {background-color: rgb(255, 199, 69);}
+header {background-image: url("../Bilder/Balkenbild.jpg");
+        background-repeat: no-repeat;
+        background-position: center;}
+.index h2 {background-color: orange;}
+.index h3 {text-decoration: underline orange;}
 /*---------topbar--stuff-------*/

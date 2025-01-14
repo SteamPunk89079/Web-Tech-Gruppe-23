@@ -20,7 +20,7 @@ aktivitaeten.addEventListener("click",function(){
   window.location.href = "/pages/Aktivitäten.html";
 });
 kalendar.addEventListener("click", function(){
-  window.location.href = "pages/Kalendar.html";
+  window.location.href = "/pages/Kalendar.html";
 });
 events.addEventListener("click", function(){
   window.location.href = "/pages/Events.html";
@@ -29,5 +29,5 @@ hobbies.addEventListener("click",function(){
   window.location.href = "/pages/Hobbies.html";
 });
 theater.addEventListener("click", function(){
-  window.location.href = "pages/Theater.html";
+  window.location.href = "/pages/Theater.html";
 })
