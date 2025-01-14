@@ -11,7 +11,7 @@
 
 
 
-    <section class="news-container">
+    <nav class="news-container">
         <nav class="title">
             Breaking News
         </nav>
@@ -26,7 +26,7 @@
                 Event nr.3
             </li>
         </ul>
-    </section>
+    </nav>
 
 
 
@@ -38,15 +38,14 @@
         <button id="Home_button" class="button">Home</button>
         <button id="Karte_button" class="button" style="background-color: cadetblue;">Karte</button>
         <button id="Aktivitaeten_button" class="button">Aktivitäten</button>
+        <button id="Theater_button" class="button">Theater</button>
         <button id="Kalendar_button" class="button">Kalendar</button>
         <button id="Events_button" class="button">Events</button>
-        <img class="topbar_img" src="../Bilder/trier-logo.jpg" style="text-align: right;">
+        <img class="topbar_img" src="../Bilder/trier-logo.jpg" alt="logo" style="text-align: right;">
         
     
     </div>
     
-
-
 
 
 
@@ -60,16 +59,16 @@
 
   
     
-    <section class="container">
+    <main class="container">
 
 
         <nav class="left"></nav>
 
 
 
-        <section class="middle">
-            <article class="location_card" id="location_card">
-                <video width="300px" muted>
+        <nav class="middle">
+            <aside class="location_card">
+                <video style="width: 300px;" muted>
                     <source src="../Videos/mintons_good.m4v" type="video/mp4">
                     New mintons video
                 </video>
@@ -77,10 +76,10 @@
                 <h2 class="test">New Mintons</h2>
                 <p>Jakobstraße 13, 54290</p>
                 <a href="https://new-mintons.de" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Zur Webseite</a>
-            </article>
+            </aside>
 
-            <article class="location_card" id="location_card">
-                <video width="300px" muted>
+            <aside class="location_card">
+                <video style="width: 300px;" muted>
                     <source src="../Videos/chrome.m4v" type="video/mp4">
                     Chrome
                 </video>
@@ -88,10 +87,10 @@
                 <h2>Chrome</h2>
                 <p>Deutschherrenstraße 1, 54290</p>
                 <a href="https://new-mintons.de" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Zur Webseite</a>
-            </article>
+            </aside>
 
-            <article class="location_card" id="location_card">
-                <video width="300px" muted>
+            <aside class="location_card">
+                <video style="width: 300px;" muted>
                     <source src="../Videos/simplicissimus.m4v" type="video/mp4">
                     Simplicissimus video
                 </video>
@@ -99,10 +98,10 @@
                 <h2>Simplicissimus</h2>
                 <p>Viehmarktplatz 11, 54290</p>
                 <a href="https://new-mintons.de" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Zur Webseite</a>
-            </article>
+            </aside>
 
-            <article class="location_card" id="location_card">
-                <video width="300px" muted>
+            <aside class="location_card">
+                <video style="width: 300px;" muted>
                     <source src="../Videos/kubiculum.m4v" type="video/mp4">
                     Cubiculum video
                 </video>
@@ -110,10 +109,10 @@
                 <h2>Cubiculum</h2>
                 <p>Hosenstraße 2, 54290</p>
                 <a href="https://new-mintons.de" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Zur Webseite</a>
-            </article>
+            </aside>
 
-            <article class="location_card" id="location_card">
-                <video width="300px" muted>
+            <aside class="location_card">
+                <video style="width: 300px;" muted>
                     <source src="../Videos/irish_pub.m4v" type="video/mp4">
                     Irish Pub video
                 </video>
@@ -121,10 +120,10 @@
                 <h2>Irish pub</h2>
                 <p>Böhmerstraße 10, 54290</p>
                 <a href="https://new-mintons.de" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Zur Webseite</a>
-            </article>
+            </aside>
 
-            <article class="location_card" id="location_card">
-                <video width="300px" muted>
+            <aside class="location_card">
+                <video style="width: 300px;" muted>
                     <source src="../Videos/ziegels.m4v" type="video/mp4">
                     Ziegels video
                 </video>
@@ -132,14 +131,14 @@
                 <h2>Ziegels</h2>
                 <p>Jakobstraße 11, 54290</p>
                 <a href="https://new-mintons.de" style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Zur Webseite</a>
-            </article>
-        </section>
+            </aside>
+        </nav>
 
 
-        <div class="right"></div>
+        <nav class="right"></nav>
 
 
-    </section>
+    </main>
 
     
 
@@ -148,25 +147,25 @@
     <footer>
         <p>&copy; 2024 My Website. All rights reserved.</p>
         <nav>
-          <a href="#">Privacy Policy</a> |
-          <a href="#">Terms of Service</a> |
-          <a href="#">Contact Us</a> |
-          <a href="../Pages/Login.html">Login</a>
+          <a href="#" class="links">Privacy Policy</a> |
+          <a href="#" class="links">Terms of Service</a> |
+          <a href="#" class="links">Contact Us</a> |
+          <a href="../Pages/Login.html" class="links">Login</a>
         </nav>
     </footer>
 
 
 
     
-    <!--------------------------POPUP------------------------------------>
-    <section id="popup" class="popup-overlay">
-        <div class="popup-content">
+    <!--POPUP-->
+    <nav id="popup" class="popup-overlay">
+        <aside class="popup-content">
             <img src="your-image.jpg" alt="Popup Image" class="popup-image">
             <p>Welcome to our site! Check out our latest offers.</p>
             <button id="close-popup" class="close-button">Close</button>
-        </div>
-    </section>    
-    <!--------------------------POPUP------------------------------------>
+        </aside>
+    </nav>    
+    <!--POPUP-->
 
 
 

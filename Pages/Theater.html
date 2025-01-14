@@ -4,26 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Theater</title>
+
     <link rel="stylesheet" href="../Styles/theater.css">
+    <link rel="stylesheet" href="../Styles/index_style.css">
 </head>
 <body>
 
+  <div class="topbars">
+        
+    <button id="Home_button" class="button">Home</button>
+    <button id="Karte_button" class="button">Karte</button>
+    <button id="Aktivitaeten_button" class="button">Aktivitäten</button>
+    <button id="Theater_button" class="button" style="background-color: cadetblue;">Theater</button>
+    <button id="Kalendar_button" class="button">Kalendar</button>
+    <button id="Events_button" class="button">Events</button>
+    <img class="topbar_img" src="../Bilder/trier-logo.jpg" alt="logo" style="text-align: right;">
+    
+  </div>
+
+  <nav class="Text">
     <h1>Lust auf Theather?</h1>
 
-    <article>
+    <aside>
         <p>Hier findest Du die aktuelle Stücke! <br> Viel Spaß!!!&hearts;</p>
         <br>
-    </article>
+    </aside>
+ 
+
     <hr>
     <br><br>
     
-    <section class="content-box">
+    <nav class="content-box">
         <button class="arrow left-arrow">&#8592;</button>
 
-        <article class="content-container">
+        <nav class="content-container">
             <section class="content active">
               <h2>La Cage aux Folles</h2>
-              <img src="../Bilder/La Cage aux Folles - Musical von Jerry Hermann, Trier.jpg" alt="Bild 1">
+              <img src="../Bilder/LaCageauxFolles-MusicalvonJerryHermann,Trier.jpg" alt="Bild 1">
               <p>Musical von Harvey Fierstein.<br>Spieldauer, ca. 2,5 Stunden.<br>
                 29.01.2025<br>19:30 Uhr</p>
             </section>
@@ -37,11 +54,13 @@
               <img src="../Bilder/TheSnowman.jpg" alt="Bild 3">
               <p>2. Familienkonzert<br>Dauer: ca. 119 min<br>02.02.2025<br>11:00 Uhr</p>
             </section>
-          </article>
+          </nav>
           
         <button class="arrow right-arrow">&#8594;</button>
-      </section>
-    </article>
+        </nav>
+  </nav>
+
+  <br><br><br>
 
 <footer>
   <h4>Öffnungszeiten</h4>
@@ -56,5 +75,6 @@
 </footer>
     
     <script src="/Scripts/Theater.Js"></script>
+    <script src="/Script.Js"></script>
 </body>
 </html>

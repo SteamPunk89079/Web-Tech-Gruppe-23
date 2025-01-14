@@ -1,6 +1,7 @@
 const home = document.getElementById("Home_button");
 const karte = document.getElementById("Karte_button");
 const aktivitaeten = document.getElementById("Aktivitaeten_button");
+const theater = document.getElementById("Theater_button");
 const kalendar = document.getElementById("Kalendar_button");
 const events = document.getElementById("Events_button");
 
@@ -13,6 +14,10 @@ karte.addEventListener('click', function () {
 aktivitaeten.addEventListener('click', function () {
     window.location.href = "./Aktivitäten.html";
 });
+
+theater.addEventListener("click", function(){
+    window.location.href = "/pages/Theater.html";})
+
 events.addEventListener('click', function () {
     window.location.href = "./Events.html"
 });

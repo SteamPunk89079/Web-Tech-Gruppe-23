@@ -7,6 +7,10 @@ body {
     border-color: transparent;
 }
 
+.button {background-color: transparent;
+    border-color: white;
+}
+
 .circle-paragraph::after {
     content: ""; /* No text, just the circle */
     display: block;

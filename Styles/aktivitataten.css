@@ -2,6 +2,11 @@
     background-color: transparent;
     border: transparent;
 }
+
+.button {background-color: transparent;
+    border-color: white;
+}
+
 body {background-image: url("../Bilder/Trier-Stadt.jpg");
     background-repeat: no-repeat;
     background-position: center;}

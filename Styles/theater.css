@@ -1,16 +1,21 @@
 h1 {
     color: white;
     text-decoration: underline lightsalmon;
+    font-size: 32px;
 }
 
 p {
     color: white;
+    font-size: 20px;
 }
 
 body {
-    background-image: url("../Bilder/Theaterbackground.png");
+  background-image: url("../Bilder/Theaterbackground.png");
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.Text {
     font-family: Arial, sans-serif;
     justify-content: center;
     align-items: center;
@@ -28,7 +33,7 @@ body {
 .content-container {
     margin: auto;
     width: 500px;
-    height: 500px;
+    height: 600px;
     position: relative;
 }
   
@@ -67,14 +72,14 @@ body {
   
   .content p {
     text-align: center; /* Text zentrieren */
-    font-size: 16px;
+    font-size: 25px;
     line-height: 1.5;
     color: black;
   }
   
 .arrow {
     margin: auto;
-    font-size: 20px;
+    font-size: 30px;
     padding: 10px 20px;
     cursor: pointer;
     border: none;

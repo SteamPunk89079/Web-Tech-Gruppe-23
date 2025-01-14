@@ -4,13 +4,13 @@
  /*---------topbar--stuff-------*/
  
  .topbars{
-    margin-top: 38px;
+    margin-top: 70px;
     border:  transparent;
     background-color: transparent;
-
     position: relative; /* Ensures the image is positioned relative to this container */
     padding: 10px;
 }
+
 .topbars button:first-of-type{
     margin-left: 40px;
 }
@@ -30,7 +30,7 @@
     margin-left: -10px;
     margin-right: -10px;
     height: 70px;
-    width: 100px;
+    width: 150px;
 
     border-radius: 10px;
     border: 1px solid black;
@@ -41,6 +41,7 @@
     background-color:rgb(255, 212, 111);
     border: 1px solid rgb(201, 148, 0);
     
+    font-size: 20px;
 }
 
 
@@ -124,7 +125,10 @@ footer {
     border-radius: 20px;      
     margin-left: 10px;
     margin-top: 50px;
+    font-size: 25px;
 }
+
+.links {color: lightblue;}
 
 .individuelle_location{
     background-color: violet;
@@ -319,5 +323,9 @@ footer {
 .index header {background-image: url("../Bilder/Balkenbild.jpg");
         background-repeat: no-repeat;
         background-position: center;}
-.index h2 {background-color: orange;}
-.index h3 {text-decoration: underline orange;}
+.index h2 {background-color: orange;
+    font-size: 32px;}
+.index h3 {text-decoration: underline orange;
+    font-size: 28px;}
+
+.index p {font-size: 25px;}
