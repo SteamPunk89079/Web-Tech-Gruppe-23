@@ -4,11 +4,12 @@
   "main": "index.js",
   "scripts": {
     "build:start": "mkdir build_folder",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prebuild": "cp index.html build_folder && cp Script.js build_folder",
-    "build": " npm run build:start && cp -r Pages build_folder && cp -r Styles build_folder && cp -r Scripts build_folder && cp -r Videos build_folder",
-    "clean": "rm -r build_folder",
-    "start": "php -S localhost:8080"
+    "build": " npm run build:start && cp -r Pages build_folder && cp -r Styles build_folder && cp -r Scripts build_folder && cp -r Videos build_folder && npm run pre:build && npm run video:compress && cp -r compressed_videos build_folder/compressed_videos && rm -r compressed_videos",
+    "clean": "rm -r build_folder && rm -r compressed_videos",
+    "start": "php -S localhost:8080",
+    "pre:build": "cp index.html build_folder && cp Script.js build_folder && cp -r PHP build_folder",
+    "video:compress": "mkdir -p compressed_videos && for file in videos/*; do ffmpeg -i \"$file\" -vcodec libx264 -crf 28 -preset fast -acodec aac \"compressed_videos/$(basename \\\"$file\\\" | sed 's/\\.[^.]*$/.mp4/')\"; done"
+
   },
   "author": "",
   "license": "ISC",
