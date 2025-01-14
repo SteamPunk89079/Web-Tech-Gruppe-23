@@ -88,12 +88,13 @@
     border: 2px solid black;
     background-color:rgb(255, 199, 69);
     text-align: center;
+    font-size: 25px;
     border-radius: 20px;
     width: 350px;
 }
 
 
-
+.title {font-size: 32px;}
 
 
 

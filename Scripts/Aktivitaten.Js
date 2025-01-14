@@ -5,9 +5,8 @@ const theater = document.getElementById("Theater_button");
 const kalendar = document.getElementById("Kalendar_button").addEventListener(
   'click', function(){
     window.location.href = "/pages/Kalendar.html";
-  }
-)
-
+  })
+const events = document.getElementById("Events_button");
 
 
 
@@ -22,3 +21,6 @@ aktivitaeten.addEventListener("click",function(){
 
 theater.addEventListener("click", function(){
     window.location.href = "/pages/Theater.html";})
+
+events.addEventListener('click', function () {
+    window.location.href = "./Events.html"});

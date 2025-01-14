@@ -1,14 +1,8 @@
-.topbars {
-    background-color: transparent;
-    border: transparent;
-}
-
-.button {background-color: transparent;
-    border-color: white;
-}
-
 body {background-image: url("../Bilder/Trier-Stadt.jpg");
     background-repeat: no-repeat;
-    background-position: center;}
+    background-position: center;
+    background-size: cover;}
 article {background-color: rgba(245, 245, 245, 0.536);}
-h2 {text-decoration: underline black;}
+h2 {text-decoration: underline black;
+font-size: 32px;}
+li {font-size: 28px;}
