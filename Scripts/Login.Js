@@ -1,12 +1,12 @@
 
 
+const label = document.getElementById("status_message");
 
 
 
-
-document.querySelector(".login").addEventListener("click", ()=>{
-    const username = document.querySelector(".username").value;
-    const password = document.querySelector(".password").value;
+document.getElementById("login_button").addEventListener("click", ()=>{
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
 
     const credentials = {
         username: username,
@@ -22,10 +22,13 @@ document.querySelector(".login").addEventListener("click", ()=>{
     }).then(response => response.json())
     .then(data => {
         if (data.status === "success"){
-            alert("Login successfull");
-            //window.location.href = "../Pages/QueryMaker.html"
+            alert("SUCCESS");
+            window.location.href = "../Pages/QueryMaker.html"
         } else {
             alert("Invalid username or password");
+            label.innerHTML = '<p> Wrong username or password </p>'
+            username.value = "";
+            password.value = "";
         }
     }).catch(error => console.error("Error: "+error));
 })

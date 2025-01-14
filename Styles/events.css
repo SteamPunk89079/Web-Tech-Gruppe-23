@@ -17,3 +17,24 @@
 body{
     background-color: rgb(255, 212, 111);
 }
+
+body, html {
+    height: 100%; /* Ensure the full height of the viewport is available */
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* Divide into 3 equal columns */
+    height: 100%; /* Full height of the viewport */
+}
+
+.middle-column {
+    grid-column: 2; /* Place this div in the second column */
+    background-color: lightblue; /* For visual distinction */
+}
+
+.right-column {
+    grid-column: 3; /* Place this div in the third column */
+    background-color: lightcoral; /* For visual distinction */
+}
