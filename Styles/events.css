@@ -18,3 +18,9 @@ body{
     background-color: rgb(255, 212, 111);
     font-size: 25px;
 }
+
+
+/*----------RESPONSIVE DESIGN---------------*/
+@media screen and (max-width:540px) {
+    body {font-size: 16px;}
+}

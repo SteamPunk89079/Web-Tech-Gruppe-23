@@ -1,1 +1,4 @@
 body{background-color: rgb(255, 199, 69);}
+
+/*----------RESPONSIVE DESIGN---------------*/
+@media screen and (max-width:540px) {}

@@ -328,5 +328,26 @@ footer {
     font-size: 32px;}
 .index h3 {text-decoration: underline orange;
     font-size: 28px;}
-
 .index p {font-size: 25px;}
+
+
+
+/*----------RESPONSIVE DESIGN---------------*/
+@media screen and (max-width:540px) {
+    .index h3 {font-size: 16px;}
+    .index h2 {font-size: 18px;}
+    .index p {font-size: 12px;}
+    .header {max-height: 20%;}
+    .button {
+        width: 55px;
+        font-size: 10px;
+        margin-right: 3px;
+    }
+    .topbars {
+        position: relative;
+        margin-left: 0px;
+        margin-right: 50px;
+        margin-top: 30px;
+    }
+   footer {font-size: 13px}
+} 
