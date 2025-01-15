@@ -34,32 +34,43 @@
     <br><br><br><br>
 
  <!---------------------------------------CALENDAR--------------------------------->   
-    <section class="calendar" style="background-color: rgb(255, 212, 111) ">
-        <nav class="month_bar">
-            <button 
-            class="month_selector" 
-            style="margin-right: 25px; 
-                    margin-left: 5px;"
-            id="month_before"        
-            ><-</button>
+    <div class = container>
+        <section class="calendar" style="background-color: rgb(255, 212, 111) ">
+            <nav class="month_bar">
+                <button 
+                class="month_selector" 
+                style="margin-right: 25px; 
+                        margin-left: 5px;"
+                id="month_before"        
+                ><-</button>
 
-            <p id="month_text" style="background-color: rgb(255, 199, 69); width: 150px;"></p>
+                <p id="month_text" style="background-color: rgb(255, 199, 69); width: 150px;"></p>
+                
+                <button class="month_selector" 
+                style="margin-left: 25px;"
+                id="month_after"
+                >-></button>
+            </nav>
             
-            <button class="month_selector" 
-            style="margin-left: 25px;"
-            id="month_after"
-            >-></button>
-        </nav>
-        
-        <div id="kalendar"></div>
-    </section>
+            <div id="kalendar"></div>
+        </section>
+        <div class="upcoming_container">
+            <h2 style="text-align: center;">Upcoming events</h2>
+            <hr>
+            
+            <div id="upcoming_events" class="upcoming_events">
+
+            </div>
+
+        </div>
+    </div>
  <!---------------------------------------CALENDAR--------------------------------->
     
-    <p id="days_left_counter" style="text-align: center;"></p>
+    
+    
+ 
 
-
-
-    <section style="border: 2px solid transparent; height: 300px;">
+    <section style="border: 2px solid transparent; height: 200px;">
 
     </section>
 

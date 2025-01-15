@@ -8,7 +8,7 @@ if ($credentials === null) {
     exit;
 }
 
-$file_path = "./users.json";
+$file_path = "users.json";
 if (!file_exists($file_path)) {
     echo json_encode(["status" => "error", "message" => "User data not found."]);
     exit;

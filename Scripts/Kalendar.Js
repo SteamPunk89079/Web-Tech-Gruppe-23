@@ -48,16 +48,12 @@ month_after.addEventListener('click', function () {
 //--------------------------MONTH-NAVIGATION--------------------------
 //------------------------------MAIN---------------------------------------
 updateCalendar();
-
+upcoming_events();
 //------------------------------MAIN---------------------------------------
-
-
-
+/*-------------------CALENDAR-----------------------*/
 async function updateCalendar() {
-//GOOD VERSION
     const days_in_month = get_days_in_month(today.getFullYear(), actual_month);
     const month_name = new Date(today.getFullYear(), actual_month, 1).toLocaleString('de-DE', { month: 'long' });
-    
     let arr = [];
     for (let i = 1; i <= days_in_month; i++) {
         if (i === today.getDate() && actual_month === today.getMonth()) {
@@ -66,9 +62,8 @@ async function updateCalendar() {
                 onmouseover="this.style.backgroundColor='green'; this.style.color='white';"
                 onmouseout="this.style.backgroundColor='red'; this.style.color='white';"
             >${i}</p>`);
-        } else if ( await is_date_event(i, actual_month) ){ 
-            arr.push(`<div style="color: black;"
-                        onmouseover="this.style.backgroundColor='green'; this.style.color='white';"
+        } else if ( await is_date_event(i, actual_month + 1) ){ 
+            arr.push(`<div style="color: black;" 
                         this.style.color='white';">
                         <p class="circle-paragraph">${i}</p>
                     </div>`)
@@ -79,25 +74,19 @@ async function updateCalendar() {
     calendar_text.innerHTML = arr.join("");
     month_text.innerHTML = month_name;
 }
-
 async function get_event_dates(){
     let date_event_arr = [];
     let response = await fetch(`../PHP/data.json`)
-
     if (!response.ok){
         throw new Error("Filter malfunction");
     }
-
     let dtb = await response.json()
-
     dtb.forEach((inner_array) => {
         const entry = inner_array[0];
         date_event_arr.push(entry.date);
     });
-
     return date_event_arr
 }
-
 async function is_date_event(day, month) {
     let dates_array = await get_event_dates();
     let valid = false;
@@ -110,20 +99,34 @@ async function is_date_event(day, month) {
     })
     return valid;
 }
-
-
-
 function get_days_in_month(year, month) {
     const next_month = new Date(year, month + 1, 0);
     return next_month.getDate();
 }
-
-//--------------------------DEADLINE---------------------
-const deadline = new Date(today.getFullYear(), 11, 25);
-if (today > deadline) {
-    deadline.setFullYear(today.getFullYear() + 1);
+/*-------------------CALENDAR-----------------------*/
+//----------------------UPCOMING-EVENTS-----------------------------------------
+function upcoming_events(){
+    const events_field = document.getElementById("upcoming_events");
+    const current_date = new Date();
+    fetch("../PHP/data.json").then(response => {
+        if (!response.ok){
+            throw new Error("Upcoming events datafetch error");
+        }
+        return response.json();
+    }).then(dtb => {
+        dtb.forEach((inner_array)  => {
+            const entry = inner_array[0];
+            const date = entry.date;
+            const event_date = new Date(date);
+            if ( current_date < event_date ){
+                events_field.innerHTML += `<p>${entry.description}</p>
+                                            <p>Standort:  ${entry.location}</p>
+                                            <p>Datum:  ${entry.date}</p>
+                                            <p>Veranstaltungs Art:  ${entry.type}</p>
+                                            <hr>`
+            }
+        })
+    })    
 }
-const time_diff = deadline - today;
-const days_remaining = Math.floor(time_diff / (1000 * 3600 * 24));
-//--------------------------DEADLINE---------------------
-
+//----------------------UPCOMING-EVENTS-----------------------------------------
+ 

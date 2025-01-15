@@ -13,7 +13,7 @@ document.getElementById("login_button").addEventListener("click", ()=>{
         password: password
     };
 
-    fetch("../PHP/users.json", {
+    fetch("../PHP/login.php", {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -22,13 +22,12 @@ document.getElementById("login_button").addEventListener("click", ()=>{
     }).then(response => response.json())
     .then(data => {
         if (data.status === "success"){
-            alert("SUCCESS");
             window.location.href = "../Pages/QueryMaker.html"
         } else {
             alert("Invalid username or password");
             label.innerHTML = '<p> Wrong username or password </p>'
-            username.value = "";
-            password.value = "";
+            username.value = "";password.value = "";
+            
         }
     }).catch(error => console.error("Error: "+error));
 })
