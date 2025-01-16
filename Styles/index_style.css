@@ -11,9 +11,9 @@
     padding: 10px;
 }
 
-.topbars button:first-of-type{
-    margin-left: 40px;
-}
+.topbar:hover{background-color: cadetblue;}
+
+.topbars button:first-of-type{margin-left: 40px;}
 
 
 .topbar_img{
@@ -51,16 +51,10 @@
 }
 
 
-
 .mainpic{
     width: 70%;
     margin-left: 15%;
 }
-
-
-
-
-
 
 
 .left,
@@ -78,9 +72,6 @@
 }
 
 
-
-
-
 .karte_page{
     background-color:rgb(255, 212, 111);    
 }
@@ -94,10 +85,6 @@
 }
 
 
-.title {font-size: 32px;}
-
-
-
 .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -105,7 +92,8 @@
     width: 100%;
 }
 .title{
-text-align: center;
+    font-size: 32px;
+    text-align: center;
 }
 
 video{
@@ -144,9 +132,6 @@ footer {
 .location_card:hover h2 {
     color: rgba(190, 23, 23, 0.656);
 }
-  
-
-
 
 
 /*----------------------NEWS-BAR---------------------*/
@@ -213,8 +198,6 @@ footer {
 /*----------------------NEWS-BAR---------------------*/
 
 
-
-
 /*---------------POPUP-------------------------*/
 .popup-overlay {
     display: none; 
@@ -261,8 +244,6 @@ footer {
     background-color: #ff3b3b;
 }
 /*---------------POPUP-------------------------*/
-
-
 
 
 /*-------------------CALENDAR-----------------------*/
@@ -316,10 +297,10 @@ footer {
     background-color: rgb(190, 190, 190);
     cursor: pointer;
 }
-
-
 /*-------------------CALENDAR-----------------------*/
 
+
+/*-------------------STARTSEITE---------------------*/
 .index {background-color: rgb(255, 199, 69);}
 .index header {background-image: url("../Bilder/Balkenbild.jpg");
         background-repeat: no-repeat;
@@ -329,7 +310,7 @@ footer {
 .index h3 {text-decoration: underline orange;
     font-size: 28px;}
 .index p {font-size: 25px;}
-
+/*-------------------STARTSEITE---------------------*/
 
 
 /*----------RESPONSIVE DESIGN---------------*/
@@ -351,3 +332,4 @@ footer {
     }
    footer {font-size: 13px}
 } 
+/*----------RESPONSIVE DESIGN---------------*/
