@@ -1,4 +1,32 @@
-body{background-color: rgb(255, 199, 69);}
+body{
+    background-image: url(../Bilder/HS_Trier.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    text-align: center;
+}
+
+h2 {background-color: rgba(255, 255, 255, 0.632);
+    width: fit-content;}
+
+.container{
+    width: auto;
+    background-color: rgba(240, 248, 255, 0.422);
+    height: 100%;
+    gap: 60px;
+    padding: 60px;
+    
+}
+
+.box{
+    width: auto;
+    background-color: white;
+}
+
+
+
 
 /*----------RESPONSIVE DESIGN---------------*/
-@media screen and (max-width:540px) {}
+@media screen and (max-width:540px) {
+    body {font-size: 16px;}
+}
