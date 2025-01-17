@@ -39,6 +39,35 @@
     
     font-size: 20px;
 }
+
+.burger-menu {
+    position: relative;
+    margin-right: auto;
+    display: inline-block;
+    font-size: 24px;
+    padding: 10px;
+    background-color: orange;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.burger-menu option {
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
+
+.burger-menu .option1 {
+    display: none;
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
+
+.burger-menu option:hover {
+    background-color: #00bcd4;
+}
 /*---------topbar--stuff-------*/
 
 /*---------footer--------------*/
@@ -80,7 +109,7 @@ footer {
 /*-------------------STARTSEITE---------------------*/
 
 /*-------------------LOGIN PAGE-----------------------*/
-.login_page body {
+body.login_page  {
     margin: 0;
     height: 100vh;
     display: flex;
