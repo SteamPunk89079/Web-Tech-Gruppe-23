@@ -19,7 +19,6 @@
     top: 10px; /* Distance from the top of the container */
     right: 10px; /* Distance from the right of the container */
 }
-
 .button{
     margin-top: 10px;
     margin-bottom: -10px;
@@ -39,16 +38,19 @@
     
     font-size: 20px;
 }
+/*---------topbar--stuff-------*/
 
+/*------------NAV-BAR-------------*/
 .burger-menu {
     position: relative;
+    width: fit-content;
     margin-right: auto;
-    display: inline-block;
+    border: none;
+    display: block;
     font-size: 24px;
     padding: 10px;
     background-color: orange;
     color: white;
-    border: none;
     cursor: pointer;
 }
 
@@ -68,7 +70,8 @@
 .burger-menu option:hover {
     background-color: #00bcd4;
 }
-/*---------topbar--stuff-------*/
+/*------------NAV-BAR-------------*/
+
 
 /*---------footer--------------*/
 footer {
@@ -596,7 +599,7 @@ body.contactus_page {
 .contactus_page h6 {
     background-color: rgba(255, 255, 255, 0.666);
     font-size: 24px;
-    padding: auto;}
+}
 /*----------------------CONTACT US----------------------*/
 
 /*----------RESPONSIVE DESIGN---------------*/
