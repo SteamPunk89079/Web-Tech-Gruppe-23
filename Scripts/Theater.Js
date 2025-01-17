@@ -27,35 +27,40 @@ events.addEventListener('click', function () {
   window.location.href = "./Events.html"
 });
 
-// Elemente auswählen
-const contents = document.querySelectorAll('.content'); // Alle Inhalte
-const leftArrow = document.querySelector('.left-arrow'); // Linker Pfeil
-const rightArrow = document.querySelector('.right-arrow'); // Rechter Pfeil
+document.addEventListener("DOMContentLoaded", () => {
+  const leftArrow = document.querySelector(".left-arrow");
+  const rightArrow = document.querySelector(".right-arrow");
+  const sections = document.querySelectorAll(".content-container .content");
 
-let currentIndex = 0; // Startindex
+  let currentIndex = 0; // Start mit der ersten Sektion
 
-// Funktion, um den aktiven Inhalt zu aktualisieren
-function updateContent() {
-  // Alle Inhalte verstecken
-  contents.forEach((content, index) => {
-    content.classList.remove('active'); // Entferne 'active' von allen
-    if (index === currentIndex) {
-      content.classList.add('active'); // Füge 'active' nur zum aktuellen hinzu
-    }
+  const updateSlider = () => {
+      console.log("Aktueller Index:", currentIndex);
+      sections.forEach((section, index) => {
+          if (index === currentIndex) {
+              section.classList.add("content");
+              section.style.opacity = "1"; 
+              section.style.display = "flex";
+              console.log("Sichtbar gemacht:", section);
+          } else {
+              section.classList.remove("content");
+              section.style.opacity = "0";
+              section.style.display = "none";
+          }
+      });
+  };
+
+  rightArrow.addEventListener("click", () => {
+      currentIndex = (currentIndex + 1) % sections.length;
+      console.log("Rechts geklickt, neuer Index:", currentIndex);
+      updateSlider();
   });
-}
 
-// Event-Listener für den linken Pfeil
-leftArrow.addEventListener('click', () => {
-  currentIndex = (currentIndex - 1 + contents.length) % contents.length; // Rückwärts navigieren
-  updateContent(); // Inhalt aktualisieren
+  leftArrow.addEventListener("click", () => {
+      currentIndex = (currentIndex - 1 + sections.length) % sections.length;
+      console.log("Links geklickt, neuer Index:", currentIndex);
+      updateSlider();
+  });
+
+  updateSlider(); // Erste Sektion initialisieren
 });
-
-// Event-Listener für den rechten Pfeil
-rightArrow.addEventListener('click', () => {
-  currentIndex = (currentIndex + 1) % contents.length; // Vorwärts navigieren
-  updateContent(); // Inhalt aktualisieren
-});
-
-// Initialen Inhalt anzeigen
-updateContent();

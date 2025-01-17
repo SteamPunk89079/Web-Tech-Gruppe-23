@@ -1,4 +1,4 @@
-/*Reihenfplge: index, Karten, Aktivitaten, Theater, Kaleder , events, contact us*/
+/* Aktivitaten, Theater, Kaleder , events, contact us*/
 
 /*---------topbar--stuff-------*/
 .topbars{
@@ -41,6 +41,22 @@
 }
 /*---------topbar--stuff-------*/
 
+/*---------footer--------------*/
+footer {
+    background-color: #333;      /* Dark background color */
+    color: #f1f1f1;              /* Light text color */
+    text-align: center;          /* Center the text */
+    padding: 10px;               /* Add some padding */
+    width: auto;                 /* Full width */
+    bottom: 0;      
+    border-radius: 20px;      
+    margin-left: 10px;
+    margin-top: 50px;
+    font-size: 25px;
+}
+.links{color: lightblue;}
+/*---------footer--------------*/
+
 /*-------------------STARTSEITE---------------------*/
 .banner{
     display: flex;
@@ -53,7 +69,7 @@
 }
 
 .index {background-color: rgb(255, 199, 69);}
-.index header {background-image: url("../Bilder/Balkenbild.jpg");
+.index header {background-image: url("Bilder/Balkenbild.jpg");
         background-repeat: no-repeat;
         background-position: center;}
 .index h2 {background-color: orange;
@@ -63,13 +79,101 @@
 .index p {font-size: 25px;}
 /*-------------------STARTSEITE---------------------*/
 
+/*-------------------LOGIN PAGE-----------------------*/
+.login_page body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("Bilder/Daemmerung\ Trier.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.login_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.login_page input {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login_page button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color:  rgb(255, 199, 69);
+    color: white;
+    cursor: pointer;
+}
+
+.login_page button:hover {background-color: #0056b3;}
+/*-------------------LOGIN PAGE-----------------------*/
+
 /*-------------------KARTEN-SEITE-------------------*/
 .karte_page{
     background-color:rgb(255, 212, 111);    
 }
 
+.left,
+.right {
+  width: 100%;
+}
+
+.middle {
+    width: 1500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+}
+
+.location_card{
+    border: 2px solid black;
+    background-color:rgb(255, 199, 69);
+    text-align: center;
+    font-size: 25px;
+    border-radius: 20px;
+    width: 350px;
+}
+
+.karte-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    width: 100%;
+}
+
+.karte_title {                     
+    font-size: 32px;
+    text-align: center;
+}
+
+video{
+    border-radius: 20px;
+    border: 3px solid rgb(0, 49, 90);
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+/*-------------------KARTEN-SEITE-------------------*/
+
 /*----------------------NEWS-BAR---------------------*/
-.karte-news-container {
+.news-container {
     position: fixed;
     top: 0;
     left: 0;
@@ -78,33 +182,33 @@
     box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.3);
 }
 
-.karte-news-container .karte-news-title {
+.news-container .news-title {
     position: absolute;
     background: #df2020;
     height: 100%;
     display: flex;
     align-items: center;
-    padding: 0 24px;
+    padding: 24px;
     color: white;
     font-weight: bold;
     z-index: 200;
 }
 
-.karte-news-container ul {
+.news-container ul {
     display: flex;
     list-style: none;
     margin: 0;
     animation: scroll 25s infinite linear;
 }
 
-.karte-news-container ul li {
+.news-container ul li {
     white-space: nowrap;
     padding: 10px 24px;
     color: #494949;
     position: relative;
 }
 
-.karte-news-container ul li::after {
+.news-container ul li::after {
     content:"";
     width: 1px;
     height: 100%;
@@ -114,11 +218,357 @@
     right: 0;
 }
 
-.karte-news-container ul li:last-child::after {display: none;}
+.news-container ul li:last-child::after {
+    display: none;
+}
 
 @keyframes scroll {
-    from {transform: translateX(100%);}
-    to {transform: translateX(-1083px);}
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-1083px);
+    }
 }
 /*----------------------NEWS-BAR---------------------*/
-/*-------------------KARTEN-SEITE-------------------*/
+
+/*---------------POPUP-------------------------*/
+.popup-overlay {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    z-index: 1000;
+}
+
+.popup-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 300px;
+    height: 300px;
+}
+
+.popup-image {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+.close-button {
+    background-color: #ff5c5c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.close-button:hover {
+    background-color: #ff3b3b;
+}
+/*---------------POPUP-------------------------*/
+
+/*------------individuelle Standorte----------------*/
+.individuelle_location{
+    background-color: violet;
+}
+
+.location_row{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.location_card:hover p,
+.location_card:hover h2 {
+    color: rgba(190, 23, 23, 0.656);
+}
+/*------------individuelle Standorte----------------*/
+
+/*------------Aktivitäten Seite----------------*/
+body.aktivitaten {background-image: url("Bilder/Trier-Stadt.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;}
+.aktivitaten article {background-color: rgba(245, 245, 245, 0.536);}
+.aktivitaten h2 {text-decoration: underline black;
+    font-size: 32px;}
+.aktivitaten li {font-size: 28px;}
+/*------------Aktivitäten Seite----------------*/
+
+/*-------------------THEATER----------------------*/
+.theater h1 {
+    color: white;
+    text-decoration: underline lightsalmon;
+    font-size: 32px;
+}
+
+.theater p {
+    color: white;
+    font-size: 20px;
+}
+
+body.theater  {
+    background-image: url("Bilder/Theaterbackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.theater .Text {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+}
+  
+.content-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+  
+.content-container {
+    margin: auto;
+    width: 500px;
+    height: 600px;
+    position: relative;
+}
+
+.content {
+    opacity: 1;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column; /* Elemente untereinander anordnen */
+    justify-content: center;
+    align-items: center; /* Zentriert Überschrift, Bild und Text */
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    gap: 10px; /* Abstand zwischen Überschrift, Bild und Text */
+    transition: opacity 0.5s ease; /* Sanfte Ein-/Ausblendung */
+    border-radius: 50px;
+  }
+  
+.content h2 {margin: 0;}
+  
+.content img {
+    max-width: 80%;
+    height: auto; /* Bild wird responsiv */
+    border-radius: 8px; /* Optional, für abgerundete Kanten */
+  }
+  
+.content p {
+    color: black;
+    text-align: center; /* Text zentrieren */
+    font-size: 25px;
+    line-height: 1.5;
+  }
+  
+.theater .arrow {
+    margin: auto;
+    font-size: 30px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+  
+.theater .arrow:hover {background-color: orange;}
+/*-------------------THEATER----------------------*/
+
+/*-------------------CALENDAR-----------------------*/
+#month_text{
+    width: 285px;
+    margin-bottom: 20px;
+}
+.calendar {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    border: 1px solid #ccc;
+    width: 300px; 
+    margin: auto;
+}
+#kalendar {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr); 
+    gap: 5px;
+}
+.calendar p {
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.calendar p {
+    background-color: rgb(255, 199, 69);
+}
+
+#kalendar p:hover{
+    background-color: rgb(190, 190, 190);
+    cursor: pointer;
+}
+.month_bar{
+    display: flex; 
+}
+
+.month_selector{
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: rgb(255, 199, 69);
+    border: 1px solid #ddd;
+}
+
+.month_selector:hover{
+    background-color: rgb(190, 190, 190);
+    cursor: pointer;
+}
+
+body.kalender {
+    background-image: url("Bilder/Trier\ City\ Event.jpg");
+}
+
+.circle-paragraph::after {
+    content: ""; /* No text, just the circle */
+    display: block;
+    width: 6px; /* Diameter of the circle */
+    height: 6px;
+    background-color: red; /* Circle color */
+    border-radius: 50%; /* Makes it a circle */
+    margin: 5px auto 0; /* Centers the circle horizontally */
+}
+/*-------------------CALENDAR-----------------------*/
+
+/*--------------------EVENTS PAGE--------------------*/
+.event{
+    border: 2px solid black;
+    background-color:  rgb(255, 199, 69);
+    text-align: center;
+    border-radius: 20px;
+    width: 550px;
+}
+#card{
+    display: flex;
+
+        flex-direction: column; /* Stack the items vertically */
+        align-items: center;    /* Center horizontally */
+        justify-content: center; /* Center vertically */
+        margin-top: 20px;
+}
+
+#dropdown_type{font-size: 20px;}
+
+#dropdown_location{font-size: 20px;}
+
+body.event_page {
+    background-color: rgb(255, 212, 111);
+    font-size: 25px;
+}
+/*--------------------EVENTS PAGE--------------------*/
+
+/*--------------------QUERY-MAKER-STYLES--------------------*/
+.querymaker_page .container{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px; 
+}
+
+.querymaker_page .event_description{
+    width: 400px;
+    height: 400px;
+    padding: 5px; 
+    text-align: left; 
+    vertical-align: top; 
+    resize: none;
+    font-family: Arial, sans-serif; 
+    font-size: 25px;
+}
+
+.querymaker_page label{font-size: 25px;}
+
+.querymaker_page select{font-size: 25px;}
+
+.querymaker_page input{font-size: 25px;}
+
+.querymaker_page button{font-size: 25px;}
+/*--------------------QUERY-MAKER-STYLES--------------------*/
+
+/*----------------------CONTACT US----------------------*/
+body.contactus_page {
+    background-image: url("Bilder/HS_Trier.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contactus_page h2 {
+    background-color: white;
+    width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.contactus_page h3 {text-align: center;}
+
+.contactus_page h4{
+    width: auto;
+    background-color: rgb(255, 212, 111);
+    text-align: center;
+    margin-top: 0px;
+}
+
+.contactus_page .container {
+    width: auto;
+    background-color: rgba(240, 248, 255, 0.422);
+    gap: 60px;
+    padding: 60px;
+    justify-content: center;
+    display: flex;
+    border-radius: 20px;
+}
+
+.contactus_page .box {
+    width: auto;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contactus_page h6 {
+    background-color: rgba(255, 255, 255, 0.666);
+    font-size: 24px;
+    padding: auto;}
+/*----------------------CONTACT US----------------------*/
+
+/*----------RESPONSIVE DESIGN---------------*/
+/*@media screen and (max-width:540px) 
