@@ -1,0 +1,24 @@
+
+
+
+
+
+.container{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px; 
+
+}
+
+.event_description{
+    width: 400px;
+    height: 400px;
+    padding: 5px; 
+    text-align: left; 
+    vertical-align: top; 
+    resize: none;
+    font-family: Arial, sans-serif; 
+    font-size: 14px;
+}

@@ -1,0 +1,9 @@
+.topbars {
+    background-color: transparent;
+    border: transparent;
+}
+body {background-image: url("../Bilder/Trier-Stadt.jpg");
+    background-repeat: no-repeat;
+    background-position: center;}
+article {background-color: rgba(245, 245, 245, 0.536);}
+h2 {text-decoration: underline black;}

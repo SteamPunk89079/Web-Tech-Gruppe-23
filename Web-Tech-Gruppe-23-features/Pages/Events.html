@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events</title>
+    <link rel="stylesheet" href="../Styles/events.css">
+</head>
+<body>
+
+
+
+
+
+    <h1>Events List</h1>
+ 
+
+    <form class="filter_bar">
+        <hr>
+        
+        <h2 style="margin-left: 20px;">Filter: </h2>
+        
+        <label for="dropdown_type" style="margin-left: 20px;">Veranstaltungs Art:</label>
+        
+        <select id="dropdown_type">
+            <option value="option_0"></option>
+            <option value="Konzert">Konzert</option>
+            <option value="Kneipe">Kneipe</option>
+            <option value="Theather_Stuck">Theather Stuck</option>
+            <option value="Art_Galerie">Art Galerie</option>
+            <option value="Flohmarkt">Flohmarkt</option>
+            <option value="Sehenswurdigkeit">Sehenswurdigkeit</option>
+            <option value="Restaurant">Restaurant</option>
+            <option value="Film">Film</option>
+            <option value="Workshop">Workshop</option>
+        </select>
+        
+        <label for="dropdown_location">Standort:</label>
+        
+        <select id="dropdown_location">
+            <option value="option_0"></option>
+            <option value="New_Mintons">New Mintons</option>
+            <option value="Chrome">Chrome</option>
+            <option value="Ziegels">Ziegels</option>
+            <option value="Irish_Pub">Irish Pub</option>
+            <option value="Simplicissimus">Simplicissimus</option>
+            <option value="Cubiculum">Cubiculum</option>
+            <option value="option_7">...museum</option>
+            <option value="option_8">...kino</option>
+            <option value="option_9">...theater</option>
+        </select>
+        
+        <button id="filter_button">filter</button>
+        <button id="filter_delete_button">remove filters</button>
+
+        <hr>
+    </form>
+
+
+    <!-- fetch body -->
+    <div id="card"></div>
+    <!-- fetch body -->
+
+
+
+
+       
+    <script src="../Scripts/Events.js"></script>
+</body>
+</html>
