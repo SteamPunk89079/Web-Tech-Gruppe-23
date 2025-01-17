@@ -2,7 +2,6 @@
  
  
  /*---------topbar--stuff-------*/
- 
  .topbars{
     margin-top: 70px;
     border:  transparent;
@@ -14,7 +13,6 @@
 .topbar:hover{background-color: cadetblue;}
 
 .topbars button:first-of-type{margin-left: 40px;}
-
 
 .topbar_img{
     width: 100px;
@@ -55,7 +53,7 @@
     width: 70%;
     margin-left: 15%;
 }
-
+/*CHECK*/
 
 .left,
 .right {
@@ -72,7 +70,7 @@
 }
 
 
-.karte_page{
+.karte_page{                                /**/
     background-color:rgb(255, 212, 111);    
 }
 .location_card{
@@ -91,7 +89,7 @@
     gap: 30px;
     width: 100%;
 }
-.title{
+.title{                     
     font-size: 32px;
     text-align: center;
 }
@@ -144,7 +142,7 @@ footer {
     box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.3);
 }
 
-.news-container .title {
+.news-container .karte-news-title {
     position: absolute;
     background: #df2020;
     height: 100%;
