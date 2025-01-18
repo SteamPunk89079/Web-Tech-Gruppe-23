@@ -1,5 +1,5 @@
 const Pages = {
-    0: "../index.html",
+    0: "index.html",
     1: "Aktivitäten.html",
     2: "Theater.html",
     3: "Hobbies.html",
@@ -7,35 +7,40 @@ const Pages = {
     5: "Kalendar.html",
     6: "Events.html"
 };
-const index_pages = {
-    0: "index.html",
-    1: "./Pages/Aktivitäten.html",
-    2: "./Pages/Theater.html",
-    3: "./Pages/Hobbies.html",
-    4: "./Pages/Karte.html",
-    5: "./Pages/Kalendar.html",
-    6: "./Pages/Events.html"
-};
 
+function determine_page() {
+    const pageTitle = document.title; // Get the title of the current page
+    if (pageTitle === "Homepage") {
+        return 0;
+    } else if (pageTitle === "Aktivitäten") {
+        return 1;
+    } else if (pageTitle === "Theater") {
+        return 2;
+    } else if (pageTitle === "Hobbies") {
+        return 3;
+    } else if (pageTitle === "Karte") {
+        return 4;
+    } else if (pageTitle === "Kalendar") {
+        return 5;
+    } else if (pageTitle === "Events") {
+        return 6;
+    } else {
+        return 0; // Default to the homepage if no match
+    }
+}
 
-let current_page = parseInt(localStorage.getItem('current_page')) || 1;
+let current_page = parseInt(localStorage.getItem('current_page')) || determine_page();
 
 document.addEventListener('keydown', (event) => {
     if (event.key === 'ArrowRight') {
-        if (current_page === Object.keys(Pages).length) {
-            current_page = 0;
-        } else {
-            current_page++;
-        }
+        current_page = (current_page + 1) % Object.keys(Pages).length; // Go to the next page, wrap around to 0
     } else if (event.key === 'ArrowLeft') {
-        if (current_page === 0) {
-            current_page = Object.keys(Pages).length;
-        } else {
-            current_page--;
-        }
+        current_page = (current_page - 1 + Object.keys(Pages).length) % Object.keys(Pages).length; // Go to the previous page, wrap around
     } else {
-        return; 
+        return; // Ignore other keys
     }
+
+    // Save the current page index and navigate to the new page
     localStorage.setItem('current_page', current_page);
     window.location.href = Pages[current_page];
 });

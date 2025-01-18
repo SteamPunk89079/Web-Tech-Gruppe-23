@@ -11,7 +11,7 @@ const theater = document.getElementById("Theater_button");
 
 
 home.addEventListener("click", function(){
-  window.location.href = "../index.html";
+  window.location.href = "/pages/Index.html";
 });
 karte.addEventListener("click", function(){
   window.location.href = "/pages/Karte.html";

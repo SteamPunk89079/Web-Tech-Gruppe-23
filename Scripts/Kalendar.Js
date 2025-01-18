@@ -3,18 +3,30 @@ const karte = document.getElementById("Karte_button");
 const aktivitaeten = document.getElementById("Aktivitaeten_button");
 const kalendar = document.getElementById("Kalendar_button");
 const events = document.getElementById("Events_button");
+const hobbies = document.getElementById("Hobbies_button");
+const theater = document.getElementById("Theater_button");
 
-home.addEventListener('click', function () {
-    window.location.href = "../index.html";
+
+home.addEventListener("click", function(){
+   window.location.href = "/pages/Index.html";
 });
-karte.addEventListener('click', function () {
-    window.location.href = "./Karte.html";
+karte.addEventListener("click", function(){
+   window.location.href = "/pages/Karte.html";
 });
-aktivitaeten.addEventListener('click', function () {
-    window.location.href = "./Aktivitäten.html";
+aktivitaeten.addEventListener("click",function(){
+   window.location.href = "/pages/Aktivitäten.html";
 });
-events.addEventListener('click', function () {
-    window.location.href = "./Events.html"
+kalendar.addEventListener("click",function(){
+   window.location.href = "/pages/Kalendar.html";
+});
+events.addEventListener("click", function(){
+   window.location.href = "/pages/Events.html";
+});
+hobbies.addEventListener("click", function(){
+   window.location.href = "/pages/Hobbies.html";
+});
+theater.addEventListener("click", function(){
+   window.location.href = "/pages/Theater.html";
 });
 
 const today = new Date();
