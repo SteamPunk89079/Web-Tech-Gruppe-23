@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 body: json_data
             }).then(response => response.json()).then(data => {
                 console.log("succesfull: ", data);
-                test.innerHTML = "Data saved succesfully!";
+                test.innerHTML = `<h1 style="color: red; font-size: 45px">Data saved succesfully!</h1>`;
             }).catch(error => {
                 console.error("ERROR: ", error);
                 test.innerHTML = "Error saving data.";

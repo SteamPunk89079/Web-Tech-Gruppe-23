@@ -76,8 +76,6 @@ footer {
 .location_card:hover h2 {
     color: rgba(190, 23, 23, 0.656);
 }
-  
-
 
 /*---------------POPUP-------------------------*/
 .popup-overlay {
@@ -90,7 +88,6 @@ footer {
     background-color: rgba(0, 0, 0, 0.5); 
     z-index: 1000;
 }
-
 .popup-content {
     position: absolute;
     top: 50%;
@@ -104,13 +101,11 @@ footer {
     width: 300px;
     height: 300px;
 }
-
 .popup-image {
     max-width: 100%;
     height: auto;
     margin-bottom: 15px;
 }
-
 .close-button {
     background-color: #ff5c5c;
     color: white;
@@ -120,7 +115,6 @@ footer {
     cursor: pointer;
     font-size: 16px;
 }
-
 .close-button:hover {
     background-color: #ff3b3b;
 }
@@ -136,7 +130,6 @@ body.login_page{
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .login_container {
     display: flex;
     flex-direction: column;
@@ -148,7 +141,6 @@ body.login_page{
     border-radius: 10px; 
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 input {
     width: 250px;
     padding: 10px;
@@ -156,7 +148,6 @@ input {
     border: 1px solid #ccc;
     border-radius: 5px;
 }
-
 button {
     padding: 10px 20px;
     font-size: 16px;
@@ -166,7 +157,6 @@ button {
     color: white;
     cursor: pointer;
 }
-
 button:hover {
     background-color: #0056b3;
 }
@@ -273,7 +263,6 @@ footer {
     flex-direction: column;
     align-items: center; 
     gap: 10px; 
-
 }
 
 .query_maker .event_description{
@@ -284,8 +273,15 @@ footer {
     vertical-align: top; 
     resize: none;
     font-family: Arial, sans-serif; 
-    font-size: 14px;
+    font-size: 25px;
 }
+.query_maker label{font-size: 25px;}
+
+.query_maker select{font-size: 25px;}
+
+.query_maker input{font-size: 25px;}
+
+.query_maker button{font-size: 25px;}
 /*------------------QUERY-MAKER-PAGE------------------------*/
 /*------------------EVENTS-PAGE------------------------*/
 .events_page .event{
@@ -323,3 +319,82 @@ footer {
     background-color: lightcoral;
 }
 /*------------------EVENTS-PAGE------------------------*/
+/*------------------BURGER-MENU-------------------------*/
+.burger-menu {
+    position: relative;
+    width: fit-content;
+    margin-right: auto;
+    border: none;
+    display: block;
+    font-size: 24px;
+    padding: 10px;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+}
+.burger-menu option {
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
+.burger-menu .option1 {
+    display: none;
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
+.burger-menu option:hover {
+    background-color: #00bcd4;
+}
+/*------------------BURGER-MENU-------------------------*/
+/*------------------CONTACT-US--------------------------*/
+body .contactus_page {
+    background-image: url("Bilder/HS_Trier.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-size: 20px;
+    text-align: center;
+}
+
+.contactus_page h2 {
+    background-color: white;
+    width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.contactus_page h3 {text-align: center;}
+
+.contactus_page h4{
+    width: auto;
+    background-color: rgb(255, 212, 111);
+    text-align: center;
+    margin-top: 0px;
+}
+
+.contactus_page .container {
+    width: auto;
+    background-color: rgba(240, 248, 255, 0.422);
+    gap: 60px;
+    padding: 60px;
+    justify-content: center;
+    display: flex;
+    border-radius: 20px;
+}
+
+.contactus_page .box {
+    width: auto;
+    margin: auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contactus_page h6 {
+    background-color: rgba(255, 255, 255, 0.666);
+    font-size: 24px;
+}
+/*------------------CONTACT-US--------------------------*/
