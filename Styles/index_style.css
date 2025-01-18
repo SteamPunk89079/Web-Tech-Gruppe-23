@@ -356,7 +356,6 @@ body .contactus_page {
     font-size: 20px;
     text-align: center;
 }
-
 .contactus_page h2 {
     background-color: white;
     width: fit-content;
@@ -364,16 +363,13 @@ body .contactus_page {
     margin-top: 50px;
     margin-bottom: 10px;
 }
-
 .contactus_page h3 {text-align: center;}
-
 .contactus_page h4{
     width: auto;
     background-color: rgb(255, 212, 111);
     text-align: center;
     margin-top: 0px;
 }
-
 .contactus_page .container {
     width: auto;
     background-color: rgba(240, 248, 255, 0.422);
@@ -383,7 +379,6 @@ body .contactus_page {
     display: flex;
     border-radius: 20px;
 }
-
 .contactus_page .box {
     width: auto;
     margin: auto;
@@ -392,7 +387,6 @@ body .contactus_page {
     border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-
 .contactus_page h6 {
     background-color: rgba(255, 255, 255, 0.666);
     font-size: 24px;
