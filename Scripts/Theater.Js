@@ -49,11 +49,11 @@ function updateContent() {
   });
 }
 leftArrow.addEventListener('click', () => {
-  currentIndex = (current_index - 1 + contents.length) % contents.length; // Rückwärts navigieren
+  current_index = (current_index - 1 + contents.length) % contents.length; // Rückwärts navigieren
   updateContent();
 });
 rightArrow.addEventListener('click', () => {
-  currentIndex = (current_index + 1) % contents.length; // Vorwärts navigieren
+  current_index = (current_index + 1) % contents.length; // Vorwärts navigieren
   updateContent();
 });
 

@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
+    
     <link rel="stylesheet" href="../Styles/index_style.css">
     <link rel="stylesheet" href="../Styles/topbar.css">
 
-    <script src="../Scripts/navigation_script.js"></script>
+    <script src="../Scripts/Utilities/navigation_script.js"></script>
+
 
 </head>
 
@@ -34,15 +36,16 @@
         </div>
     </header>
 
-    <select class="burger-menu" >
-        
-        <option class="option1">Einstellungen⚙️</option>
-        <option id="Schriftgröße" class="burger_button">Schriftgröße ändern</option>
-        <option id="Farbschema" class="burger_button">Farbschema</option>
-        <option id="Language" class="burger_button">Sprache</option>
 
-    </select>  
-   
+    <div style="display: flex; align-items: center;">
+        <select class="burger-menu">
+            <option class="option1">Einstellungen⚙️</option>
+            <option id="Schriftgröße" class="burger_button">Schriftgröße ändern</option>
+            <option id="Farbschema" class="burger_button">Farbschema</option>
+            <option id="Language" class="burger_button">Sprache</option>
+        </select>
+        
+    </div>
 
     <figure class="mainscreen">
         <img src="/Bilder/Trier-Stadt.jpg" class="mainpic" alt="mainpic">
@@ -51,9 +54,11 @@
 
 
     
-    <h2>Hast heute kein Plan was Du machen sollst?</h2>
-    <h3>Hier bist Du richtig!</h3>
-    <p>Kennst du das Gefühl, den ganzen Tag mit dem Handy zu verbringen, ohne wirklich zu wissen, was du tun sollst?<br>
+    <h2 id="headline1">Hast heute kein Plan was Du machen sollst?</h2>
+    
+    <h3 id="headline2">Hier bist Du richtig!</h3>
+    
+    <p id="paragraph1">Kennst du das Gefühl, den ganzen Tag mit dem Handy zu verbringen, ohne wirklich zu wissen, was du tun sollst?<br>
         Vielleicht hast du dir vorgenommen, etwas zu unternehmen, aber am Ende des Tages fühlst du dich irgendwie unzufrieden, 
         weil nichts passiert ist.<br>
         Das muss nicht sein! Hier auf unserer Webseite findest du alles, was du brauchst, 
@@ -63,8 +68,9 @@
          um etwas Großartiges zu erleben! &hearts;
     </p>
     
-    <h2>Trier, die älteste Stadt</h2>
-    <p>Trier, die älteste Stadt Deutschlands, hat so viel mehr zu bieten, als man auf den ersten Blick denkt! Zwischen römischen Ruinen, charmanten Altstadtgassen und 
+    <h2 id="headline3">Trier, die älteste Stadt</h2>
+    
+    <p id="paragraph2">Trier, die älteste Stadt Deutschlands, hat so viel mehr zu bieten, als man auf den ersten Blick denkt! Zwischen römischen Ruinen, charmanten Altstadtgassen und 
         beeindruckenden historischen Stätten steckt eine lebendige Kultur und eine Vielzahl von Veranstaltungen, die darauf warten, von dir entdeckt zu werden. Ob du in einem der 
         gemütlichen Cafés un Restaurants den Tag beginnst, ein Konzert im Amphitheater besuchst oder einfach durch die Straßen schlenderst – Trier bietet dir zahlreiche Möglichkeiten,
         deinen Tag spannend und abwechslungsreich zu gestalten. Und das Beste: Auf dieser Seite findest du alle Events und coolen Orte, die Trier zu bieten hat. Lass dich 
@@ -93,6 +99,7 @@
 
 
     <script src="../Scripts/Index.Js"></script>
+    <script src="../Scripts/Utilities/translate_script.js"></script>
 
 </body>
 </html>

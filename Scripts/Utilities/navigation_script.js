@@ -9,7 +9,7 @@ const Pages = {
 };
 
 function determine_page() {
-    const pageTitle = document.title; // Get the title of the current page
+    const pageTitle = document.title; // title of the current page
     if (pageTitle === "Homepage") {
         return 0;
     } else if (pageTitle === "Aktivitäten") {
@@ -25,7 +25,7 @@ function determine_page() {
     } else if (pageTitle === "Events") {
         return 6;
     } else {
-        return 0; // Default to the homepage if no match
+        return 0; //homepage if no match
     }
 }
 
@@ -33,14 +33,12 @@ let current_page = parseInt(localStorage.getItem('current_page')) || determine_p
 
 document.addEventListener('keydown', (event) => {
     if (event.key === 'ArrowRight') {
-        current_page = (current_page + 1) % Object.keys(Pages).length; // Go to the next page, wrap around to 0
+        current_page = (current_page + 1) % Object.keys(Pages).length; 
     } else if (event.key === 'ArrowLeft') {
-        current_page = (current_page - 1 + Object.keys(Pages).length) % Object.keys(Pages).length; // Go to the previous page, wrap around
+        current_page = (current_page - 1 + Object.keys(Pages).length) % Object.keys(Pages).length; 
     } else {
-        return; // Ignore other keys
+        return; 
     }
-
-    // Save the current page index and navigate to the new page
     localStorage.setItem('current_page', current_page);
     window.location.href = Pages[current_page];
 });
