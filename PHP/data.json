@@ -2,329 +2,97 @@
     [
         {
             "type": "Konzert",
-            "location": "Plaza",
-            "date": "2025-01-02",
-            "description": "Ein aufregender Auftakt nach dem Neujahr im Plaza"
-        }
-    ],
-    [
-        {
-            "type": "Flohmarkt",
-            "location": "City Center",
-            "date": "2025-01-15",
-            "description": "Ein wöchentlicher Flohmarkt im Stadtzentrum"
-        }
-    ],
-    [
-        {
-            "type": "Theater_Stuck",
-            "location": "Royal Theater",
-            "date": "2025-01-22",
-            "description": "Ein fesselndes Theaterstück im Royal Theater"
-        }
-    ],
-    [
-        {
-            "type": "Art_Galerie",
-            "location": "Downtown Gallery",
-            "date": "2025-01-30",
-            "description": "Ein Abend der zeitgenössischen Kunst in Downtown"
-        }
-    ],
-    [
-        {
-            "type": "Sehenswurdigkeit",
-            "location": "Old Castle",
-            "date": "2025-02-01",
-            "description": "Besuch der historischen Stätte im Alten Schloss"
-        }
-    ],
-    [
-        {
-            "type": "Film",
-            "location": "Cineworld",
-            "date": "2025-02-10",
-            "description": "Ein Abend voller Sehvergnügen im Cineworld"
-        }
-    ],
-    [
-        {
-            "type": "Workshop",
-            "location": "Art Studio",
-            "date": "2025-02-20",
-            "description": "Ein kreativer Mal-Workshop im Kunststudio"
+            "location": "New Mintons",
+            "date": "2024-11-20",
+            "description": "A live jazz performance featuring renowned artists."
         }
     ],
     [
         {
             "type": "Kneipe",
-            "location": "The Irish Bar",
-            "date": "2025-02-28",
-            "description": "Ein geselliger Abend im Irish Bar mit Livemusik"
-        }
-    ],
-    [
-        {
-            "type": "Konzert",
-            "location": "Beachfront",
-            "date": "2025-03-05",
-            "description": "Ein unvergessliches Konzert am Strand"
+            "location": "Irish_Pub",
+            "date": "2025-01-26",
+            "description": "An evening of live music and special craft beers."
         }
     ],
     [
         {
             "type": "Flohmarkt",
-            "location": "Marketplace",
-            "date": "2025-03-14",
-            "description": "Ein geschäftiger Flohmarkt auf dem Marktplatz"
+            "location": "Simplicissimus",
+            "date": "2024-11-22",
+            "description": "A bustling flea market with antiques and handcrafted items."
         }
     ],
     [
         {
-            "type": "Theater_Stuck",
-            "location": "Community Center",
-            "date": "2025-03-28",
-            "description": "Eine spannende Theateraufführung im Gemeinschaftszentrum"
+            "type": "Art Galerie",
+            "location": "Cubiculum",
+            "date": "2024-11-23",
+            "description": "Exhibition showcasing contemporary abstract art."
         }
     ],
     [
         {
-            "type": "Art_Galerie",
-            "location": "Art Hub",
-            "date": "2025-04-02",
-            "description": "Ein Abend mit aufstrebenden Künstlern im Art Hub"
+            "type": "Restaurant",
+            "location": "Simplicissimus",
+            "date": "2024-11-24",
+            "description": "Gourmet tasting menu by a Michelin-starred chef."
         }
     ],
     [
         {
-            "type": "Sehenswurdigkeit",
-            "location": "Historical Museum",
-            "date": "2025-04-10",
-            "description": "Entdeckung historischer Artefakte im Museum"
-        }
-    ],
-    [
-        {
-            "type": "Film",
-            "location": "Film Palace",
-            "date": "2025-04-15",
-            "description": "Ein Filmabend mit heimischen Produktionen"
-        }
-    ],
-    [
-        {
-            "type": "Workshop",
-            "location": "Baking Studio",
-            "date": "2025-04-25",
-            "description": "Ein Backworkshop im Baking Studio für alle Levels"
-        }
-    ],
-    [
-        {
-            "type": "Kneipe",
-            "location": "The Old Tavern",
-            "date": "2025-05-01",
-            "description": "Ein geselliger Abend voller Geschichten in der Old Tavern"
-        }
-    ],
-    [
-        {
-            "type": "Konzert",
-            "location": "Concert Hall",
-            "date": "2025-05-10",
-            "description": "Ein klassisches Konzert in der Wochenmitte"
-        }
-    ],
-    [
-        {
-            "type": "Flohmarkt",
-            "location": "Green Park",
-            "date": "2025-05-15",
-            "description": "Ein fröhlicher Flohmarkt im Grünen Park"
-        }
-    ],
-    [
-        {
-            "type": "Theater_Stuck",
-            "location": "City Playhouse",
-            "date": "2025-05-20",
-            "description": "Eine fesselnde Aufführung im City Playhouse"
-        }
-    ],
-    [
-        {
-            "type": "Art_Galerie",
-            "location": "Gallery 24",
-            "date": "2025-06-01",
-            "description": "Ein Ausstellungseröffnung in der Gallery 24"
-        }
-    ],
-    [
-        {
-            "type": "Sehenswurdigkeit",
-            "location": "Nature Reserve",
-            "date": "2025-06-05",
-            "description": "Entdecken Sie die Schönheit des Naturreservats"
+            "type": "Theater St\u00fcck",
+            "location": "Ziegels",
+            "date": "2024-11-25",
+            "description": "A captivating play based on a modern social drama."
         }
     ],
     [
         {
             "type": "Film",
-            "location": "Art Cinemas",
-            "date": "2025-06-15",
-            "description": "Ein Filmabend mit Indie-Filmen in Art Cinemas"
+            "location": "...kino",
+            "date": "2024-11-26",
+            "description": "A special screening of a critically acclaimed indie film."
         }
     ],
     [
         {
             "type": "Workshop",
-            "location": "Photography Studio",
-            "date": "2025-06-20",
-            "description": "Ein Fotoworkshop für Anfänger und Fortgeschrittene"
+            "location": "New Mintons",
+            "date": "2024-11-27",
+            "description": "Pottery workshop for beginners and enthusiasts."
         }
     ],
     [
         {
-            "type": "Kneipe",
-            "location": "The Local Pub",
-            "date": "2025-06-30",
-            "description": "Ein Abend voller Gesellschaftsspiele und Snacks"
-        }
-    ],
-    [
-        {
-            "type": "Konzert",
-            "location": "Riverside",
-            "date": "2025-07-05",
-            "description": "Ein Open-Air-Konzert am Flussufer"
-        }
-    ],
-    [
-        {
-            "type": "Flohmarkt",
-            "location": "Old Town Square",
-            "date": "2025-07-15",
-            "description": "Ein entspannter Flohmarkt im historischen Stadtzentrum"
-        }
-    ],
-    [
-        {
-            "type": "Theater_Stuck",
-            "location": "School Auditorium",
-            "date": "2025-07-25",
-            "description": "Eine aufregende Schüleraufführung im Auditorium"
-        }
-    ],
-    [
-        {
-            "type": "Art_Galerie",
-            "location": "Cultural Center",
-            "date": "2025-08-01",
-            "description": "Eine Nacht für die lokale Kunstszene im Kulturzentrum"
+            "type": "Sehensw\u00fcrdigkeit",
+            "location": "Chrome",
+            "date": "2024-11-28",
+            "description": "Guided tour of the historic castle and gardens."
         }
     ],
     [
         {
             "type": "Sehenswurdigkeit",
-            "location": "Botanical Garden",
-            "date": "2025-08-10",
-            "description": "Besuchen Sie die blühenden Pflanzen im Botanischen Garten"
-        }
-    ],
-    [
-        {
-            "type": "Film",
-            "location": "Outdoor Cinema",
-            "date": "2025-08-20",
-            "description": "Ein Filmabend unter den Sternen im Freiluftkino"
-        }
-    ],
-    [
-        {
-            "type": "Workshop",
-            "location": "Cooking Academy",
-            "date": "2025-08-25",
-            "description": "Kochen lernen mit einem Chef im Cooking Academy"
-        }
-    ],
-    [
-        {
-            "type": "Kneipe",
-            "location": "Jazz Lounge",
-            "date": "2025-09-01",
-            "description": "Jazzabend in der Lounge mit Live-Música"
-        }
-    ],
-    [
-        {
-            "type": "Konzert",
-            "location": "City Hall",
-            "date": "2025-09-10",
-            "description": "Ein Konzert mit regionalen Talenten im Stadtgarten"
-        }
-    ],
-    [
-        {
-            "type": "Flohmarkt",
-            "location": "East Side Park",
-            "date": "2025-09-15",
-            "description": "Ein häuslicher Flohmarkt im East Side Park"
-        }
-    ],
-    [
-        {
-            "type": "Theater_Stuck",
-            "location": "Historic Theatre",
-            "date": "2025-09-25",
-            "description": "Eine zauberhafte Inszenierung im historischen Theater"
+            "location": "Chrome",
+            "date": "2024-12-12",
+            "description": "dsadsdasasd"
         }
     ],
     [
         {
             "type": "Art_Galerie",
-            "location": "Art District",
-            "date": "2025-10-01",
-            "description": "Ein kultureller Abend im Kunstbezirk"
+            "location": "Irish_Pub",
+            "date": "2024-12-27",
+            "description": "description"
         }
     ],
     [
         {
-            "type": "Sehenswurdigkeit",
-            "location": "City Monument",
-            "date": "2025-10-05",
-            "description": "Erkunden Sie das Denkmal der Stadt"
-        }
-    ],
-    [
-        {
-            "type": "Film",
-            "location": "Filmhouse",
-            "date": "2025-10-10",
-            "description": "Ein klassischer Filmabend im Filmhouse"
-        }
-    ],
-    [
-        {
-            "type": "Workshop",
-            "location": "Craft Studio",
-            "date": "2025-10-15",
-            "description": "Ein Workshop zum Erlernen von Handwerkskünsten"
-        }
-    ],
-    [
-        {
-            "type": "Kneipe",
-            "location": "The Corner Bar",
-            "date": "2025-10-20",
-            "description": "Ein geselliger Abend mit Freunden in der Corner Bar"
-        }
-    ],
-    [
-        {
-            "type": "Konzert",
-            "location": "Outdoor Park",
-            "date": "2025-10-25",
-            "description": "Ein Herbstkonzert im Park"
+            "type": "Art_Galerie",
+            "location": "Ziegels",
+            "date": "2024-12-14",
+            "description": "dsaadsdasdasdasdassda"
         }
     ]
 ]

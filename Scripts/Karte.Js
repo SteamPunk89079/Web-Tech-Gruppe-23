@@ -11,10 +11,6 @@ const events = document.getElementById("Events_button");
 const hobbies = document.getElementById("Hobbies_button");
 const theater = document.getElementById("Theater_button");
 
-
-
-
-
 home.addEventListener("click", function(){
   window.location.href = "../index.html";
 });

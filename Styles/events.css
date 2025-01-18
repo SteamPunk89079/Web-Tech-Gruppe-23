@@ -8,9 +8,9 @@
 #card{
     display: flex;
 
-        flex-direction: column; /* Stack the items vertically */
-        align-items: center;    /* Center horizontally */
-        justify-content: center; /* Center vertically */
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center; 
         margin-top: 20px;
 }
 
@@ -19,22 +19,21 @@ body{
 }
 
 body, html {
-    height: 100%; /* Ensure the full height of the viewport is available */
-    margin: 0;
+    height: 100%; 
 }
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Divide into 3 equal columns */
-    height: 100%; /* Full height of the viewport */
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
 }
 
 .middle-column {
-    grid-column: 2; /* Place this div in the second column */
-    background-color: lightblue; /* For visual distinction */
+    grid-column: 2;
+    background-color: lightblue;
 }
 
 .right-column {
-    grid-column: 3; /* Place this div in the third column */
-    background-color: lightcoral; /* For visual distinction */
+    grid-column: 3; 
+    background-color: lightcoral;
 }

@@ -1,8 +1,8 @@
 /*---------topbar--stuff-------*/
 .topbars {
-    display: flex; /* Use flexbox for layout */
-    justify-content: space-between; /* Space between buttons and the image */
-    align-items: center; /* Vertically align items */
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
     padding: 10px;
     background-color: transparent;
     margin-top: 38px;
@@ -12,9 +12,10 @@
     margin-left: 20px;
 }
 .topbars .button {
-    margin-left: -25px;
+    margin-left: -15px;
     height: 70px;
     width: 100px;
+    color: black;
 
     border-radius: 10px;
     border: 1px solid black;
@@ -28,19 +29,14 @@
     text-align: center;
     cursor: pointer;
 }
-
 .topbars .button:hover {
     background-color: rgb(255, 200, 90);
 }
-
 .topbar_img {
     width: 100px;
     height: auto; 
     margin-left: auto;
 }
-
-
-
 .index {background-color: rgb(255, 199, 69);}
 header {background-image: url("../Bilder/Balkenbild.jpg");
         background-repeat: no-repeat;

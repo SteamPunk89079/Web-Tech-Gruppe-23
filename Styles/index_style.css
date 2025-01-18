@@ -125,13 +125,201 @@ footer {
     background-color: #ff3b3b;
 }
 /*---------------POPUP-------------------------*/
+/*------------------LOGIN-PAGE-------------------------*/
+body.login_page{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../Bilder/Daemmerung\ Trier.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+.login_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
 
+input {
+    width: 250px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color:  rgb(255, 199, 69);
+    color: white;
+    cursor: pointer;
+}
 
-.index {background-color: rgb(255, 199, 69);}
-.index header {background-image: url("../Bilder/Balkenbild.jpg");
-        background-repeat: no-repeat;
-        background-position: center;}
-.index h2 {background-color: orange;}
-.index h3 {text-decoration: underline orange;}
+button:hover {
+    background-color: #0056b3;
+}
+/*------------------LOGIN-PAGE-------------------------*/
+/*------------------THEATER-PAGE------------------------*/
+.theater_page  header{
+    background-image: none;
+    border: none;
+}
+.theater_page .topbars{
+    border: none;
+}
+.theater_page h1 {
+    color: white;
+    text-decoration: underline lightsalmon;
+}
+.theater_page p {
+    color: white;
+}
+.theater_page {
+    background-image: url("../Bilder/Theaterbackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: auto;
+    text-align: center;
+}
+.theater_page .content-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.theater_page .content-container {
+    margin: auto;
+    width: 500px;
+    height: 500px;
+    position: relative;
+}
+.theater_page .content.active {
+  opacity: 1;
+}
+.theater_page .content {
+    opacity: 0; 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    font-size: 20px;
+    color: black;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    gap: 10px;
+    transition: opacity 0.5s ease; 
+    border-radius: 50px;
+}
+.theater_page .content h2 {
+    margin: 0;
+}
+.theater_page .content img {
+    max-width: 80%;
+    height: auto; 
+    border-radius: 8px;
+}
+.theater_page .content p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    color: black;
+}
+.theater_page .arrow {
+    margin: auto;
+    font-size: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+.theater_page .arrow:hover {
+    background-color: orange;
+}
+footer {
+  background-color: black;     
+  color: #f1f1f1;             
+  text-align: center;   
+  padding: 10px;              
+  width: auto;         
+  bottom: 0;            
+  margin-top: 50px;
+}
+/*------------------THEATER-PAGE------------------------*/
+/*------------------QUERY-MAKER-PAGE------------------------*/
+.query_maker .container{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    gap: 10px; 
+
+}
+
+.query_maker .event_description{
+    width: 400px;
+    height: 400px;
+    padding: 5px; 
+    text-align: left; 
+    vertical-align: top; 
+    resize: none;
+    font-family: Arial, sans-serif; 
+    font-size: 14px;
+}
+/*------------------QUERY-MAKER-PAGE------------------------*/
+/*------------------EVENTS-PAGE------------------------*/
+.events_page .event{
+    border: 2px solid black;
+    background-color:  rgb(255, 199, 69);
+    text-align: center;
+    border-radius: 20px;
+    width: 550px;
+}
+.events_page #card{
+    display: flex;
+
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center; 
+        margin-top: 20px;
+}
+.events_page body{
+    background-color: rgb(255, 212, 111);
+}
+.events_page body, html {
+    height: 100%; 
+}
+.events_page .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
+}
+.events_page .middle-column {
+    grid-column: 2;
+    background-color: lightblue;
+}
+.events_page .right-column {
+    grid-column: 3; 
+    background-color: lightcoral;
+}
+/*------------------EVENTS-PAGE------------------------*/
