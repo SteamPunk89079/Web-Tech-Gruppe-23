@@ -34,9 +34,9 @@ theater.addEventListener("click", function(){
 });
 //------------------------------Topbar-Scripts--------------------------------
 //------------------------------Theater-Scripts--------------------------------
-const contents = document.querySelectorAll('.content'); // Alle Inhalte
-const leftArrow = document.querySelector('.left-arrow'); // Linker Pfeil
-const rightArrow = document.querySelector('.right-arrow'); // Rechter Pfeil
+const contents = document.querySelectorAll('.content'); 
+const leftArrow = document.querySelector('.left-arrow'); 
+const rightArrow = document.querySelector('.right-arrow'); 
 
 let current_index = 0;
 
@@ -49,11 +49,11 @@ function updateContent() {
   });
 }
 leftArrow.addEventListener('click', () => {
-  current_index = (current_index - 1 + contents.length) % contents.length; // Rückwärts navigieren
+  current_index = (current_index - 1 + contents.length) % contents.length; 
   updateContent();
 });
 rightArrow.addEventListener('click', () => {
-  current_index = (current_index + 1) % contents.length; // Vorwärts navigieren
+  current_index = (current_index + 1) % contents.length; 
   updateContent();
 });
 

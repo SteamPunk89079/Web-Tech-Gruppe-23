@@ -25,7 +25,7 @@ function determine_page() {
     } else if (pageTitle === "Events") {
         return 6;
     } else {
-        return 0; //homepage if no match
+        return 0;
     }
 }
 
