@@ -701,43 +701,93 @@ body.contactus_page {
 /*----------------------CONTACT US----------------------*/
 
 /*----------RESPONSIVE DESIGN---------------*/
-@media screen and (max-width:540px) {
+@media screen and (max-width:786px) {
 
-
+    /*topbars/Nav-bar*/
     body.index {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body.aktivitaten {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body.contactus_page {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body.event_page {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body.kalender {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body.karte_page {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body.login_page {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body.querymaker_page {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body.theater {
         font-family: Arial, Helvetica, sans-serif;
     }
 
     .mobile-container {
         display: block;
-        border: none;
         cursor: pointer;
-        position: relative;
-    }
-
-    .kasten {
-        position: relative;
+        position: absolute;
         display: block;
         width: 50px;
-        margin-left: auto;
         background-color: orange;
         height: 50px;
         color: white;
         border-radius: 10px;
+        top: 0%;
+        right: 0%;
     }
 
-.hidden {
-    display: none !important;
+    .hidden {
+        display: none !important;}
+
+    .banner {
+        position: relative;
     }
 
+    .button {
+        height: fit-content;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        background-color: rgb(255, 212, 111);
+        border: 1px solid rgb(201, 148, 0);
+        margin-left: auto;
+    }
+
+    .topbar_img {
+        display: flex;
+        position: relative;
+        right: 0px;
+        margin-left: auto;
+    }
 
     .topbars {
-        overflow: hidden;
-        background-color: transparent;
-        position: relative;
-        max-width: 300px;
+        flex-direction: column;
+        background-color: lightslategray;
+        position: fixed;
         display: flex;
-        overflow-x: auto;
+        height: 100%;
+        top: 0%;
+        right: 0%;
+        z-index: 1000;
     }
 
     .topbars button {
@@ -751,14 +801,191 @@ body.contactus_page {
     }
 
 
-    .topbars button:hover {
-        background-color: #ddd;
+    button:hover {
+        background-color: yellowgreen;
         color: black;
+    } 
+    /*topbars/Nav-bar*/
+
+    /*footer*/
+    footer {
+        font-size: 16px;
+        width: auto; 
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
-    #Home_button {
-        background-color: #04AA6D;
+    .news-container .news-title {
+        height:auto;
+        padding: 10px;
+    }
+
+    .karte.title {
+        margin: auto;
+    }
+
+    .karte-container {
+        width: auto;
+        position: relative;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .middle {
+        width: auto;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .karte_page .burger-menu {
+        position: relative;
+        font-size: 14px;
+        left: 0%;
+    }
+
+    .popup-content {
+        margin: auto;
+    }
+
+
+
+
+
+
+}
+
+
+@media screen and (max-width:1200px) {
+
+    .mobile-container {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        display: block;
+        width: 50px;
+        background-color: orange;
+        height: 50px;
         color: white;
+        border-radius: 10px;
+        top: 0%;
+        right: 0%;
+    }
+
+    .hidden {
+        display: none !important;}
+
+    .banner {
+        position: relative;
+    }
+
+    .button {
+        height: fit-content;
+        width: 250px;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        background-color: rgb(255, 212, 111);
+        border: 1px solid rgb(201, 148, 0);
+        margin-left: auto;
+    }
+
+    .topbar_img {
+        display: flex;
+        position: relative;
+        right: 0px;
+        margin-left: auto;
+    }
+
+    .topbars {
+        flex-direction: column;
+        background-color: lightslategray;
+        position: fixed;
+        display: flex;
+        height: 100%;
+        top: 0%;
+        right: 0%;
+        z-index: 1000;
+    }
+
+    .topbars button {
+        float: left;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+        justify-content: center;
+        overflow-x: auto;
+    }
+
+
+    button:hover {
+        background-color: yellowgreen;
+        color: black;
+    }  
+    /*topbars/Nav-bar*/
+
+    /*footer*/
+    footer {
+        font-size: 18px;
+        width: auto; 
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .news-container .news-title {
+        height:auto;
+        padding: 10px;
+    }
+
+    .karte.title {
+        margin: auto;
+    }
+
+    .karte-container {
+        width: auto;
+        position: relative;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .middle {
+        width: auto;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .location_card {
+        width: auto;
+    }
+
+    .karte_page .burger-menu {
+        position: relative;
+        font-size: 18px;
+        left: 0%;
+    }
+
+    .popup-content {
+        margin: auto;
+    }
+
+
+    .contactus_page .container {
+        width: auto;
+        background-color: rgba(240, 248, 255, 0.422);
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        align-items: normal;
+    }
+
+    .contactus_page .box {
+        margin: 0%;
     }
 
 }

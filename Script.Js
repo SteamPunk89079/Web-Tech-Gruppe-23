@@ -3,6 +3,7 @@ const karte = document.getElementById("Karte_button");
 const aktivitaeten = document.getElementById("Aktivitaeten_button");
 const theater = document.getElementById("Theater_button");
 const kalendar = document.getElementById("Kalendar_button");
+const contact = document.getElementById("Contactus_button");
 
 
 
