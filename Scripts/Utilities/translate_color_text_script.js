@@ -36,22 +36,21 @@ document.addEventListener("DOMContentLoaded", () => {
         document.body.style.color = theme === "dark" ? "#fff" : "#000";
         document.getElementById("headline1").style.backgroundColor = theme === "dark" ? "#7A7A7A" : "#FFA500";
         document.getElementById("headline3").style.backgroundColor = theme === "dark" ? "#7A7A7A" : "#FFA500";
+        document.getElementById("robin_h2").style.background = theme === "dark" ? "#7A7A7A" : "#F8DF51";
+        
     }
 
-    // Apply font size
     const fontSize = localStorage.getItem("font-size");
     if (fontSize) {
         document.body.style.fontSize = fontSize === "large" ? "25px" : "14px";
     }
 
-    // Apply language
     const language = localStorage.getItem("language");
     if (language) {
         toggleLanguage(language);
     }
 });
 
-// Save settings to localStorage when radio buttons change
 document.querySelectorAll(".radio_button input").forEach((input) => {
     input.addEventListener("change", (event) => {
         const { name, value } = event.target;
@@ -59,7 +58,6 @@ document.querySelectorAll(".radio_button input").forEach((input) => {
     });
 });
 
-// Set saved values on page load
 document.addEventListener("DOMContentLoaded", () => {
     const settings = ["theme", "font-size", "language"];
     settings.forEach((setting) => {
