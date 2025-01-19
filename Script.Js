@@ -9,24 +9,24 @@ const contact = document.getElementById("Contactus_button");
 
 
 home.addEventListener("click", function () {
-
+   window.location.href = "../index.html";
 });
 
 karte.addEventListener("click", function () {
    window.location.href = "/pages/Karte.html";
-})
+});
 
 aktivitaeten.addEventListener("click", function () {
    window.location.href = "/pages/Aktivitäten.html";
-})
+});
 
 kalendar.addEventListener("click", function () {
    window.location.href = "/pages/Kalendar.html";
-})
+});
 
 theater.addEventListener("click", function () {
    window.location.href = "/pages/Theater.html";
-})
+});
 
 
 //---------------------------------------------

@@ -719,68 +719,82 @@ body.contactus_page {
     }
 
     .hidden {
-        display: none !important;}
+        display: none !important;
 
-    .banner {
-        position: relative;
+        .banner {
+            position: relative;
+        }
+
+        .button {
+            height: fit-content;
+            width: 250px;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            background-color: rgb(255, 212, 111);
+            border: 1px solid rgb(201, 148, 0);
+            margin-left: auto;
+        }
+
+        .topbar_img {
+            display: flex;
+            position: relative;
+            right: 0px;
+            margin-left: auto;
+        }
+
+        .topbars {
+            flex-direction: column;
+            background-color: lightslategray;
+            position: fixed;
+            display: flex;
+            height: 100%;
+            top: 0%;
+            right: 0%;
+            z-index: 1000;
+        }
+
+        .karte_page .topbars {
+            flex-direction: column;
+            background-color: lightslategray;
+            position: absolute;
+            display: flex;
+            height: 100%;
+            top: 0%;
+            right: 0%;
+            z-index: 1000;
+        }
+
+        .topbars button {
+            float: left;
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            justify-content: center;
+            overflow-x: auto;
+        }
+
+
+        button:hover {
+            background-color: yellowgreen;
+            color: black;
+        }
+
     }
 
-    .button {
-        height: fit-content;
-        width: 250px;
-        display: flex;
-        flex-direction: column;
-        border-radius: 10px;
-        background-color: rgb(255, 212, 111);
-        border: 1px solid rgb(201, 148, 0);
-        margin-left: auto;
-    }
-
-    .topbar_img {
-        display: flex;
-        position: relative;
-        right: 0px;
-        margin-left: auto;
-    }
-
-    .topbars {
-        flex-direction: column;
-        background-color: lightslategray;
-        position: fixed;
-        display: flex;
-        height: 100%;
-        top: 0%;
-        right: 0%;
-        z-index: 1000;
-    }
-
-    .topbars button {
-        float: left;
-        color: white;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        justify-content: center;
-        overflow-x: auto;
-    }
-
-
-    button:hover {
-        background-color: yellowgreen;
-        color: black;
-    } 
     /*topbars/Nav-bar*/
 
     /*footer*/
     footer {
         font-size: 16px;
-        width: auto; 
+        width: auto;
         padding-left: 50px;
         padding-right: 50px;
     }
 
     .news-container .news-title {
-        height:auto;
+        height: auto;
         padding: 10px;
     }
 
@@ -796,7 +810,7 @@ body.contactus_page {
         justify-content: center;
         align-content: center;
     }
-    
+
     .middle {
         width: auto;
         gap: 30px;
@@ -834,7 +848,8 @@ body.contactus_page {
     }
 
     .hidden {
-        display: none !important;}
+        display: none !important;
+    }
 
     .banner {
         position: relative;
@@ -883,19 +898,20 @@ body.contactus_page {
     button:hover {
         background-color: yellowgreen;
         color: black;
-    }  
+    }
+
     /*topbars/Nav-bar*/
 
     /*footer*/
     footer {
         font-size: 18px;
-        width: auto; 
+        width: auto;
         padding-left: 50px;
         padding-right: 50px;
     }
 
     .news-container .news-title {
-        height:auto;
+        height: auto;
         padding: 10px;
     }
 
@@ -911,7 +927,7 @@ body.contactus_page {
         justify-content: center;
         align-content: center;
     }
-    
+
     .middle {
         width: auto;
         gap: 30px;
@@ -952,7 +968,8 @@ body.contactus_page {
 
 @media screen and (max-width:700px) {
 
-    .event_page h1, h2 {
+    .event_page h1,
+    h2 {
         font-size: larger;
     }
 
@@ -971,7 +988,7 @@ body.contactus_page {
     #dropdown_type {
         font-size: small;
     }
-    
+
     #dropdown_location {
         font-size: small;
     }
@@ -980,5 +997,5 @@ body.contactus_page {
         width: 300px;
         font-size: 14px;
     }
-    
+
 }
