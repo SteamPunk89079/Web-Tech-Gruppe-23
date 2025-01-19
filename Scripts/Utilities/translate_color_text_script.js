@@ -1,6 +1,4 @@
-
-
-
+// Language translation function
 function toggleLanguage(language) {
     const translations = {
         english: {
@@ -28,14 +26,20 @@ function toggleLanguage(language) {
     }
 }
 
+const locationCard = document.querySelectorAll(".location_card");
+
+
+//--------------------------------------LOADER-SCRIPT--------------------------
 document.addEventListener("DOMContentLoaded", () => {
     const theme = localStorage.getItem("theme");
     if (theme) {
         document.body.style.backgroundColor = theme === "dark" ? "#333" : "rgb(255, 212, 111)";
         document.body.style.color = theme === "dark" ? "#fff" : "#000";
-        location_card.event.style.backgroundColor = theme === "dark" ? "#fff" : "#000";
-        
+        locationCard.forEach((locationCard) => {
+            locationCard.style.backgroundColor = theme === "dark" ? "#7A7A7A" : "#F8DF51";
+        })
     }
+
     const fontSize = localStorage.getItem("font-size");
     if (fontSize) {
         document.body.style.fontSize = fontSize === "large" ? "25px" : "14px";
@@ -45,13 +49,15 @@ document.addEventListener("DOMContentLoaded", () => {
         toggleLanguage(language);
     }
 });
+//--------------------------------------LOADER-SCRIPT--------------------------
+
+//--------------------------------------BUTTON-SCRIPT--------------------------
 document.querySelectorAll(".radio_button input").forEach((input) => {
     input.addEventListener("change", (event) => {
         const { name, value } = event.target;
         localStorage.setItem(name, value);
     });
 });
-
 
 document.addEventListener("DOMContentLoaded", () => {
     const settings = ["theme", "font-size", "language"];
@@ -64,9 +70,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-
 const home_button = document.getElementById("home_button");
 home_button.addEventListener('click', function() {
     localStorage.setItem('reload', 'true');
     window.history.back();
 });
+//--------------------------------------BUTTON-SCRIPT--------------------------
