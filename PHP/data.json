@@ -1,1 +1,170 @@
-[[{"type":"Konzert","location":"New Mintons","date":"2024-11-20","description":"A live jazz performance featuring renowned artists."}],[{"type":"Kneipe","location":"Irish_Pub","date":"2025-01-26","description":"An evening of live music and special craft beers."}],[{"type":"Flohmarkt","location":"Simplicissimus","date":"2024-11-22","description":"A bustling flea market with antiques and handcrafted items."}],[{"type":"Art Galerie","location":"Cubiculum","date":"2024-11-23","description":"Exhibition showcasing contemporary abstract art."}],[{"type":"Restaurant","location":"Simplicissimus","date":"2024-11-24","description":"Gourmet tasting menu by a Michelin-starred chef."}],[{"type":"Theater St\u00fcck","location":"Ziegels","date":"2024-11-25","description":"A captivating play based on a modern social drama."}],[{"type":"Film","location":"...kino","date":"2024-11-26","description":"A special screening of a critically acclaimed indie film."}],[{"type":"Workshop","location":"New Mintons","date":"2024-11-27","description":"Pottery workshop for beginners and enthusiasts."}],[{"type":"Sehensw\u00fcrdigkeit","location":"Chrome","date":"2024-11-28","description":"Guided tour of the historic castle and gardens."}],[{"type":"Sehenswurdigkeit","location":"Chrome","date":"2024-12-12","description":"dsadsdasasd"}],[{"type":"Art_Galerie","location":"Irish_Pub","date":"2024-12-27","description":"description"}],[{"type":"Art_Galerie","location":"Ziegels","date":"2024-12-14","description":"dsaadsdasdasdasdassda"}],[{"type":"Theather_Stuck","location":"Chrome","date":"2025-01-30","description":"sdfvbhdgsdfgh"}],[{"type":"Theather_Stuck","location":"option_8","date":"2025-01-28","description":"fasdafsdsd"}],[{"type":"Restaurant","location":"Ziegels","date":"2025-01-30","description":"dssabh"}],[{"type":"Restaurant","location":"Ziegels","date":"2025-01-24","description":"wasdf456"}],[{"type":"Restaurant","location":"Irish_Pub","date":"2025-01-22","description":"sdfsdfsdf"}],[{"type":"Kneipe","location":"Chrome","date":"2025-01-30","description":"asdasdasd"}],[{"type":"Art_Galerie","location":"Cubiculum","date":"2025-01-29","description":"pula"}],[{"type":"Konzert","location":"New_Mintons","date":"2025-02-02","description":"asddsasd"}]]
+[
+    [
+        {
+            "type": "Konzert",
+            "location": "New Mintons",
+            "date": "2024-11-20",
+            "description": "A live jazz performance featuring renowned artists."
+        }
+    ],
+    [
+        {
+            "type": "Kneipe",
+            "location": "Irish_Pub",
+            "date": "2025-01-26",
+            "description": "An evening of live music and special craft beers."
+        }
+    ],
+    [
+        {
+            "type": "Flohmarkt",
+            "location": "Simplicissimus",
+            "date": "2024-11-22",
+            "description": "A bustling flea market with antiques and handcrafted items."
+        }
+    ],
+    [
+        {
+            "type": "Art Galerie",
+            "location": "Cubiculum",
+            "date": "2024-11-23",
+            "description": "Exhibition showcasing contemporary abstract art."
+        }
+    ],
+    [
+        {
+            "type": "Restaurant",
+            "location": "Simplicissimus",
+            "date": "2024-11-24",
+            "description": "Gourmet tasting menu by a Michelin-starred chef."
+        }
+    ],
+    [
+        {
+            "type": "Theater St\u00fcck",
+            "location": "Ziegels",
+            "date": "2024-11-25",
+            "description": "A captivating play based on a modern social drama."
+        }
+    ],
+    [
+        {
+            "type": "Film",
+            "location": "...kino",
+            "date": "2024-11-26",
+            "description": "A special screening of a critically acclaimed indie film."
+        }
+    ],
+    [
+        {
+            "type": "Workshop",
+            "location": "New Mintons",
+            "date": "2024-11-27",
+            "description": "Pottery workshop for beginners and enthusiasts."
+        }
+    ],
+    [
+        {
+            "type": "Sehensw\u00fcrdigkeit",
+            "location": "Chrome",
+            "date": "2024-11-28",
+            "description": "Guided tour of the historic castle and gardens."
+        }
+    ],
+    [
+        {
+            "type": "Sehenswurdigkeit",
+            "location": "Chrome",
+            "date": "2024-12-12",
+            "description": "dsadsdasasd"
+        }
+    ],
+    [
+        {
+            "type": "Art_Galerie",
+            "location": "Irish_Pub",
+            "date": "2024-12-27",
+            "description": "description"
+        }
+    ],
+    [
+        {
+            "type": "Art_Galerie",
+            "location": "Ziegels",
+            "date": "2024-12-14",
+            "description": "dsaadsdasdasdasdassda"
+        }
+    ],
+    [
+        {
+            "type": "Theather_Stuck",
+            "location": "Chrome",
+            "date": "2025-01-30",
+            "description": "sdfvbhdgsdfgh"
+        }
+    ],
+    [
+        {
+            "type": "Theather_Stuck",
+            "location": "option_8",
+            "date": "2025-01-28",
+            "description": "fasdafsdsd"
+        }
+    ],
+    [
+        {
+            "type": "Restaurant",
+            "location": "Ziegels",
+            "date": "2025-01-30",
+            "description": "dssabh"
+        }
+    ],
+    [
+        {
+            "type": "Restaurant",
+            "location": "Ziegels",
+            "date": "2025-01-24",
+            "description": "wasdf456"
+        }
+    ],
+    [
+        {
+            "type": "Restaurant",
+            "location": "Irish_Pub",
+            "date": "2025-01-22",
+            "description": "sdfsdfsdf"
+        }
+    ],
+    [
+        {
+            "type": "Kneipe",
+            "location": "Chrome",
+            "date": "2025-01-30",
+            "description": "asdasdasd"
+        }
+    ],
+    [
+        {
+            "type": "Art_Galerie",
+            "location": "Cubiculum",
+            "date": "2025-01-29",
+            "description": "pula"
+        }
+    ],
+    [
+        {
+            "type": "Konzert",
+            "location": "New_Mintons",
+            "date": "2025-02-02",
+            "description": "asddsasd"
+        }
+    ],
+    [
+        {
+            "type": "Art_Galerie",
+            "location": "New_Mintons",
+            "date": "2025-02-10",
+            "description": "dedscriere"
+        }
+    ]
+]
