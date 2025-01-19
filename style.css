@@ -704,42 +704,6 @@ body.contactus_page {
 @media screen and (max-width:786px) {
 
     /*topbars/Nav-bar*/
-    body.index {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    body.aktivitaten {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    body.contactus_page {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    body.event_page {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    body.kalender {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    body.karte_page {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    body.login_page {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    body.querymaker_page {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
-    body.theater {
-        font-family: Arial, Helvetica, sans-serif;
-    }
-
     .mobile-container {
         display: block;
         cursor: pointer;
@@ -849,11 +813,6 @@ body.contactus_page {
     .popup-content {
         margin: auto;
     }
-
-
-
-
-
 
 }
 
@@ -975,6 +934,7 @@ body.contactus_page {
     }
 
 
+
     .contactus_page .container {
         width: auto;
         background-color: rgba(240, 248, 255, 0.422);
@@ -988,4 +948,37 @@ body.contactus_page {
         margin: 0%;
     }
 
+}
+
+@media screen and (max-width:700px) {
+
+    .event_page h1, h2 {
+        font-size: larger;
+    }
+
+    .event_page .burger-menu {
+        font-size: small;
+    }
+
+    .event_page label {
+        font-size: small;
+    }
+
+    .event_page select {
+        font-size: smaller;
+    }
+
+    #dropdown_type {
+        font-size: small;
+    }
+    
+    #dropdown_location {
+        font-size: small;
+    }
+
+    .event {
+        width: 300px;
+        font-size: 14px;
+    }
+    
 }
