@@ -105,16 +105,18 @@ function changeFontSize() {
 }
 
 function saveSettings(settings) {
-    fetch("../PHP/settings.json", {
+    fetch("../PHP/save_settings.php", { 
         method: "POST",
         headers: {
             "Content-Type": "application/json"
         },
-        body: JSON.stringify(settings)
+        body: JSON.stringify(settings) 
     })
     .then(response => response.json())
     .then(data => {
         console.log("Settings saved:", data);
     })
-    .catch(error => console.error("Error saving settings:", error));
+    .catch(error => {
+        console.error("Error saving settings:", error);
+    });
 }
