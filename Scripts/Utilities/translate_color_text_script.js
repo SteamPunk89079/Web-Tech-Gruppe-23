@@ -1,9 +1,13 @@
 
 
-const burgerMenu = document.querySelector('.burger-menu');
-const language_select = document.getElementById(Language);
 
+
+
+
+const burgerMenu = document.querySelector('.burger-menu');
 let TRANSLATED = false;
+let COLORS_INVERTED = false;
+let TEXT_ENLARGED = false;
 
 const translations = {
     headline1: "Don't have any plans for today?",
@@ -27,6 +31,7 @@ const translations = {
         Get inspired and experience the city in a whole new way!
     `
 };
+
 const germanText = {
     headline1: "Hast heute kein Plan was Du machen sollst?",
     headline2: "Hier bist Du richtig!",
@@ -50,44 +55,66 @@ const germanText = {
     `
 };
 
-
 burgerMenu.addEventListener('change', (event) => {
-    const selectedOption = event.target.value; 
+    const selectedOption = event.target.value;
     switch (selectedOption) {
-        case "Schriftgröße ändern": 
+        case "Schriftgröße ändern":
             changeFontSize();
             break;
-        case "Farbschema": 
-            changeColorScheme();
+        case "Farbschema":
+            toggleColorScheme();
             break;
-        case "Sprache": 
-            language_select.innerHTML = `<select class="burger-menu2">
-                <option id="german">Deutsch</option>
-                <option id="english">german</option>
-            </select>`
-            changeLanguage();
-            TRANSLATED = true;
+        case "Sprache":
+            toggleLanguage();
             break;
         default:
-            console.log("Einstellungen⚙️ selected");
+            console.log("Default selected");
     }
 });
-    
 
-function changeLanguage(){
-    if (TRANSLATED){
-        document.getElementById("headline1").textContent = germanText.headline1;
-        document.getElementById("headline2").textContent = germanText.headline2;
-        document.getElementById("paragraph1").innerHTML = germanText.paragraph1;
-        document.getElementById("headline3").textContent = germanText.headline3;
-        document.getElementById("paragraph2").innerHTML = germanText.paragraph2;
-        TRANSLATED = false;
-    }else{
-        document.getElementById("headline1").textContent = translations.headline1;
-        document.getElementById("headline2").textContent = translations.headline2;
-        document.getElementById("paragraph1").innerHTML = translations.paragraph1;
-        document.getElementById("headline3").textContent = translations.headline3;
-        document.getElementById("paragraph2").innerHTML = translations.paragraph2;
-        TRANSLATED = true;
-    }
+function toggleLanguage() {
+    TRANSLATED = !TRANSLATED; 
+    const textData = TRANSLATED ? germanText : translations;
+
+    document.getElementById("headline1").textContent = textData.headline1;
+    document.getElementById("headline2").textContent = textData.headline2;
+    document.getElementById("paragraph1").innerHTML = textData.paragraph1;
+    document.getElementById("headline3").textContent = textData.headline3;
+    document.getElementById("paragraph2").innerHTML = textData.paragraph2;
+
+}
+
+function toggleColorScheme() {
+    const newColor = COLORS_INVERTED ? "#FFC745" : "lightblue";
+    document.body.style.backgroundColor = newColor;
+    COLORS_INVERTED = !COLORS_INVERTED;
+
+    saveSettings({
+        background_color: newColor
+    });
+}
+
+function changeFontSize() {
+    const newSize = TEXT_ENLARGED ? "16px" : "30px";
+    document.body.style.fontSize = newSize;
+    TEXT_ENLARGED = !TEXT_ENLARGED;
+
+    saveSettings({
+        text_size: newSize
+    });
+}
+
+function saveSettings(settings) {
+    fetch("../PHP/settings.json", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(settings)
+    })
+    .then(response => response.json())
+    .then(data => {
+        console.log("Settings saved:", data);
+    })
+    .catch(error => console.error("Error saving settings:", error));
 }

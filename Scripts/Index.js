@@ -34,6 +34,4 @@ events.addEventListener("click", function(){
 
 
 
-
-
    

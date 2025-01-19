@@ -62,3 +62,10 @@ Php fur login page
 
 text vergrosern     
 sprache andern 
+
+--------------------------------------------------------------
+
+future possible improvements 
+    -cookie implementation for -session login
+                                 -language persistency
+                                 -colorscheme persistency
