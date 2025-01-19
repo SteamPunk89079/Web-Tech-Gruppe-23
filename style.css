@@ -1,25 +1,33 @@
 /* Aktivitaten, Theater, Kaleder , events, contact us*/
 
 /*---------topbar--stuff-------*/
-.topbars{
+.topbars {
     margin-top: 70px;
-    border:  transparent;
+    border: transparent;
     background-color: transparent;
-    position: relative; /* Ensures the image is positioned relative to this container */
+    position: relative;
+    /* Ensures the image is positioned relative to this container */
     padding: 10px;
 }
 
-.topbar:hover{background-color: cadetblue;}
+.topbar:hover {
+    background-color: cadetblue;
+}
 
-.topbars button:first-of-type{margin-left: 40px;}
+.topbars button:first-of-type {
+    margin-left: 40px;
+}
 
-.topbar_img{
+.topbar_img {
     width: 100px;
     position: relative;
-    top: 10px; /* Distance from the top of the container */
-    right: 10px; /* Distance from the right of the container */
+    top: 10px;
+    /* Distance from the top of the container */
+    right: 10px;
+    /* Distance from the right of the container */
 }
-.button{
+
+.button {
     margin-top: 10px;
     margin-bottom: -10px;
     margin-left: -10px;
@@ -33,11 +41,12 @@
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
 
-    background-color:rgb(255, 212, 111);
+    background-color: rgb(255, 212, 111);
     border: 1px solid rgb(201, 148, 0);
-    
+
     font-size: 20px;
 }
+
 /*---------topbar--stuff-------*/
 
 /*------------NAV-BAR-------------*/
@@ -45,6 +54,7 @@
     position: relative;
     width: fit-content;
     margin-right: auto;
+    margin-bottom: auto;
     border: none;
     display: block;
     font-size: 24px;
@@ -70,68 +80,92 @@
 .burger-menu option:hover {
     background-color: #00bcd4;
 }
+
 /*------------NAV-BAR-------------*/
 
 
 /*---------footer--------------*/
 footer {
-    background-color: #333;      /* Dark background color */
-    color: #f1f1f1;              /* Light text color */
-    text-align: center;          /* Center the text */
-    padding: 10px;               /* Add some padding */
-    width: auto;                 /* Full width */
-    bottom: 0;      
-    border-radius: 20px;      
+    background-color: #333;
+    /* Dark background color */
+    color: #f1f1f1;
+    /* Light text color */
+    text-align: center;
+    /* Center the text */
+    padding: 10px;
+    /* Add some padding */
+    width: auto;
+    /* Full width */
+    bottom: 0;
+    border-radius: 20px;
     margin-left: 10px;
     margin-top: 50px;
     font-size: 25px;
 }
-.links{color: lightblue;}
+
+.links {
+    color: lightblue;
+}
+
 /*---------footer--------------*/
 
 /*-------------------STARTSEITE---------------------*/
-.banner{
+.banner {
     display: flex;
     border: 2px solid black;
 }
 
-.mainpic{
+.mainpic {
     width: 70%;
     margin-left: 15%;
 }
 
-.index {background-color: rgb(255, 199, 69);}
-.index header {background-image: url("Bilder/Balkenbild.jpg");
-        background-repeat: no-repeat;
-        background-position: center;}
-.index h2 {background-color: orange;
-    font-size: 32px;}
-.index h3 {text-decoration: underline orange;
-    font-size: 28px;}
-.index p {font-size: 25px;}
+.index {
+    background-color: rgb(255, 199, 69);
+}
+
+.index header {
+    background-image: url("Bilder/Balkenbild.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.index h2 {
+    background-color: orange;
+    font-size: 32px;
+}
+
+.index h3 {
+    text-decoration: underline orange;
+    font-size: 28px;
+}
+
+.index p {
+    font-size: 25px;
+}
+
 /*-------------------STARTSEITE---------------------*/
 
 /*-------------------LOGIN PAGE-----------------------*/
-body.login_page  {
-    margin: 0;
-    height: 100vh;
+body.login_page {
     display: flex;
-    justify-content: center;
-    align-items: center;
     background-image: url("Bilder/Daemmerung\ Trier.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .login_container {
+    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-items: center;
+    margin: auto;
+    align-self: center;
     gap: 10px;
     padding: 20px;
     background: #fff;
     border: 1px solid #ccc;
-    border-radius: 10px; 
+    border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
@@ -148,22 +182,25 @@ body.login_page  {
     font-size: 16px;
     border: none;
     border-radius: 5px;
-    background-color:  rgb(255, 199, 69);
+    background-color: rgb(255, 199, 69);
     color: white;
     cursor: pointer;
 }
 
-.login_page button:hover {background-color: #0056b3;}
+.login_page button:hover {
+    background-color: #0056b3;
+}
+
 /*-------------------LOGIN PAGE-----------------------*/
 
 /*-------------------KARTEN-SEITE-------------------*/
-.karte_page{
-    background-color:rgb(255, 212, 111);    
+.karte_page {
+    background-color: rgb(255, 212, 111);
 }
 
 .left,
 .right {
-  width: 100%;
+    width: 100%;
 }
 
 .middle {
@@ -174,9 +211,9 @@ body.login_page  {
     width: 100%;
 }
 
-.location_card{
+.location_card {
     border: 2px solid black;
-    background-color:rgb(255, 199, 69);
+    background-color: rgb(255, 199, 69);
     text-align: center;
     font-size: 25px;
     border-radius: 20px;
@@ -190,18 +227,19 @@ body.login_page  {
     width: 100%;
 }
 
-.karte_title {                     
+.karte_title {
     font-size: 32px;
     text-align: center;
 }
 
-video{
+video {
     border-radius: 20px;
     border: 3px solid rgb(0, 49, 90);
     margin-top: 10px;
     margin-left: 10px;
     margin-right: 10px;
 }
+
 /*-------------------KARTEN-SEITE-------------------*/
 
 /*----------------------NEWS-BAR---------------------*/
@@ -241,7 +279,7 @@ video{
 }
 
 .news-container ul li::after {
-    content:"";
+    content: "";
     width: 1px;
     height: 100%;
     background: #b8b8b8;
@@ -258,21 +296,23 @@ video{
     from {
         transform: translateX(100%);
     }
+
     to {
         transform: translateX(-1083px);
     }
 }
+
 /*----------------------NEWS-BAR---------------------*/
 
 /*---------------POPUP-------------------------*/
 .popup-overlay {
-    display: none; 
+    display: none;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1000;
 }
 
@@ -309,14 +349,15 @@ video{
 .close-button:hover {
     background-color: #ff3b3b;
 }
+
 /*---------------POPUP-------------------------*/
 
 /*------------individuelle Standorte----------------*/
-.individuelle_location{
+.individuelle_location {
     background-color: violet;
 }
 
-.location_row{
+.location_row {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -325,17 +366,30 @@ video{
 .location_card:hover h2 {
     color: rgba(190, 23, 23, 0.656);
 }
+
 /*------------individuelle Standorte----------------*/
 
 /*------------Aktivitäten Seite----------------*/
-body.aktivitaten {background-image: url("Bilder/Trier-Stadt.jpg");
+body.aktivitaten {
+    background-image: url("Bilder/Trier-Stadt.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;}
-.aktivitaten article {background-color: rgba(245, 245, 245, 0.536);}
-.aktivitaten h2 {text-decoration: underline black;
-    font-size: 32px;}
-.aktivitaten li {font-size: 28px;}
+    background-size: cover;
+}
+
+.aktivitaten article {
+    background-color: rgba(245, 245, 245, 0.536);
+}
+
+.aktivitaten h2 {
+    text-decoration: underline black;
+    font-size: 32px;
+}
+
+.aktivitaten li {
+    font-size: 28px;
+}
+
 /*------------Aktivitäten Seite----------------*/
 
 /*-------------------THEATER----------------------*/
@@ -350,7 +404,7 @@ body.aktivitaten {background-image: url("Bilder/Trier-Stadt.jpg");
     font-size: 20px;
 }
 
-body.theater  {
+body.theater {
     background-image: url("Bilder/Theaterbackground.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -364,14 +418,14 @@ body.theater  {
     margin: auto;
     text-align: center;
 }
-  
+
 .content-box {
     display: flex;
     align-items: center;
     gap: 10px;
     color: white;
 }
-  
+
 .content-container {
     margin: auto;
     width: 500px;
@@ -384,35 +438,44 @@ body.theater  {
     width: 100%;
     height: 100%;
     display: flex;
-    flex-direction: column; /* Elemente untereinander anordnen */
+    flex-direction: column;
+    /* Elemente untereinander anordnen */
     justify-content: center;
-    align-items: center; /* Zentriert Überschrift, Bild und Text */
+    align-items: center;
+    /* Zentriert Überschrift, Bild und Text */
     font-size: 20px;
     color: black;
     background-color: white;
     position: absolute;
     top: 0;
     left: 0;
-    gap: 10px; /* Abstand zwischen Überschrift, Bild und Text */
-    transition: opacity 0.5s ease; /* Sanfte Ein-/Ausblendung */
+    gap: 10px;
+    /* Abstand zwischen Überschrift, Bild und Text */
+    transition: opacity 0.5s ease;
+    /* Sanfte Ein-/Ausblendung */
     border-radius: 50px;
-  }
-  
-.content h2 {margin: 0;}
-  
+}
+
+.content h2 {
+    margin: 0;
+}
+
 .content img {
     max-width: 80%;
-    height: auto; /* Bild wird responsiv */
-    border-radius: 8px; /* Optional, für abgerundete Kanten */
-  }
-  
+    height: auto;
+    /* Bild wird responsiv */
+    border-radius: 8px;
+    /* Optional, für abgerundete Kanten */
+}
+
 .content p {
     color: black;
-    text-align: center; /* Text zentrieren */
+    text-align: center;
+    /* Text zentrieren */
     font-size: 25px;
     line-height: 1.5;
-  }
-  
+}
+
 .theater .arrow {
     margin: auto;
     font-size: 30px;
@@ -423,27 +486,33 @@ body.theater  {
     color: black;
     border-radius: 5px;
 }
-  
-.theater .arrow:hover {background-color: orange;}
+
+.theater .arrow:hover {
+    background-color: orange;
+}
+
 /*-------------------THEATER----------------------*/
 
 /*-------------------CALENDAR-----------------------*/
-#month_text{
+#month_text {
     width: 285px;
     margin-bottom: 20px;
 }
+
 .calendar {
     font-family: Arial, sans-serif;
     padding: 20px;
     border: 1px solid #ccc;
-    width: 300px; 
+    width: 300px;
     margin: auto;
 }
+
 #kalendar {
     display: grid;
-    grid-template-columns: repeat(7, 1fr); 
+    grid-template-columns: repeat(7, 1fr);
     gap: 5px;
 }
+
 .calendar p {
     margin: 0;
     padding: 10px;
@@ -452,19 +521,21 @@ body.theater  {
     border: 1px solid #ddd;
     border-radius: 4px;
 }
+
 .calendar p {
     background-color: rgb(255, 199, 69);
 }
 
-#kalendar p:hover{
+#kalendar p:hover {
     background-color: rgb(190, 190, 190);
     cursor: pointer;
 }
-.month_bar{
-    display: flex; 
+
+.month_bar {
+    display: flex;
 }
 
-.month_selector{
+.month_selector {
     width: 40px;
     height: 40px;
     border-radius: 5px;
@@ -474,7 +545,7 @@ body.theater  {
     border: 1px solid #ddd;
 }
 
-.month_selector:hover{
+.month_selector:hover {
     background-color: rgb(190, 190, 190);
     cursor: pointer;
 }
@@ -484,70 +555,94 @@ body.kalender {
 }
 
 .circle-paragraph::after {
-    content: ""; /* No text, just the circle */
+    content: "";
+    /* No text, just the circle */
     display: block;
-    width: 6px; /* Diameter of the circle */
+    width: 6px;
+    /* Diameter of the circle */
     height: 6px;
-    background-color: red; /* Circle color */
-    border-radius: 50%; /* Makes it a circle */
-    margin: 5px auto 0; /* Centers the circle horizontally */
+    background-color: red;
+    /* Circle color */
+    border-radius: 50%;
+    /* Makes it a circle */
+    margin: 5px auto 0;
+    /* Centers the circle horizontally */
 }
+
 /*-------------------CALENDAR-----------------------*/
 
 /*--------------------EVENTS PAGE--------------------*/
-.event{
+.event {
     border: 2px solid black;
-    background-color:  rgb(255, 199, 69);
+    background-color: rgb(255, 199, 69);
     text-align: center;
     border-radius: 20px;
     width: 550px;
 }
-#card{
+
+#card {
     display: flex;
 
-        flex-direction: column; /* Stack the items vertically */
-        align-items: center;    /* Center horizontally */
-        justify-content: center; /* Center vertically */
-        margin-top: 20px;
+    flex-direction: column;
+    /* Stack the items vertically */
+    align-items: center;
+    /* Center horizontally */
+    justify-content: center;
+    /* Center vertically */
+    margin-top: 20px;
 }
 
-#dropdown_type{font-size: 20px;}
+#dropdown_type {
+    font-size: 20px;
+}
 
-#dropdown_location{font-size: 20px;}
+#dropdown_location {
+    font-size: 20px;
+}
 
 body.event_page {
     background-color: rgb(255, 212, 111);
     font-size: 25px;
 }
+
 /*--------------------EVENTS PAGE--------------------*/
 
 /*--------------------QUERY-MAKER-STYLES--------------------*/
-.querymaker_page .container{
+.querymaker_page .container {
     border: 2px solid black;
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    gap: 10px; 
+    align-items: center;
+    gap: 10px;
 }
 
-.querymaker_page .event_description{
+.querymaker_page .event_description {
     width: 400px;
     height: 400px;
-    padding: 5px; 
-    text-align: left; 
-    vertical-align: top; 
+    padding: 5px;
+    text-align: left;
+    vertical-align: top;
     resize: none;
-    font-family: Arial, sans-serif; 
+    font-family: Arial, sans-serif;
     font-size: 25px;
 }
 
-.querymaker_page label{font-size: 25px;}
+.querymaker_page label {
+    font-size: 25px;
+}
 
-.querymaker_page select{font-size: 25px;}
+.querymaker_page select {
+    font-size: 25px;
+}
 
-.querymaker_page input{font-size: 25px;}
+.querymaker_page input {
+    font-size: 25px;
+}
 
-.querymaker_page button{font-size: 25px;}
+.querymaker_page button {
+    font-size: 25px;
+}
+
 /*--------------------QUERY-MAKER-STYLES--------------------*/
 
 /*----------------------CONTACT US----------------------*/
@@ -568,9 +663,11 @@ body.contactus_page {
     margin-bottom: 10px;
 }
 
-.contactus_page h3 {text-align: center;}
+.contactus_page h3 {
+    text-align: center;
+}
 
-.contactus_page h4{
+.contactus_page h4 {
     width: auto;
     background-color: rgb(255, 212, 111);
     text-align: center;
@@ -600,7 +697,68 @@ body.contactus_page {
     background-color: rgba(255, 255, 255, 0.666);
     font-size: 24px;
 }
+
 /*----------------------CONTACT US----------------------*/
 
 /*----------RESPONSIVE DESIGN---------------*/
-/*@media screen and (max-width:540px) 
+@media screen and (max-width:540px) {
+
+
+    body.index {
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .mobile-container {
+        display: block;
+        border: none;
+        cursor: pointer;
+        position: relative;
+    }
+
+    .kasten {
+        position: relative;
+        display: block;
+        width: 50px;
+        margin-left: auto;
+        background-color: orange;
+        height: 50px;
+        color: white;
+        border-radius: 10px;
+    }
+
+.hidden {
+    display: none !important;
+    }
+
+
+    .topbars {
+        overflow: hidden;
+        background-color: transparent;
+        position: relative;
+        max-width: 300px;
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .topbars button {
+        float: left;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+        justify-content: center;
+        overflow-x: auto;
+    }
+
+
+    .topbars button:hover {
+        background-color: #ddd;
+        color: black;
+    }
+
+    #Home_button {
+        background-color: #04AA6D;
+        color: white;
+    }
+
+}
