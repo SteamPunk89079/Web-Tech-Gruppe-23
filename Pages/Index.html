@@ -1,145 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Homepage</title>
-    
-    <link rel="stylesheet" href="../Styles/index_style.css">
-    <link rel="stylesheet" href="../Styles/topbar.css">
-    <link rel="stylesheet" href="../Styles/footer.css">
-
-
-    <script src="../Scripts/Utilities/navigation_script.js"></script>
-
-
-</head>
-
-
-
-
-
-<body class="index">
-
-
-
-
-
-
-
-<!-----------------------------TOPBAR------------------------------------>
-    <header class="banner" >
-        <div class="topbars">
-            <button id="Home_button" class="button" style="background-color: cadetblue;">Home</button>
-            <button id="Aktivitaeten_button" class="button">Aktivitäten</button>
-            <button id="Theater_button" class="button">Theater</button>
-            <button id="Hobbies_button" class="button">Hobbies</button>
-            <button id="Karte_button" class="button">Karte</button>
-            <button id="Kalendar_button" class="button">Kalendar</button>
-            <button id="Events_button" class="button">Events</button>
-            <img class="topbar_img" src="../Bilder/trier-logo.jpg" style="text-align: right;">
-        </div>
-    </header>
-<!-----------------------------TOPBAR------------------------------------>
-
-
-
-
-
-
-
-
-
-
-<!---                        BURGER MENU
-
-
-    <div style="display: flex; align-items: center;">
-        <select class="burger-menu">
-            <option class="option1">Einstellungen⚙️</option>
-            <option id="Schriftgröße" class="burger_button">Schriftgröße ändern</option>
-            <option id="Farbschema" class="burger_button">Farbschema</option>
-            <option id="Language" class="burger_button">Sprache</option>
-        </select>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Homepage</title>
         
-    </div>
+        <script>
+            window.addEventListener('pageshow', (event) => {
+            if (event.persisted) { 
+            window.location.reload(); 
+            }
+        });
+        </script>
 
-    
--->
+        <link rel="stylesheet" href="../Styles/index_style.css">
+        <link rel="stylesheet" href="../Styles/topbar.css">
+        <link rel="stylesheet" href="../Styles/footer.css">
 
+        
 
-
-
-
-
-<!-----------------------------MAINSCREEN------------------------------------>
-
-    <figure class="mainscreen">
-            <img src="/Bilder/Trier-Stadt.jpg" class="mainpic" alt="mainpic">
-    </figure>
-
-    
-    <h2 id="headline1">Hast heute kein Plan was Du machen sollst?</h2>
-    
-    <h3 id="headline2">Hier bist Du richtig!</h3>
-    
-    <p id="paragraph1">Kennst du das Gefühl, den ganzen Tag mit dem Handy zu verbringen, ohne wirklich zu wissen, was du tun sollst?<br>
-        Vielleicht hast du dir vorgenommen, etwas zu unternehmen, aber am Ende des Tages fühlst du dich irgendwie unzufrieden, 
-        weil nichts passiert ist.<br>
-        Das muss nicht sein! Hier auf unserer Webseite findest du alles, was du brauchst, 
-        um deinen Tag sinnvoll zu gestalten – sei es ein spannendes Event, coole Orte oder
-        neue Ideen, um Trier zu entdecken.<br>
-        Lass dich inspirieren und hol das Beste aus deinem Tag heraus – du bist hier genau richtig,
-         um etwas Großartiges zu erleben! &hearts;
-    </p>
-    
-    <h2 id="headline3">Trier, die älteste Stadt</h2>
-    
-    <p id="paragraph2">Trier, die älteste Stadt Deutschlands, hat so viel mehr zu bieten, als man auf den ersten Blick denkt! Zwischen römischen Ruinen, charmanten Altstadtgassen und 
-        beeindruckenden historischen Stätten steckt eine lebendige Kultur und eine Vielzahl von Veranstaltungen, die darauf warten, von dir entdeckt zu werden. Ob du in einem der 
-        gemütlichen Cafés un Restaurants den Tag beginnst, ein Konzert im Amphitheater besuchst oder einfach durch die Straßen schlenderst – Trier bietet dir zahlreiche Möglichkeiten,
-        deinen Tag spannend und abwechslungsreich zu gestalten. Und das Beste: Auf dieser Seite findest du alle Events und coolen Orte, die Trier zu bieten hat. Lass dich 
-        inspirieren und erlebe die Stadt auf eine ganz neue Weise!
-    </p>
+        <script src="../Scripts/Utilities/navigation_script.js"></script>
 
 
-<!-----------------------------MAINSCREEN------------------------------------>
+    </head>
 
 
 
 
 
-<!-----------------------------FOOTER------------------------------------>
+    <body class="index">
 
-    <footer>
-        <p>&copy; 2025 Gruppe-23. All rights reserved.</p>
-        <nav>
-            <a href="../Pages/Settings.html">Einstellungen</a> |
-            <a href="../Pages/ContactUs.html">Contact Us</a> |
-            <a href="../Pages/Login.html">Login</a>
-            <nav style="margin-top: 15px;">
-            <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                <img style="border:0;width:88px;height:31px"
-                    src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
-                    alt="Valid CSS!" />
-            </a>
-            <a href="http://jigsaw.w3.org/css-validator/check/referer">
-                <img style="border:0;width:88px;height:31px"
-                    src="http://jigsaw.w3.org/css-validator/images/vcss"
-                    alt="Valid CSS!" />
-            </a>
+
+
+
+
+
+
+    <!-----------------------------TOPBAR------------------------------------>
+        <header class="banner" >
+            <div class="topbars">
+                <button id="Home_button" class="button" style="background-color: cadetblue;">Home</button>
+                <button id="Aktivitaeten_button" class="button">Aktivitäten</button>
+                <button id="Theater_button" class="button">Theater</button>
+                <button id="Hobbies_button" class="button">Hobbies</button>
+                <button id="Karte_button" class="button">Karte</button>
+                <button id="Kalendar_button" class="button">Kalendar</button>
+                <button id="Events_button" class="button">Events</button>
+                <img class="topbar_img" src="../Bilder/trier-logo.jpg" style="text-align: right;">
+            </div>
+        </header>
+    <!-----------------------------TOPBAR------------------------------------>
+
+
+    <!-----------------------------MAINSCREEN------------------------------------>
+
+        <figure class="mainscreen">
+                <img src="/Bilder/Trier-Stadt.jpg" class="mainpic" alt="mainpic">
+        </figure>
+
+        
+        <h2 id="headline1">Hast heute kein Plan was Du machen sollst?</h2>
+        
+        <h3 id="headline2">Hier bist Du richtig!</h3>
+        
+        <p id="paragraph1">Kennst du das Gefühl, den ganzen Tag mit dem Handy zu verbringen, ohne wirklich zu wissen, was du tun sollst?<br>
+            Vielleicht hast du dir vorgenommen, etwas zu unternehmen, aber am Ende des Tages fühlst du dich irgendwie unzufrieden, 
+            weil nichts passiert ist.<br>
+            Das muss nicht sein! Hier auf unserer Webseite findest du alles, was du brauchst, 
+            um deinen Tag sinnvoll zu gestalten – sei es ein spannendes Event, coole Orte oder
+            neue Ideen, um Trier zu entdecken.<br>
+            Lass dich inspirieren und hol das Beste aus deinem Tag heraus – du bist hier genau richtig,
+            um etwas Großartiges zu erleben! &hearts;
+        </p>
+        
+        <h2 id="headline3">Trier, die älteste Stadt</h2>
+        
+        <p id="paragraph2">Trier, die älteste Stadt Deutschlands, hat so viel mehr zu bieten, als man auf den ersten Blick denkt! Zwischen römischen Ruinen, charmanten Altstadtgassen und 
+            beeindruckenden historischen Stätten steckt eine lebendige Kultur und eine Vielzahl von Veranstaltungen, die darauf warten, von dir entdeckt zu werden. Ob du in einem der 
+            gemütlichen Cafés un Restaurants den Tag beginnst, ein Konzert im Amphitheater besuchst oder einfach durch die Straßen schlenderst – Trier bietet dir zahlreiche Möglichkeiten,
+            deinen Tag spannend und abwechslungsreich zu gestalten. Und das Beste: Auf dieser Seite findest du alle Events und coolen Orte, die Trier zu bieten hat. Lass dich 
+            inspirieren und erlebe die Stadt auf eine ganz neue Weise!
+        </p>
+
+
+    <!-----------------------------MAINSCREEN------------------------------------>
+
+
+    <!-----------------------------FOOTER------------------------------------>
+
+        <footer>
+            <p>&copy; 2025 Gruppe-23. All rights reserved.</p>
+            <nav>
+                <a href="../Pages/Settings.html">Einstellungen</a> |
+                <a href="../Pages/ContactUs.html">Contact Us</a> |
+                <a href="../Pages/Login.html">Login</a>
+                <nav style="margin-top: 15px;">
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss-blue"
+                        alt="Valid CSS!" />
+                </a>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss"
+                        alt="Valid CSS!" />
+                </a>
+                </nav>
             </nav>
-        </nav>
-    </footer>
+        </footer>
 
 
-<!-----------------------------FOOTER------------------------------------>
+    <!-----------------------------FOOTER------------------------------------>
 
 
 
 
-    <script src="../Scripts/Index.Js"></script>
-    <script src="../Scripts/Utilities/translate_color_text_script.js"></script>
+        <script src="../Scripts/Index.Js"></script>
+        <script src="../Scripts/Utilities/translate_color_text_script.js"></script>
 
-</body>
+    </body>
 </html>

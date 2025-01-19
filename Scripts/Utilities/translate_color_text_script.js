@@ -1,4 +1,6 @@
-// Language translation function
+
+
+
 function toggleLanguage(language) {
     const translations = {
         english: {
@@ -16,7 +18,6 @@ function toggleLanguage(language) {
             paragraph2: "Trier, die älteste Stadt Deutschlands, hat so viel mehr zu bieten, als man auf den ersten Blick denkt! Zwischen römischen Ruinen, charmanten Altstadtgassen und beeindruckenden historischen Stätten steckt eine lebendige Kultur und eine Vielzahl von Veranstaltungen, die darauf warten, von dir entdeckt zu werden. Ob du in einem der gemütlichen Cafés un Restaurants den Tag beginnst, ein Konzert im Amphitheater besuchst oder einfach durch die Straßen schlenderst – Trier bietet dir zahlreiche Möglichkeiten, deinen Tag spannend und abwechslungsreich zu gestalten. Und das Beste: Auf dieser Seite findest du alle Events und coolen Orte, die Trier zu bieten hat. Lass dich inspirieren und erlebe die Stadt auf eine ganz neue Weise!",
         },
     };
-
     const content = translations[language];
     if (content) {
         document.getElementById("headline1").textContent = content.headline1;
@@ -27,31 +28,23 @@ function toggleLanguage(language) {
     }
 }
 
-// Load settings from localStorage
 document.addEventListener("DOMContentLoaded", () => {
-    // Apply theme
     const theme = localStorage.getItem("theme");
     if (theme) {
         document.body.style.backgroundColor = theme === "dark" ? "#333" : "rgb(255, 212, 111)";
         document.body.style.color = theme === "dark" ? "#fff" : "#000";
-        document.getElementById("headline1").style.backgroundColor = theme === "dark" ? "#7A7A7A" : "#FFA500";
-        document.getElementById("headline3").style.backgroundColor = theme === "dark" ? "#7A7A7A" : "#FFA500";
+        location_card.event.style.backgroundColor = theme === "dark" ? "#fff" : "#000";
+        
     }
-
-    // Apply font size
     const fontSize = localStorage.getItem("font-size");
     if (fontSize) {
         document.body.style.fontSize = fontSize === "large" ? "25px" : "14px";
     }
-
-    // Apply language
     const language = localStorage.getItem("language");
     if (language) {
         toggleLanguage(language);
     }
 });
-
-// Save settings to localStorage when radio buttons change
 document.querySelectorAll(".radio_button input").forEach((input) => {
     input.addEventListener("change", (event) => {
         const { name, value } = event.target;
@@ -59,7 +52,7 @@ document.querySelectorAll(".radio_button input").forEach((input) => {
     });
 });
 
-// Set saved values on page load
+
 document.addEventListener("DOMContentLoaded", () => {
     const settings = ["theme", "font-size", "language"];
     settings.forEach((setting) => {
@@ -71,8 +64,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// Back button functionality
+
 const home_button = document.getElementById("home_button");
 home_button.addEventListener('click', function() {
+    localStorage.setItem('reload', 'true');
     window.history.back();
 });
