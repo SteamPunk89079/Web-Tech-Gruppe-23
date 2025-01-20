@@ -84,7 +84,7 @@
             "type": "Art_Galerie",
             "location": "Irish_Pub",
             "date": "2024-12-27",
-            "description": "description"
+            "description": "An unconventional gallery showcasing pub-inspired artworks."
         }
     ],
     [
@@ -92,7 +92,7 @@
             "type": "Art_Galerie",
             "location": "Ziegels",
             "date": "2024-12-14",
-            "description": "dsaadsdasdasdasdassda"
+            "description": "A special collection of modern sculptures and paintings."
         }
     ],
     [
@@ -100,15 +100,7 @@
             "type": "Theather_Stuck",
             "location": "Chrome",
             "date": "2025-01-30",
-            "description": "sdfvbhdgsdfgh"
-        }
-    ],
-    [
-        {
-            "type": "Theather_Stuck",
-            "location": "option_8",
-            "date": "2025-01-28",
-            "description": "fasdafsdsd"
+            "description": "A gripping performance of a classic tale with a modern twist."
         }
     ],
     [
@@ -116,7 +108,7 @@
             "type": "Restaurant",
             "location": "Ziegels",
             "date": "2025-01-30",
-            "description": "dssabh"
+            "description": "Indulge in a chef-curated seasonal menu with wine pairings."
         }
     ],
     [
@@ -124,7 +116,7 @@
             "type": "Restaurant",
             "location": "Ziegels",
             "date": "2025-01-24",
-            "description": "wasdf456"
+            "description": "A night of culinary excellence featuring locally sourced ingredients."
         }
     ],
     [
@@ -132,7 +124,7 @@
             "type": "Restaurant",
             "location": "Irish_Pub",
             "date": "2025-01-22",
-            "description": "sdfsdfsdf"
+            "description": "Enjoy a hearty traditional Irish meal with live music."
         }
     ],
     [
@@ -140,7 +132,7 @@
             "type": "Kneipe",
             "location": "Chrome",
             "date": "2025-01-30",
-            "description": "asdasdasd"
+            "description": "A lively pub night with drinks, games, and good company."
         }
     ],
     [
@@ -148,7 +140,7 @@
             "type": "Art_Galerie",
             "location": "Cubiculum",
             "date": "2025-01-29",
-            "description": "pula"
+            "description": "Experience an eclectic mix of avant-garde and minimalist art."
         }
     ],
     [
@@ -156,7 +148,7 @@
             "type": "Konzert",
             "location": "New_Mintons",
             "date": "2025-02-02",
-            "description": "asddsasd"
+            "description": "A high-energy concert by a popular indie rock band."
         }
     ],
     [
@@ -164,7 +156,7 @@
             "type": "Art_Galerie",
             "location": "New_Mintons",
             "date": "2025-02-10",
-            "description": "dedscriere"
+            "description": "A captivating exhibit exploring the interplay of light and shadow in art."
         }
     ]
 ]

@@ -28,6 +28,7 @@ function toggleLanguage(language) {
 }
 
 const locationCard = document.querySelectorAll(".location_card");
+const eventCards = document.querySelectorAll(".card");
 
 
 //--------------------------------------LOADER-SCRIPT--------------------------
@@ -36,20 +37,46 @@ document.addEventListener("DOMContentLoaded", () => {
     if (theme) {
         document.body.style.backgroundColor = theme === "dark" ? "#333" : "rgb(255, 212, 111)";
         document.body.style.color = theme === "dark" ? "#fff" : "#000";
+        
+        //---------------------------KARTE-PAGE-----------------------------------
         locationCard.forEach((locationCard) => {
             locationCard.style.backgroundColor = theme === "dark" ? "#7A7A7A" : "#F8DF51";
-        })
+        });
+        //---------------------------KARTE-PAGE-----------------------------------
+        //---------------------------EVENTS-PAGE-----------------------------------
+        eventCards.forEach((eventCard) => {
+            eventCard.style.backgroundColor = theme ===  "dark" ? "#7A7A7A" : "#F8DF51";
+        });
+        const dynamicCardContainer = document.getElementById("card");
+        if (dynamicCardContainer) {
+            const events = dynamicCardContainer.querySelectorAll(".event");
+            events.forEach((event) => {
+                event.style.backgroundColor = theme === "dark" ? "#7A7A7A" : "#F8DF51";
+                event.style.color = theme === "dark" ? "#000000" : "#F8DF51";
+            });
+        }
+        //---------------------------EVENTS-PAGE-----------------------------------
+
     }
 
     const fontSize = localStorage.getItem("font-size");
     if (fontSize) {
-        document.body.style.fontSize = fontSize === "large" ? "30px" : "10px";
+        applyFontSize(fontSize);
     }
     const language = localStorage.getItem("language");
     if (language) {
         toggleLanguage(language);
     }
 });
+
+function applyFontSize(size) {
+    const fontSize = size === "large" ? "30px" : "15px"; 
+    document.body.style.fontSize = fontSize;
+    const elements = document.querySelectorAll("*:not(.topbars):not(.topbars *)"); 
+    elements.forEach((el) => {
+        el.style.fontSize = fontSize; 
+    });
+}
 //--------------------------------------LOADER-SCRIPT--------------------------
 
 //--------------------------------------BUTTON-SCRIPT--------------------------
