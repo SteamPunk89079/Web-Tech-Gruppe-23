@@ -519,40 +519,27 @@ body.kalendar{
     font-size: 18px;
 }
 /*-------------------UPCOMING-EVENTS----------------------*/
-
-/*--------RESPONSIVE DESIGN*/
+/*-------------------RESPONSIVE-DESIGN---------------------*/
 @media screen and (max-width:786px) {
-
     body.index h2 {font-size: larger;}
     body.index h3 {font-size: large;}
     body.index p {font-size: medium;}
-
     body.aktivitaten_page h2 {font-size: larger;}
     body.aktivitaten_page ul {font-size: large;}
-
     body.theater_page h1 {font-size: large;}
     body.theater_page p {font-size: large;}
-
     .events_page .event {
         width: 60%;
         align-items: center;
     }
-
-
     .contactus_page h4 {
         font-size: medium;
     }
-
     .contactus_page h6 {
         font-size: medium;
     }
-
-
 }
-
 @media screen and (max-width:940px) {
-
-    
     .kalendar .container {
         display: flex;
         flex-direction: column;
@@ -560,39 +547,27 @@ body.kalendar{
         width: fit-content;
         align-items: center;
     }
-
     .kalendar .upcoming_container {
         margin-right: 0%;
     }
-
     .kalendar .calendar {
         margin-left: 0%;
     }
-
     .kalender .mobile-container {
         position: fixed;
         right: 0%;
         top: 0%;
         z-index: 1000;
     }
-
-
 }
-
-
-
-
 @media screen and (max-width:1200px) {
-
     .news-container .news-title {
         height: auto;
         padding: 10px;
     }
-
     .karte.title {
         margin: auto;
     }
-
     .karte-container {
         width: auto;
         position: relative;
@@ -601,24 +576,18 @@ body.kalendar{
         justify-content: center;
         align-content: center;
     }
-
     .middle {
         width: auto;
         gap: 30px;
         display: flex;
         flex-direction: column;
     }
-
     .location_card {
         width: auto;
     }
-
-
     .popup-content {
         margin: auto;
     }
-
-
     .contactus_page .container {
         width: auto;
         background-color: rgba(240, 248, 255, 0.422);
@@ -627,11 +596,9 @@ body.kalendar{
         border-radius: 20px;
         align-items: normal;
     }
-
     .contactus_page .box {
         margin: 0%;
     }
-
     .hobbies_page .mobile-container {
         background-color: darkgoldenrod;
         border-color: darkorange;
@@ -640,26 +607,21 @@ body.kalendar{
         right: 0%;
         z-index: 1000;
     }
-
     .query_maker .container{
         width: auto;
     }
-    
     .query_maker .event_description {
         width: auto;
     }
-
     #date_selector {
         font-size: medium;
     }
-
     #save_event_button {
         font-size: medium;
     }
-
     .hobbies_page article {
         width: fit-content;
         position: relative;
     }
-
 }
+/*-------------------RESPONSIVE-DESIGN---------------------*/

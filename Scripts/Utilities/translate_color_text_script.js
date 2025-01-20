@@ -29,6 +29,8 @@ function toggleLanguage(language) {
 
 const locationCard = document.querySelectorAll(".location_card");
 const eventCards = document.querySelectorAll(".card");
+const headline1 = document.getElementById("headline1");
+const headline2 = document.getElementById("headline3");
 
 
 //--------------------------------------LOADER-SCRIPT--------------------------
@@ -37,7 +39,8 @@ document.addEventListener("DOMContentLoaded", () => {
     if (theme) {
         document.body.style.backgroundColor = theme === "dark" ? "#333" : "rgb(255, 212, 111)";
         document.body.style.color = theme === "dark" ? "#fff" : "#000";
-        
+        headline1.style.backgroundColor = theme === "dark" ? "rgb(117, 117, 117)" : "rgb(255, 165, 0)";
+        headline2.style.backgroundColor = theme === "dark" ? "rgb(117, 117, 117)" : "rgb(255, 165, 0)";
         //---------------------------KARTE-PAGE-----------------------------------
         locationCard.forEach((locationCard) => {
             locationCard.style.backgroundColor = theme === "dark" ? "#7A7A7A" : "#F8DF51";
@@ -56,9 +59,7 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         }
         //---------------------------EVENTS-PAGE-----------------------------------
-
     }
-
     const fontSize = localStorage.getItem("font-size");
     if (fontSize) {
         applyFontSize(fontSize);
@@ -68,7 +69,6 @@ document.addEventListener("DOMContentLoaded", () => {
         toggleLanguage(language);
     }
 });
-
 function applyFontSize(size) {
     const fontSize = size === "large" ? "30px" : "15px"; 
     document.body.style.fontSize = fontSize;
@@ -78,7 +78,6 @@ function applyFontSize(size) {
     });
 }
 //--------------------------------------LOADER-SCRIPT--------------------------
-
 //--------------------------------------BUTTON-SCRIPT--------------------------
 document.querySelectorAll(".radio_button input").forEach((input) => {
     input.addEventListener("change", (event) => {

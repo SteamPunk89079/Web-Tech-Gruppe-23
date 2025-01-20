@@ -12,7 +12,6 @@ const events = document.getElementById("Events_button");
 const hobbies = document.getElementById("Hobbies_button");
 const theater = document.getElementById("Theater_button");
 
-
 home.addEventListener("click", function(){
    window.location.href = "/pages/Index.html";
 });
@@ -34,11 +33,7 @@ hobbies.addEventListener("click", function(){
 theater.addEventListener("click", function(){
    window.location.href = "/pages/Theater.html";
 });
-
-
 //-------------------------------TOPBAR-BUTTONS------------------------------------
-
-
 //-------------------------------KARTE---PAGE------------------
 const cards = document.querySelectorAll(".location_card");
     cards.forEach(card => {
@@ -57,9 +52,6 @@ const cards = document.querySelectorAll(".location_card");
         });
     });
 //-------------------------------KARTE---PAGE------------------
-
-
-
 //------------------------------POPUP-SKRIPT------------------------------------------
 setTimeout(() => {
     document.getElementById('popup').style.display = 'block';
