@@ -337,8 +337,8 @@ button:hover {
 /*------------------CONTACT-US--------------------------*/
 body.contactus_page {
     background-image: url("/Bilder/HS_Trier.jpg");
-    background-attachment: local;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     font-size: 20px;
     text-align: center;
 }
