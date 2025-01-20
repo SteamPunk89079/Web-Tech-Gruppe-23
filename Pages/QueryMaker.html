@@ -12,12 +12,11 @@
 <body class="query_maker">
     
         
-    <section class="container">
+    <main class="container">
         
         
         <label for="dropdown_type">Veranstaltungs Art:</label>
         <select id="dropdown_type">
-            <option value="option_0"></option>
             <option value="Konzert">Konzert</option>
             <option value="Kneipe">Kneipe</option>
             <option value="Theather_Stuck">Theather Stuck</option>
@@ -31,7 +30,6 @@
 
         <label for="dropdown_location">Standort:</label>
         <select id="dropdown_location">
-            <option value="option_0"></option>
             <option value="New_Mintons">New Mintons</option>
             <option value="Chrome">Chrome</option>
             <option value="Ziegels">Ziegels</option>
@@ -45,14 +43,14 @@
         
 
     
-    <textarea id="description_area" type="text" placeholder="event description" class="event_description" style="text-align: center;"></textarea>
+    <textarea id="description_area" class="event_description" style="text-align: center;"></textarea>
         
-        <input type="date" placeholder="event date" id="date_selector"> 
+        <input type="date" id="date_selector"> 
 
         <button id="save_event_button">SAVE EVENT</button>
 
         <p id="test"></p>
-    </section>
+    </main>
 
 
 
