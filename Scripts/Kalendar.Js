@@ -6,7 +6,6 @@ const events = document.getElementById("Events_button");
 const hobbies = document.getElementById("Hobbies_button");
 const theater = document.getElementById("Theater_button");
 
-
 home.addEventListener("click", function(){
    window.location.href = "/pages/Index.html";
 });
@@ -62,7 +61,7 @@ month_after.addEventListener('click', function () {
 updateCalendar();
 upcoming_events();
 //------------------------------MAIN---------------------------------------
-/*-------------------CALENDAR-----------------------*/
+/*-------------------------------CALENDAR--------------------------------*/
 async function updateCalendar() {
     const days_in_month = get_days_in_month(today.getFullYear(), actual_month);
     const month_name = new Date(today.getFullYear(), actual_month, 1).toLocaleString('de-DE', { month: 'long' });

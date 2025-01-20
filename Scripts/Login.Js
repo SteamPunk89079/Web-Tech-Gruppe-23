@@ -1,8 +1,8 @@
 
 
+
+
 const label = document.getElementById("status_message");
-
-
 
 document.getElementById("login_button").addEventListener("click", ()=>{
     const username = document.getElementById("username").value;
