@@ -1,669 +1,758 @@
- 
+ .mainpic {
+     width: 70%;
+     margin-left: 15%;
+ }
+
+ .left,
+ .right {
+     width: 100%;
+ }
+
+ .middle {
+     width: 1500px;
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 30px;
+     width: 100%;
+ }
+
+ .karte_page {
+     background-color: rgb(255, 212, 111);
+ }
+
+ .location_card {
+     border: 2px solid black;
+     background-color: rgb(255, 199, 69);
+     text-align: center;
+     border-radius: 20px;
+     width: 350px;
+ }
+
+ .container {
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 30px;
+     width: 100%;
+ }
+
+ .title {
+     text-align: center;
+ }
+
+ video {
+     border-radius: 20px;
+     border: 3px solid rgb(0, 49, 90);
+     margin-top: 10px;
+     margin-left: 10px;
+     margin-right: 10px;
+     width: 300px;
+ }
 
 
+ .individuelle_location {
+     background-color: violet;
+ }
+
+ .location_row {
+     display: grid;
+     grid-template-columns: repeat(2, 1fr);
+ }
 
 
-.mainpic{
-    width: 70%;
-    margin-left: 15%;
-}
-.left,
-.right {
-  width: 100%;
-}
-.middle {
-    width: 1500px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    width: 100%;
-}
-.karte_page{
-    background-color:rgb(255, 212, 111);    
-}
-.location_card{
-    border: 2px solid black;
-    background-color:rgb(255, 199, 69);
-    text-align: center;
-    border-radius: 20px;
-    width: 350px;
-}
-.container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    width: 100%;
-}
-.title{
-text-align: center;
-}
+ .location_card:hover p,
+ .location_card:hover h2 {
+     color: rgba(190, 23, 23, 0.656);
+ }
 
-video{
-    border-radius: 20px;
-    border: 3px solid rgb(0, 49, 90);
-    margin-top: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 300px;
-}
+ /*---------------POPUP-------------------------*/
+ .popup-overlay {
+     display: none;
+     position: fixed;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+     z-index: 1000;
+ }
 
+ .popup-content {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     background-color: #fff;
+     padding: 20px;
+     border-radius: 10px;
+     text-align: center;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+     width: 300px;
+     height: 300px;
+ }
 
-.individuelle_location{
-    background-color: violet;
-}
-.location_row{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
+ .popup-image {
+     max-width: 100%;
+     height: auto;
+     margin-bottom: 15px;
+ }
 
+ .close-button {
+     background-color: #ff5c5c;
+     color: white;
+     border: none;
+     padding: 10px 20px;
+     border-radius: 5px;
+     cursor: pointer;
+     font-size: 16px;
+ }
 
-.location_card:hover p,
-.location_card:hover h2 {
-    color: rgba(190, 23, 23, 0.656);
-}
+ .close-button:hover {
+     background-color: #ff3b3b;
+ }
 
-/*---------------POPUP-------------------------*/
-.popup-overlay {
-    display: none; 
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
-    z-index: 1000;
-}
-.popup-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    width: 300px;
-    height: 300px;
-}
-.popup-image {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 15px;
-}
-.close-button {
-    background-color: #ff5c5c;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
-.close-button:hover {
-    background-color: #ff3b3b;
-}
-/*---------------POPUP-------------------------*/
-/*------------------LOGIN-PAGE-------------------------*/
-body.login_page{
-    margin: 0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../Bilder/Daemmerung\ Trier.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.login_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    padding: 20px;
-    background: #fff;
-    border: 1px solid #ccc;
-    border-radius: 10px; 
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-input {
-    width: 250px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px;
-    background-color:  rgb(255, 199, 69);
-    color: white;
-    cursor: pointer;
-}
-button:hover {
-    background-color: #0056b3;
-}
+ /*---------------POPUP-------------------------*/
+ /*------------------LOGIN-PAGE-------------------------*/
+ body.login_page {
+     margin: 0;
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-image: url("../Bilder/Daemmerung\ Trier.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+ }
 
-#status_message{
-    color: red;
-}
-/*------------------LOGIN-PAGE-------------------------*/
-/*------------------THEATER-PAGE------------------------*/
-.theater_page  header{
-    background-image: none;
-    border: none;
-}
-.theater_page .topbars{
-    border: none;
-}
-.theater_page h1 {
-    background-color: rgba(0, 0, 0, 0.478);
-    width: fit-content;
-    color: white;
-    text-decoration: underline lightsalmon;
-    font-size: 30px;
-    margin: auto;
-}
-.theater_page p {
-    background-color: rgba(0, 0, 0, 0.478);
-    width: fit-content;
-    color: white;
-    font-size: 28px;
-    margin: auto;
-}
-.theater_page {
-    background-image: url("../Bilder/Theaterbackground.png");
-    background-repeat: no-repeat;
-    background-attachment: local;
-    font-family: Arial, sans-serif;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: auto;
-    text-align: center;
-}
-.theater_page .content-box {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-.theater_page .content-container {
-    margin: auto;
-    width: 500px;
-    height: 500px;
-    position: relative;
-}
-.theater_page .content.active {
-  opacity: 1;
-}
-.theater_page .content {
-    opacity: 0; 
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; 
-    font-size: 20px;
-    color: black;
-    background-color: white;
-    position: absolute;
-    top: 0;
-    left: 0;
-    gap: 10px;
-    transition: opacity 0.5s ease; 
-    border-radius: 50px;
-}
-.theater_page .content h2 {
-    margin: 0;
-    font-size: 25px;
-}
-.theater_page .content img {
-    max-width: 80%;
-    height: auto; 
-    border-radius: 8px;
-}
-.theater_page .content p {
-    text-align: center;
-    font-size: 18px;
-    line-height: 1.5;
-    color: black;
-    background-color: white;
-}
-.theater_page .arrow {
-    margin: auto;
-    font-size: 20px;
-    padding: 10px 20px;
-    cursor: pointer;
-    border: none;
-    background-color: white;
-    color: black;
-    border-radius: 5px;
-}
-.theater_page .arrow:hover {
-    background-color: orange;
-}
+ .login_container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 10px;
+     padding: 20px;
+     background: #fff;
+     border: 1px solid #ccc;
+     border-radius: 10px;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
 
-/*------------------THEATER-PAGE------------------------*/
-/*------------------QUERY-MAKER-PAGE------------------------*/
-body.query_maker {
-    background-image: url("../Bilder/Balkenbild.jpg"); 
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+ input {
+     width: 250px;
+     padding: 10px;
+     font-size: 16px;
+     border: 1px solid #ccc;
+     border-radius: 5px;
+ }
+
+ button {
+     padding: 10px 20px;
+     font-size: 16px;
+     border: none;
+     border-radius: 5px;
+     background-color: rgb(255, 199, 69);
+     color: white;
+     cursor: pointer;
+ }
+
+ button:hover {
+     background-color: #0056b3;
+ }
+
+ #status_message {
+     color: red;
+ }
+
+ /*------------------LOGIN-PAGE-------------------------*/
+ /*------------------THEATER-PAGE------------------------*/
+ .theater_page header {
+     background-image: none;
+     border: none;
+ }
+
+ .theater_page .topbars {
+     border: none;
+ }
+
+ .theater_page h1 {
+     background-color: rgba(0, 0, 0, 0.478);
+     width: fit-content;
+     color: white;
+     text-decoration: underline lightsalmon;
+     font-size: 30px;
+     margin: auto;
+ }
+
+ .theater_page p {
+     background-color: rgba(0, 0, 0, 0.478);
+     width: fit-content;
+     color: white;
+     font-size: 28px;
+     margin: auto;
+ }
+
+ .theater_page {
+     background-image: url("../Bilder/Theaterbackground.png");
+     background-repeat: no-repeat;
+     background-attachment: local;
+     font-family: Arial, sans-serif;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     margin: auto;
+     text-align: center;
+ }
+
+ .theater_page .content-box {
+     display: flex;
+     align-items: center;
+     gap: 10px;
+ }
+
+ .theater_page .content-container {
+     margin: auto;
+     width: 500px;
+     height: 500px;
+     position: relative;
+ }
+
+ .theater_page .content.active {
+     opacity: 1;
+ }
+
+ .theater_page .content {
+     opacity: 0;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     font-size: 20px;
+     color: black;
+     background-color: white;
+     position: absolute;
+     top: 0;
+     left: 0;
+     gap: 10px;
+     transition: opacity 0.5s ease;
+     border-radius: 50px;
+ }
+
+ .theater_page .content h2 {
+     margin: 0;
+     font-size: 25px;
+ }
+
+ .theater_page .content img {
+     max-width: 80%;
+     height: auto;
+     border-radius: 8px;
+ }
+
+ .theater_page .content p {
+     text-align: center;
+     font-size: 18px;
+     line-height: 1.5;
+     color: black;
+     background-color: white;
+ }
+
+ .theater_page .arrow {
+     margin: auto;
+     font-size: 20px;
+     padding: 10px 20px;
+     cursor: pointer;
+     border: none;
+     background-color: white;
+     color: black;
+     border-radius: 5px;
+ }
+
+ .theater_page .arrow:hover {
+     background-color: orange;
+ }
+
+ /*------------------THEATER-PAGE------------------------*/
+ /*------------------QUERY-MAKER-PAGE------------------------*/
+ body.query_maker {
+     background-image: url("../Bilder/Balkenbild.jpg");
+     background-size: cover;
+     background-repeat: no-repeat;
+ }
 
 
-.query_maker .container{
-    border: 2px solid black;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    gap: 10px; 
-}
+ .query_maker .container {
+     border: 2px solid black;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 10px;
+ }
 
-.query_maker .event_description{
-    width: 400px;
-    height: 400px;
-    padding: 5px; 
-    text-align: left; 
-    vertical-align: top; 
-    resize: none;
-    font-family: Arial, sans-serif; 
-    font-size: 25px;
-}
-.query_maker label{font-size: 25px;}
+ .query_maker .event_description {
+     width: 400px;
+     height: 400px;
+     padding: 5px;
+     text-align: left;
+     vertical-align: top;
+     resize: none;
+     font-family: Arial, sans-serif;
+     font-size: 25px;
+ }
 
-.query_maker select{font-size: 25px;}
+ .query_maker label {
+     font-size: 25px;
+ }
 
-.query_maker input{font-size: 25px;}
+ .query_maker select {
+     font-size: 25px;
+ }
 
-.query_maker button{font-size: 25px;}
-/*------------------QUERY-MAKER-PAGE------------------------*/
-/*------------------EVENTS-PAGE------------------------*/
-.events_page .event{
-    border: 2px solid black;
-    background-color:  rgb(255, 199, 69);
-    text-align: center;
-    border-radius: 20px;
-    width: 550px;
-}
-.events_page #card{
-    display: flex;
+ .query_maker input {
+     font-size: 25px;
+ }
 
-        flex-direction: column;
-        align-items: center; 
-        justify-content: center; 
-        margin-top: 20px;
-}
-.events_page body{
-    background-color: rgb(255, 212, 111);
-    font-size: 20px;
-}
+ .query_maker button {
+     font-size: 25px;
+ }
 
-.events_page .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 100%;
-}
-.events_page .middle-column {
-    grid-column: 2;
-    background-color: lightblue;
-}
-.events_page .right-column {
-    grid-column: 3; 
-    background-color: lightcoral;
-}
-/*------------------EVENTS-PAGE------------------------*/
-/*------------------BURGER-MENU-------------------------*/
-.burger-menu {
-    position: relative;
-    width: fit-content;
-    margin-right: auto;
-    border: none;
-    display: block;
-    font-size: 24px;
-    padding: 10px;
-    background-color: orange;
-    color: white;
-    cursor: pointer;
-}
-.burger-menu option {
-    background-color: white;
-    color: black;
-    padding: 10px;
-}
-.burger-menu .option1 {
-    display: none;
-    background-color: white;
-    color: black;
-    padding: 10px;
-}
-.burger-menu option:hover {
-    background-color: #00bcd4;
-}
-/*------------------BURGER-MENU-------------------------*/
-/*------------------CONTACT-US--------------------------*/
-body.contactus_page {
-    background-image: url("/Bilder/HS_Trier.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-size: 20px;
-    text-align: center;
-}
-.contactus_page h2 {
-    background-color: white;
-    width: fit-content;
-    margin: auto;
-    margin-top: 50px;
-    margin-bottom: 10px;
-    font-size: 25px;
-}
-.contactus_page h3 {text-align: center;
-font-size: 20px;}
-.contactus_page h4{
+ /*------------------QUERY-MAKER-PAGE------------------------*/
+ /*------------------EVENTS-PAGE------------------------*/
+ .events_page .event {
+     border: 2px solid black;
+     background-color: rgb(255, 199, 69);
+     text-align: center;
+     border-radius: 20px;
+     width: 550px;
+ }
+
+ .events_page #card {
+     display: flex;
+
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     margin-top: 20px;
+ }
+
+ .events_page body {
+     background-color: rgb(255, 212, 111);
+     font-size: 20px;
+ }
+
+ .events_page .container {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     height: 100%;
+ }
+
+ .events_page .middle-column {
+     grid-column: 2;
+     background-color: lightblue;
+ }
+
+ .events_page .right-column {
+     grid-column: 3;
+     background-color: lightcoral;
+ }
+
+ /*------------------EVENTS-PAGE------------------------*/
+ /*------------------BURGER-MENU-------------------------*/
+ .burger-menu {
+     position: relative;
+     width: fit-content;
+     margin-right: auto;
+     border: none;
+     display: block;
+     font-size: 24px;
+     padding: 10px;
+     background-color: orange;
+     color: white;
+     cursor: pointer;
+ }
+
+ .burger-menu option {
+     background-color: white;
+     color: black;
+     padding: 10px;
+ }
+
+ .burger-menu .option1 {
+     display: none;
+     background-color: white;
+     color: black;
+     padding: 10px;
+ }
+
+ .burger-menu option:hover {
+     background-color: #00bcd4;
+ }
+
+ /*------------------BURGER-MENU-------------------------*/
+ /*------------------CONTACT-US--------------------------*/
+ body.contactus_page {
+     background-image: url("/Bilder/HS_Trier.jpg");
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     font-size: 20px;
+     text-align: center;
+ }
+
+ .contactus_page h2 {
+     background-color: white;
+     width: fit-content;
+     margin: auto;
+     margin-top: 50px;
+     margin-bottom: 10px;
+     font-size: 25px;
+ }
+
+ .contactus_page h3 {
+     text-align: center;
+     font-size: 20px;
+ }
+
+ .contactus_page h4 {
+     width: auto;
+     background-color: rgb(255, 212, 111);
+     text-align: center;
+     margin-top: 0px;
+     font-size: 25px;
+ }
+
+ .contactus_page .container {
+     width: auto;
+     background-color: rgba(240, 248, 255, 0.422);
+     gap: 60px;
+     padding: 60px;
+     justify-content: center;
+     display: flex;
+     border-radius: 20px;
+ }
+
+ .contactus_page .box {
+     width: auto;
+     margin: auto;
+     background-color: white;
+     padding: 30px;
+     border-radius: 20px;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+ }
+
+ .contactus_page h6 {
+     background-color: rgba(255, 255, 255, 0.666);
+     font-size: 24px;
+ }
+
+ /*------------------CONTACT-US--------------------------*/
+ /*------------------------AKTIVITATEN-PAGE------------------------*/
+ body.aktivitaten_page {
+     background-image: url("/Bilder/Trier-Stadt.jpg");
+     background-repeat: no-repeat;
+     background-attachment: local;
+     font-size: 25px;
+ }
+
+ .aktivitaten_page article {
+     background-color: rgba(245, 245, 245, 0.536);
+ }
+
+ h2.aktivitaten_page {
+     text-decoration: underline black;
+ }
+
+ /*------------------------AKTIVITATEN-PAGE------------------------*/
+ /*---------------------------HOBBIES-PAGE--------------------------*/
+ body.hobbies_page {
+     background-color: rgb(249, 168, 17);
+     font-size: 25px;
+     width: auto;
+ }
+
+ h2.hobbies_page {
+     text-decoration: underline black;
+ }
+
+ .hobbies_page p {width: auto;}
+
+ .Robin1 {
+     background-color: rgb(248, 223, 81);
+     text-align: left;
+     width: auto;
+ }
+
+ .Robin2 {
+     background-color: rgba(245, 245, 245, 0.536);
+     text-align: left;
+     width: auto;
+ }
+
+ .hobbies_page .container {
+     display: flex;
+     flex-direction: row;
+     width: auto;
+ }
+
+ .hobbies_page .container .boxbild {
     width: auto;
-    background-color: rgb(255, 212, 111);
-    text-align: center;
-    margin-top: 0px;
-    font-size: 25px;
+    gap: 0%;
 }
-.contactus_page .container {
+
+ .hobbies_page .boxtext {
     width: auto;
-    background-color: rgba(240, 248, 255, 0.422);
-    gap: 60px;
-    padding: 60px;
-    justify-content: center;
-    display: flex;
-    border-radius: 20px;
-}
-.contactus_page .box {
-    width: auto;
-    margin: auto;
-    background-color: white;
-    padding: 30px;
-    border-radius: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-.contactus_page h6 {
-    background-color: rgba(255, 255, 255, 0.666);
-    font-size: 24px;
-}
-/*------------------CONTACT-US--------------------------*/
-/*------------------------AKTIVITATEN-PAGE------------------------*/
-body.aktivitaten_page{
-    background-image: url("/Bilder/Trier-Stadt.jpg");
-    background-repeat: no-repeat;
-    background-attachment: local;
-    font-size: 25px;}
-.aktivitaten_page article {background-color: rgba(245, 245, 245, 0.536);}
-h2.aktivitaten_page{text-decoration: underline black;}
-/*------------------------AKTIVITATEN-PAGE------------------------*/
-/*---------------------------HOBBIES-PAGE--------------------------*/
-body.hobbies_page {background-color: rgb(249, 168, 17);
-    font-size: 25px;
-}
-.hobbies_page article {background-color: rgba(245, 245, 245, 0.536);}
-h2.hobbies_page {text-decoration: underline black;}
-.Robin1{
-background-color: rgb(248, 223, 81);
-text-align: left;
-}
-.Robin2{
-background-color: rgba(245, 245, 245, 0.536);
-text-align: left ;
-}
-.hobbies_page .container {
-display: flex;         
-flex-direction: row;    
-width: 100%;            
-}
-.hobbies_page .boxbild {
-flex: 1;                
-padding: 20px;          
-box-sizing: border-box;
-
-}
-.hobbies_page .boxtext {
-flex: 1;               
-padding: 20px;
-box-sizing: border-box;
-}
-/*---------------------------HOBBIES-PAGE--------------------------*/
-/*-------------------CALENDAR-----------------------*/
-body.kalendar{
-    background-image: url("../Bilder/Trier\ City\ Event.jpg");
-}
-.kalendar #month_text {
-    width: 285px;
-    margin-bottom: 20px;
-}
-.kalendar .calendar {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-    border: 1px solid #ccc;
-    width: 300px; 
-    margin-left: 100px;
-}
-.kalendar #kalendar {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr); 
-    gap: 5px;
-}
-.kalendar .calendar p {
-    margin: 0;
-    padding: 10px;
-    text-align: center;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    height: 28px;
-}
-.kalendar .calendar p {
-    background-color: rgb(255, 199, 69);
-}
-.kalendar #kalendar p:hover {
-    background-color: rgb(190, 190, 190);
-    cursor: pointer;
-}
-.kalendar .month_bar {
-    display: flex; 
-}
-.kalendar .month_selector {
-    width: 40px;
-    height: 40px;
-    border-radius: 5px;
-    border: none;
-    margin-bottom: 20px;
-    background-color: rgb(255, 199, 69);
-    border: 1px solid #ddd;
-}
-.kalendar .month_selector:hover {
-    background-color: rgb(190, 190, 190);
-    cursor: pointer;
-}
-.kalendar .circle-paragraph::after {
-    content: ""; 
-    display: block;
-    width: 6px;
-    height: 6px;
-    background-color: blue; 
-    border-radius: 50%; 
-    margin: 5px auto 0; 
-}
-.kalendar .container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%; 
-    margin: 0 auto; 
-}
-/*-------------------CALENDAR-----------------------*/
-/*-------------------UPCOMING-EVENTS----------------------*/
-.kalendar .upcoming_container {
-    border: 0.1px solid black;
-    height: 380px;
-    width: 340px;
-    margin-right: 100px;
-    text-align: center;
-    background-color: rgb(255, 212, 111);
-
-    overflow-y: scroll;
-    overflow-x: hidden; 
-}
-
-.kalendar .upcoming_container h2 {
-    font-size: 20px;
-}
-.kalendar .upcoming_container p {
-    font-size: 18px;
-}
-/*-------------------UPCOMING-EVENTS----------------------*/
-
-/*--------RESPONSIVE DESIGN*/
-@media screen and (max-width:786px) {
-
-    body.index h2 {font-size: larger;}
-    body.index h3 {font-size: large;}
-    body.index p {font-size: medium;}
-
-    body.aktivitaten_page h2 {font-size: larger;}
-    body.aktivitaten_page ul {font-size: large;}
-
-    body.theater_page h1 {font-size: large;}
-    body.theater_page p {font-size: large;}
-
-    .events_page .event {
-        width: 60%;
-        align-items: center;
-    }
+ }
 
 
-    .contactus_page h4 {
-        font-size: medium;
-    }
+ /*---------------------------HOBBIES-PAGE--------------------------*/
+ /*-------------------CALENDAR-----------------------*/
+ body.kalendar {
+     background-image: url("../Bilder/Trier\ City\ Event.jpg");
+ }
 
-    .contactus_page h6 {
-        font-size: medium;
-    }
+ .kalendar #month_text {
+     width: 285px;
+     margin-bottom: 20px;
+ }
+
+ .kalendar .calendar {
+     font-family: Arial, sans-serif;
+     padding: 20px;
+     border: 1px solid #ccc;
+     width: 300px;
+     margin-left: 100px;
+ }
+
+ .kalendar #kalendar {
+     display: grid;
+     grid-template-columns: repeat(7, 1fr);
+     gap: 5px;
+ }
+
+ .kalendar .calendar p {
+     margin: 0;
+     padding: 10px;
+     text-align: center;
+     background-color: #f9f9f9;
+     border: 1px solid #ddd;
+     border-radius: 4px;
+     height: 28px;
+ }
+
+ .kalendar .calendar p {
+     background-color: rgb(255, 199, 69);
+ }
+
+ .kalendar #kalendar p:hover {
+     background-color: rgb(190, 190, 190);
+     cursor: pointer;
+ }
+
+ .kalendar .month_bar {
+     display: flex;
+ }
+
+ .kalendar .month_selector {
+     width: 40px;
+     height: 40px;
+     border-radius: 5px;
+     border: none;
+     margin-bottom: 20px;
+     background-color: rgb(255, 199, 69);
+     border: 1px solid #ddd;
+ }
+
+ .kalendar .month_selector:hover {
+     background-color: rgb(190, 190, 190);
+     cursor: pointer;
+ }
+
+ .kalendar .circle-paragraph::after {
+     content: "";
+     display: block;
+     width: 6px;
+     height: 6px;
+     background-color: blue;
+     border-radius: 50%;
+     margin: 5px auto 0;
+ }
+
+ .kalendar .container {
+     display: flex;
+     justify-content: space-between;
+     width: 100%;
+     margin: 0 auto;
+ }
+
+ /*-------------------CALENDAR-----------------------*/
+ /*-------------------UPCOMING-EVENTS----------------------*/
+ .kalendar .upcoming_container {
+     border: 0.1px solid black;
+     height: 380px;
+     width: 340px;
+     margin-right: 100px;
+     text-align: center;
+     background-color: rgb(255, 212, 111);
+
+     overflow-y: scroll;
+     overflow-x: hidden;
+ }
+
+ .kalendar .upcoming_container h2 {
+     font-size: 20px;
+ }
+
+ .kalendar .upcoming_container p {
+     font-size: 18px;
+ }
+
+ /*-------------------UPCOMING-EVENTS----------------------*/
+
+ /*--------RESPONSIVE DESIGN*/
+ @media screen and (max-width:786px) {
+
+     body.index h2 {
+         font-size: larger;
+     }
+
+     body.index h3 {
+         font-size: large;
+     }
+
+     body.index p {
+         font-size: medium;
+     }
+
+     body.aktivitaten_page h2 {
+         font-size: larger;
+     }
+
+     body.aktivitaten_page ul {
+         font-size: large;
+     }
+
+     body.theater_page h1 {
+         font-size: large;
+     }
+
+     body.theater_page p {
+         font-size: large;
+     }
+
+     .events_page .event {
+         width: 60%;
+         align-items: center;
+     }
 
 
+     .contactus_page h4 {
+         font-size: medium;
+     }
+
+     .contactus_page h6 {
+         font-size: medium;
+     }
+
+     .hobbies_page .boxbild {width: 45%;}
 }
 
-@media screen and (max-width:940px) {
+ @media screen and (max-width:940px) {
+
+
+     .kalendar .container {
+         display: flex;
+         flex-direction: column;
+         margin: auto;
+         width: fit-content;
+         align-items: center;
+     }
+
+     .kalendar .upcoming_container {
+         margin-right: 0%;
+     }
+
+     .kalendar .calendar {
+         margin-left: 0%;
+     }
+
+     .kalender .mobile-container {
+         position: fixed;
+         right: 0%;
+         top: 0%;
+         z-index: 1000;
+     }
+
+     
+
+ }
+
+
+
+ @media screen and (max-width:1200px) {
+
+     .news-container .news-title {
+         height: auto;
+         padding: 10px;
+     }
+
+     .karte.title {
+         margin: auto;
+     }
+
+     .karte-container {
+         width: auto;
+         position: relative;
+         flex-direction: column;
+         margin: auto;
+         justify-content: center;
+         align-content: center;
+     }
+
+     .middle {
+         width: auto;
+         gap: 30px;
+         display: flex;
+         flex-direction: column;
+     }
+
+     .location_card {
+         width: auto;
+     }
+
+
+     .popup-content {
+         margin: auto;
+     }
+
+
+     .contactus_page .container {
+         width: auto;
+         background-color: rgba(240, 248, 255, 0.422);
+         display: flex;
+         flex-direction: column;
+         border-radius: 20px;
+         align-items: normal;
+     }
+
+     .contactus_page .box {
+         margin: 0%;
+     }
 
     
-    .kalendar .container {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        width: fit-content;
-        align-items: center;
-    }
-
-    .kalendar .upcoming_container {
-        margin-right: 0%;
-    }
-
-    .kalendar .calendar {
-        margin-left: 0%;
-    }
-
-    .kalender .mobile-container {
-        position: fixed;
-        right: 0%;
-        top: 0%;
-        z-index: 1000;
-    }
-
-
-}
 
 
 
+     .query_maker .container {
+         width: auto;
+     }
 
-@media screen and (max-width:1200px) {
+     .query_maker .event_description {
+         width: auto;
+     }
 
-    .news-container .news-title {
-        height: auto;
-        padding: 10px;
-    }
+     #date_selector {
+         font-size: medium;
+     }
 
-    .karte.title {
-        margin: auto;
-    }
-
-    .karte-container {
-        width: auto;
-        position: relative;
-        flex-direction: column;
-        margin: auto;
-        justify-content: center;
-        align-content: center;
-    }
-
-    .middle {
-        width: auto;
-        gap: 30px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .location_card {
-        width: auto;
-    }
-
-
-    .popup-content {
-        margin: auto;
-    }
-
-
-    .contactus_page .container {
-        width: auto;
-        background-color: rgba(240, 248, 255, 0.422);
-        display: flex;
-        flex-direction: column;
-        border-radius: 20px;
-        align-items: normal;
-    }
-
-    .contactus_page .box {
-        margin: 0%;
-    }
-
-    .hobbies_page .mobile-container {
-        background-color: darkgoldenrod;
-        border-color: darkorange;
-        position: fixed;
-        top: 0%;
-        right: 0%;
-        z-index: 1000;
-    }
-
-    .query_maker .container{
-        width: auto;
-    }
-    
-    .query_maker .event_description {
-        width: auto;
-    }
-
-    #date_selector {
-        font-size: medium;
-    }
-
-    #save_event_button {
-        font-size: medium;
-    }
-
-    .hobbies_page article {
-        width: fit-content;
-        position: relative;
-    }
-
-    .Robin1 {width: fit-content; position: relative;}
-
-    .Robin2 {width: fit-content; position: relative;}
-
-}
+     #save_event_button {
+         font-size: medium;
+     }
+ }
