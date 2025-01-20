@@ -154,16 +154,24 @@ button:hover {
     border: none;
 }
 .theater_page h1 {
+    background-color: rgba(0, 0, 0, 0.478);
+    width: fit-content;
     color: white;
     text-decoration: underline lightsalmon;
+    font-size: 30px;
+    margin: auto;
 }
 .theater_page p {
+    background-color: rgba(0, 0, 0, 0.478);
+    width: fit-content;
     color: white;
+    font-size: 28px;
+    margin: auto;
 }
 .theater_page {
     background-image: url("../Bilder/Theaterbackground.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-attachment: local;
     font-family: Arial, sans-serif;
     justify-content: center;
     align-items: center;
@@ -205,6 +213,7 @@ button:hover {
 }
 .theater_page .content h2 {
     margin: 0;
+    font-size: 25px;
 }
 .theater_page .content img {
     max-width: 80%;
@@ -213,9 +222,10 @@ button:hover {
 }
 .theater_page .content p {
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
     color: black;
+    background-color: white;
 }
 .theater_page .arrow {
     margin: auto;
@@ -324,10 +334,9 @@ button:hover {
 }
 /*------------------BURGER-MENU-------------------------*/
 /*------------------CONTACT-US--------------------------*/
-body .contactus_page {
-    background-image: url("Bilder/HS_Trier.jpg");
-    background-position: center;
-    background-size: cover;
+body.contactus_page {
+    background-image: url("/Bilder/HS_Trier.jpg");
+    background-attachment: local;
     background-repeat: no-repeat;
     font-size: 20px;
     text-align: center;
@@ -369,14 +378,17 @@ body .contactus_page {
 }
 /*------------------CONTACT-US--------------------------*/
 /*------------------------AKTIVITATEN-PAGE------------------------*/
-body.aktivitaten_page{background-image: url("../Bilder/Trier-Stadt.jpg");
+body.aktivitaten_page{
+    background-image: url("/Bilder/Trier-Stadt.jpg");
     background-repeat: no-repeat;
-    background-position: center;}
+    background-attachment: local;
+    font-size: 25px;}
 .aktivitaten_page article {background-color: rgba(245, 245, 245, 0.536);}
 h2.aktivitaten_page{text-decoration: underline black;}
 /*------------------------AKTIVITATEN-PAGE------------------------*/
 /*---------------------------HOBBIES-PAGE--------------------------*/
 body.hobbies_page {background-color: rgb(249, 168, 17);
+    font-size: 25px;
 }
 .hobbies_page article {background-color: rgba(245, 245, 245, 0.536);}
 h2.hobbies_page {text-decoration: underline black;}

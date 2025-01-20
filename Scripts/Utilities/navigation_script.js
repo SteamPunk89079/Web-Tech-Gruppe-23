@@ -42,3 +42,27 @@ document.addEventListener('keydown', (event) => {
     localStorage.setItem('current_page', current_page);
     window.location.href = Pages[current_page];
 });
+
+
+
+//---------------------------------------------
+document.addEventListener("DOMContentLoaded", function () {
+
+    const topbar = document.querySelector(".topbars");
+    const mobilekasten = document.querySelector(".mobile-container");
+ 
+    topbar.classList.add("hidden");
+ 
+    mobilekasten.addEventListener("click", function () {
+       topbar.classList.toggle("hidden");
+       mobilekasten.classList.toggle("active");
+    });
+ 
+    document.addEventListener("click", function (event) {
+       if (!topbar.contains(event.target) && !mobilekasten.contains(event.target)) {
+          topbar.classList.add("hidden");
+          mobilekasten.classList.remove("active");
+       }
+    });
+ 
+ });

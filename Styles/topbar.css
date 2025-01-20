@@ -1,16 +1,18 @@
 /*---------topbar--stuff-------*/
 .topbars {
     display: flex;
-    justify-content: space-between; 
-    align-items: center; 
+    justify-content: space-between;
+    align-items: center;
     padding: 10px;
     background-color: transparent;
     margin-top: 38px;
     border: 2px solid black;
 }
-.topbars button:first-of-type{
+
+.topbars button:first-of-type {
     margin-left: 20px;
 }
+
 .topbars .button {
     margin-left: -15px;
     margin-bottom: -23px;
@@ -27,22 +29,206 @@
     background-color: rgb(255, 212, 111);
     border: 1px solid rgb(201, 148, 0);
 
-    
+
     text-align: center;
     cursor: pointer;
 }
+
 .topbars .button:hover {
     background-color: rgb(255, 200, 90);
 }
+
 .topbar_img {
     width: 100px;
-    height: auto; 
+    height: auto;
     margin-left: auto;
 }
-.index {background-color: rgb(255, 199, 69);}
-header {background-image: url("../Bilder/Balkenbild.jpg");
-        background-repeat: no-repeat;
-        background-position: center;}
-.index h2 {background-color: orange;}
-.index h3 {text-decoration: underline orange;}
+
+.index {
+    background-color: rgb(255, 199, 69);
+}
+
+header {
+    background-image: url("../Bilder/Balkenbild.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.index h2 {
+    background-color: orange;
+    font-size: 40px;
+}
+
+.index h3 {
+    text-decoration: underline orange;
+    font-size: 30px;
+}
+
+.index p {font-size: 25px;}
+
 /*---------topbar--stuff-------*/
+
+
+
+@media screen and (max-width:786px) {
+
+    .mobile-container {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        display: block;
+        width: 50px;
+        background-color: orange;
+        height: 50px;
+        color: white;
+        border-radius: 10px;
+        top: 0%;
+        right: 0%;
+    }
+
+    .hidden {
+        display: none !important;
+    }
+
+    .banner {
+        position: relative;
+    }
+
+    .topbars .button {
+        position: relative;
+        right: 0%;
+        flex-direction: column;
+        margin-bottom: auto;
+    }
+
+    .topbars button {
+        float: left;
+        height: fit-content;
+        color: white;
+        text-decoration: none;
+        font-size: 17px;
+        justify-content: center;
+        overflow-x: auto;
+    }
+
+    .events_page .event {
+        width: 60%;
+        align-items: center;
+
+    }
+
+}
+
+
+@media screen and (max-width:1200px) {
+
+    .mobile-container {
+        display: block;
+        cursor: pointer;
+        position: absolute;
+        width: 50px;
+        background-color: orange;
+        height: 50px;
+        color: white;
+        border-radius: 10px;
+        top: 0%;
+        right: 0%;
+    }
+
+    .hidden {
+        display: none !important;
+    }
+
+    .topbars .button {
+        border-top-right-radius: 0%;
+        padding-left: 10%;
+        padding-right: 40%;
+        margin-bottom: auto;
+    }
+
+    .topbar_img {
+        position: relative;
+    }
+
+    .topbars {
+        flex-direction: column;
+        background-color: lightslategray;
+        border-color: transparent;
+        position: fixed;
+        display: flex;
+        align-items: flex-end;
+        padding-right: 0%;
+        width: 40%;
+        height: fit-content;
+        top: 5%;
+        right: 0%;
+        z-index: 1000;
+    }
+
+    .topbars button {
+        float: left;
+        color: white;
+        height: min-content;
+        text-decoration: none;
+        font-size: 20px;
+        justify-content: center;
+        overflow-x: auto;
+    }
+
+
+    button:hover {
+        background-color: yellowgreen;
+        color: black;
+    }
+
+    /*topbars/Nav-bar*/
+
+    .news-container .news-title {
+        height: auto;
+        padding: 10px;
+    }
+
+    .karte.title {
+        margin: auto;
+    }
+
+    .karte-container {
+        width: auto;
+        position: relative;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .middle {
+        width: auto;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .location_card {
+        width: auto;
+    }
+
+
+    .popup-content {
+        margin: auto;
+    }
+
+
+    .contactus_page .container {
+        width: auto;
+        background-color: rgba(240, 248, 255, 0.422);
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        align-items: normal;
+    }
+
+    .contactus_page .box {
+        margin: 0%;
+    }
+
+}

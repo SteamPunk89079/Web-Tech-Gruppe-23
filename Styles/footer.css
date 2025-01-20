@@ -9,3 +9,8 @@ footer {
     border-radius: 20px;      
     margin-top: 50px;
 }
+
+footer a {
+    font-size: 18px;
+    color: aquamarine;
+}
