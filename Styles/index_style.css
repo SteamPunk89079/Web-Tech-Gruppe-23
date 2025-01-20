@@ -623,5 +623,10 @@ body.kalendar{
         width: fit-content;
         position: relative;
     }
+
+    .Robin1 {width: fit-content; position: relative;}
+
+    .Robin2 {width: fit-content; position: relative;}
+
 }
 /*-------------------RESPONSIVE-DESIGN---------------------*/
