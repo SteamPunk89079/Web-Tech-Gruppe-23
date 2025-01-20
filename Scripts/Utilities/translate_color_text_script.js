@@ -1,4 +1,3 @@
-// Language translation function
 function toggleLanguage(language) {
     const translations = {
         
