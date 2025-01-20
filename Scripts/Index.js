@@ -33,6 +33,13 @@ events.addEventListener("click", function(){
 
 
 
+if (localStorage.getItem('reload') === 'true') {
+   localStorage.removeItem('reload');   
+   location.reload();
+}
+
+
+
 
 
    
