@@ -76,7 +76,6 @@ header {
         display: block;
         cursor: pointer;
         position: absolute;
-        display: block;
         width: 50px;
         background-color: orange;
         height: 50px;
@@ -110,13 +109,6 @@ header {
         justify-content: center;
         overflow-x: auto;
     }
-
-    .events_page .event {
-        width: 60%;
-        align-items: center;
-
-    }
-
 }
 
 
@@ -179,56 +171,6 @@ header {
     button:hover {
         background-color: yellowgreen;
         color: black;
-    }
-
-    /*topbars/Nav-bar*/
-
-    .news-container .news-title {
-        height: auto;
-        padding: 10px;
-    }
-
-    .karte.title {
-        margin: auto;
-    }
-
-    .karte-container {
-        width: auto;
-        position: relative;
-        flex-direction: column;
-        margin: auto;
-        justify-content: center;
-        align-content: center;
-    }
-
-    .middle {
-        width: auto;
-        gap: 30px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .location_card {
-        width: auto;
-    }
-
-
-    .popup-content {
-        margin: auto;
-    }
-
-
-    .contactus_page .container {
-        width: auto;
-        background-color: rgba(240, 248, 255, 0.422);
-        display: flex;
-        flex-direction: column;
-        border-radius: 20px;
-        align-items: normal;
-    }
-
-    .contactus_page .box {
-        margin: 0%;
     }
 
 }

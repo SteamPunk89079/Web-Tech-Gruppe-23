@@ -112,7 +112,7 @@ body.login_page{
     align-items: center;
     background-image: url("../Bilder/Daemmerung\ Trier.jpg");
     background-repeat: no-repeat;
-    background-size: cover;
+    backgroabackground-attachment: scroll;
 }
 .login_container {
     display: flex;
@@ -243,6 +243,13 @@ button:hover {
 
 /*------------------THEATER-PAGE------------------------*/
 /*------------------QUERY-MAKER-PAGE------------------------*/
+body.query_maker {
+    background-image: url("../Bilder/Balkenbild.jpg"); 
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
 .query_maker .container{
     border: 2px solid black;
     display: flex;
@@ -289,9 +296,7 @@ button:hover {
     background-color: rgb(255, 212, 111);
     font-size: 20px;
 }
-.events_page body, html {
-    height: 100%; 
-}
+
 .events_page .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -501,4 +506,155 @@ body.kalendar{
     overflow-y: scroll;
     overflow-x: hidden; 
 }
+
+.kalendar .upcoming_container h2 {
+    font-size: 20px;
+}
+.kalendar .upcoming_container p {
+    font-size: 18px;
+}
 /*-------------------UPCOMING-EVENTS----------------------*/
+
+/*--------RESPONSIVE DESIGN*/
+@media screen and (max-width:786px) {
+
+    body.index h2 {font-size: larger;}
+    body.index h3 {font-size: large;}
+    body.index p {font-size: medium;}
+
+    body.aktivitaten_page h2 {font-size: larger;}
+    body.aktivitaten_page ul {font-size: large;}
+
+    body.theater_page h1 {font-size: large;}
+    body.theater_page p {font-size: large;}
+
+    .events_page .event {
+        width: 60%;
+        align-items: center;
+    }
+
+
+    .contactus_page h4 {
+        font-size: medium;
+    }
+
+    .contactus_page h6 {
+        font-size: medium;
+    }
+
+
+}
+
+@media screen and (max-width:940px) {
+
+    
+    .kalendar .container {
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        width: fit-content;
+        align-items: center;
+    }
+
+    .kalendar .upcoming_container {
+        margin-right: 0%;
+    }
+
+    .kalendar .calendar {
+        margin-left: 0%;
+    }
+
+    .kalender .mobile-container {
+        position: fixed;
+        right: 0%;
+        top: 0%;
+        z-index: 1000;
+    }
+
+
+}
+
+
+
+
+@media screen and (max-width:1200px) {
+
+    .news-container .news-title {
+        height: auto;
+        padding: 10px;
+    }
+
+    .karte.title {
+        margin: auto;
+    }
+
+    .karte-container {
+        width: auto;
+        position: relative;
+        flex-direction: column;
+        margin: auto;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .middle {
+        width: auto;
+        gap: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .location_card {
+        width: auto;
+    }
+
+
+    .popup-content {
+        margin: auto;
+    }
+
+
+    .contactus_page .container {
+        width: auto;
+        background-color: rgba(240, 248, 255, 0.422);
+        display: flex;
+        flex-direction: column;
+        border-radius: 20px;
+        align-items: normal;
+    }
+
+    .contactus_page .box {
+        margin: 0%;
+    }
+
+    .hobbies_page .mobile-container {
+        background-color: darkgoldenrod;
+        border-color: darkorange;
+        position: fixed;
+        top: 0%;
+        right: 0%;
+        z-index: 1000;
+    }
+
+    .query_maker .container{
+        width: auto;
+    }
+    
+    .query_maker .event_description {
+        width: auto;
+    }
+
+    #date_selector {
+        font-size: medium;
+    }
+
+    #save_event_button {
+        font-size: medium;
+    }
+
+    .hobbies_page article {
+        width: fit-content;
+        position: relative;
+    }
+
+}
